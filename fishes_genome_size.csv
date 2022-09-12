@@ -1,0 +1,6 @@
+和名,Category,SingleMulti,TAC,Target,Latin_name,Assembly_GenBank,Assembly_related_GenBank,Genome_size
+サンマ,Fish,Single,1,NPFC,Cololabis saira (Brevoort 1856),0,0,NA
+クロマグロ,Fish,Single,1,NPFC,Thunnus orientalis (Temminck & Schlegel 1844),1,4,787
+スケトウダラ,Fish,Single,1,H30,Gadus chalcogrammus Pallas 1814,1,2,449
+マアジ,Fish,Single,1,H30,Trachurus japonicus (Temminck & Schlegel 1844),0,1,799
+マイワシ,Fish,Single,1,H30,Sardinops melanostictus (Temminck & Schlegel 1846),0,0,NA

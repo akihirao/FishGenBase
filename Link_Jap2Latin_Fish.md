@@ -18,11 +18,11 @@ library(tidyverse)
 ## Loading data-set
 
 ``` r
-#Current standard Japanese/scientific names of all fish species recorded from Japanese waters
+# Current standard Japanese/scientific names of all fish species recorded from Japanese waters
 #https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
 JAFList <- read_csv("20220821_JAFList.csv")
 
-# Species of fisheries resorces
+# Species list of fisheries resources
 FRA200List <- read_csv("FRA200list.csv")
 ```
 
