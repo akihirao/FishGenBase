@@ -92,3 +92,38 @@
 ハタハタ,Fish,Single,0,H30,Trichodontidae,Arctoscopus japonicus (Steindachner 1881)
 ホウボウ,Fish,Single,0,R2,Triglidae,Chelidonichthys spinosus (McClelland 1843)
 マトウダイ,Fish,Single,0,R2,Zeidae,Zeus faber Linnaeus 1758
+アマダイ類,Fish,Multi,0,H30,NA,NA
+イカナゴ類,Fish,Single,0,H30,NA,NA
+エソ類,Fish,Multi,0,H30,NA,NA
+カレイ類,Fish,Multi,0,H30,NA,NA
+マナガツオ類,Fish,Multi,0,H30,NA,NA
+ムロアジ類,Fish,Multi,0,H30,NA,NA
+エゾイソアイナメ,Fish,Single,0,R2,NA,NA
+スルメイカ,NonFish,Single,1,H30,NA,NA
+ズワイガニ,NonFish,Single,1,H30,NA,NA
+ケンサキイカ,NonFish,Single,0,H30,NA,NA
+シャコ,NonFish,Single,0,H30,NA,NA
+ベニズワイガニ,NonFish,Single,0,H30,NA,NA
+ホッコクアカエビ,NonFish,Single,0,H30,NA,NA
+ヤリイカ,NonFish,Single,0,H30,NA,NA
+カガザミ,NonFish,Single,0,R1,NA,NA
+クマエビ,NonFish,Single,0,R1,NA,NA
+クルマエビ,NonFish,Single,0,R1,NA,NA
+コウイカ,NonFish,Single,0,R1,NA,NA
+ツノナシオキアミ,NonFish,Single,0,R1,NA,NA
+アオリイカ,NonFish,Single,0,R2,NA,NA
+イセエビ,NonFish,Single,0,R2,NA,NA
+ウチワエビ,NonFish,Single,0,R2,NA,NA
+クロザコエビ,NonFish,Single,0,R2,NA,NA
+ケガニ,NonFish,Single,0,R2,NA,NA
+サルエビ,NonFish,Single,0,R2,NA,NA
+ジンドウイカ,NonFish,Single,0,R2,NA,NA
+ソデイカ,NonFish,Single,0,R2,NA,NA
+タイワンガザミ,NonFish,Single,0,R2,NA,NA
+トゲザコエビ,NonFish,Single,0,R2,NA,NA
+ボタンエビ,NonFish,Single,0,R2,NA,NA
+マダコ,NonFish,Single,0,R2,NA,NA
+ミズダコ,NonFish,Single,0,R2,NA,NA
+モロトゲアカエビ,NonFish,Single,0,R2,NA,NA
+ヤナギダコ,NonFish,Single,0,R2,NA,NA
+ヨシエビ,NonFish,Single,0,R2,NA,NA

@@ -66,6 +66,6 @@ FRA200List_Latin <- FRA200List %>%
 
 ## Write a list file
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
-write_csv(FRA200List_Latin, "FRA200List_Latin.pre.csv")
+write_csv(FRA200List_Latin, "FRA200List_Latin.csv")
 ```
 
