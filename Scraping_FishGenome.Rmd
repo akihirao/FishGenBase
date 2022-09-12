@@ -50,7 +50,7 @@ genbank_genome_head <- "https://www.ncbi.nlm.nih.gov/genome/?term="
 
 
 for(i in 1:no_fish){
-  Species_vec <- strsplit(fishes[i,]$Latin_name, " ") %>% unlist # split genus/species names
+  Species_vec <- strsplit(fishes[i,]$Scientific_name, " ") %>% unlist # split genus/species names
   
   genbank_genome_url <- paste0(genbank_genome_head,Species_vec[1],"+",Species_vec[2])
   genbank_html <- read_html(genbank_genome_url)

@@ -17,7 +17,6 @@ output:
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 # Loading packages
 library(tidyverse)
-
 ```
 
 ## Loading data-set
@@ -28,35 +27,45 @@ library(tidyverse)
 JAFList <- read_csv("20220821_JAFList.csv")
 
 # Species list of fisheries resources
-FRA200List <- read_csv("FRA200list.csv")
+FRA200List <- read_csv("FRA200List.csv")
 ```
 
 ## Linking Japanese name and scientific name
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 no_fish <- nrow(FRA200List)
-#no_fish <- 6 # for test
 
-species_name_vec <- vector()
-
+scientific_name_vec <- vector()
+Family_vec <- vector()
 
 for(i in 1:no_fish){
 
 	target_fish <- FRA200List[i,1][[1]]
 	target_fish_ID <- which(JAFList$和名==target_fish)
-	species_name <- JAFList$学名[target_fish_ID]
+	scientific_name <- JAFList$学名[target_fish_ID]
+	Family <-JAFList$Family[target_fish_ID]
+#	gsub("\n", " ", Family)
+#	if(str_extract(Family, pattern="Epinephelidae")){
+#	  Family <- "Epinephelidae"
+#	}
 
-	if(!(identical(species_name,character(0)))){#if non-fish species
-		species_name_vec[i] <- species_name
-
+	if(!(identical(scientific_name,character(0)))){#if non-fish species
+	  Family_vec[i] <- Family
+	  scientific_name_vec[i] <- scientific_name
 	}else{
-	  species_name_vec[i] <- NA
+	  Family_vec[i] <- NA
+	  scientific_name_vec[i] <- NA
 	}
 
 }
-FRA200List_Latin <- FRA200List %>% mutate(Latin_name = species_name_vec)
+
+FRA200List_Latin <- FRA200List %>% 
+  mutate(Family = Family_vec, Scientific_name = scientific_name_vec) %>%
+  arrange(Category, Family, Scientific_name)
+
 ```
 
 ## Write a list file
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 write_csv(FRA200List_Latin, "FRA200List_Latin.pre.csv")
 ```
+

@@ -108,7 +108,7 @@
 ヒレグロ,Fish,Single,0,R2
 ホウボウ,Fish,Single,0,R2
 ホシガレイ,Fish,Single,0,R2
-ホタルジャコ,NonFish,Single,0,R2
+ホタルジャコ,Fish,Single,0,R2
 ボタンエビ,NonFish,Single,0,R2
 マダコ,NonFish,Single,0,R2
 マトウダイ,Fish,Single,0,R2
@@ -119,3 +119,11 @@
 ヤマトカマス,Fish,Single,0,R2
 ヨシエビ,NonFish,Single,0,R2
 ヨロイイタチウオ,Fish,Single,0,R2
+ニホンウナギ,Fish,Single,0,Ex
+カツオ,Fish,Single,0,Ex
+カラフトマス,Fish,Single,0,Ex
+サケ,Fish,Single,0,Ex
+ギンザケ,Fish,Single,0,Ex
+ニジマス,Fish,Single,0,Ex
+マスノスケ,Fish,Single,0,Ex
+ブラウントラウト,Fish,Single,0,Ex
