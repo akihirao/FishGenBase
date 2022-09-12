@@ -24,9 +24,9 @@ fishes_raw <- read_csv("FRA200List_Latin.csv")
 
 #filtering out species with NA
 fishes <- fishes_raw %>% drop_na()
-#no_fish <- nrow(fishes) #number of fishes in the list
-no_fish <- 5 # for test
-fishes <- fishes[1:no_fish,]
+no_fish <- nrow(fishes) #number of fishes in the list
+#no_fish <- 5 # for test
+#fishes <- fishes[1:no_fish,]
 ```
 
 ## Preparing storages
