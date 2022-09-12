@@ -1,0 +1,62 @@
+---
+title: "Link_Jap2Latin_Fish"
+author: "Akira Hirao"
+date: "`r Sys.Date()`"
+output:
+  md_document:
+    toc: true
+    variant: markdown_github
+  html_document:
+    toc: true
+---
+
+# Linking Japanese name to scientific name in fishes
+
+## Loading the packages
+
+```{r message = FALSE, warning = FALSE, echo = TRUE}
+# Loading packages
+library(tidyverse)
+
+```
+
+## Loading data-set
+
+```{r message = FALSE, warning = FALSE, echo = TRUE}
+#Current standard Japanese/scientific names of all fish species recorded from Japanese waters
+#https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
+JAFList <- read_csv("20220821_JAFList.csv")
+
+# Species of fisheries resorces
+FRA200List <- read_csv("FRA200list.csv")
+```
+
+## Linking Japanese name and scientific name
+```{r message = FALSE, warning = FALSE, echo = TRUE}
+no_fish <- nrow(FRA200List)
+#no_fish <- 6 # for test
+
+species_name_vec <- vector()
+
+
+for(i in 1:no_fish){
+
+	target_fish <- FRA200List[i,1][[1]]
+	target_fish_ID <- which(JAFList$和名==target_fish)
+	species_name <- JAFList$学名[target_fish_ID]
+
+	if(!(identical(species_name,character(0)))){#if non-fish species
+		species_name_vec[i] <- species_name
+
+	}else{
+	  species_name_vec[i] <- NA
+	}
+
+}
+FRA200List_Latin <- FRA200List %>% mutate(Latin_name = species_name_vec)
+```
+
+## Write a list file
+```{r message = FALSE, warning = FALSE, echo = TRUE}
+write_csv(FRA200List_Latin, "FRA200List_Latin.pre.csv")
+```
