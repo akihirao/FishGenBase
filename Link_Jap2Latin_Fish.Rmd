@@ -17,6 +17,7 @@ output:
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 # Loading packages
 library(tidyverse)
+library(rvest)
 ```
 
 ## Loading data-set
@@ -28,38 +29,43 @@ JAFList <- read_csv("20220821_JAFList.csv")
 
 # Species list of fisheries resources
 FRA200List <- read_csv("FRA200List.csv")
+FRA200List$Category <- factor(FRA200List$Category, levels=c("Fish","Shellfish","Cuttlefish"))
 ```
 
 ## Linking Japanese name and scientific name
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 no_fish <- nrow(FRA200List)
+#no_fish　<- 10
 
 scientific_name_vec <- vector()
-Family_vec <- vector()
+genus_name_vec <- vector()
+family_name_vec <- vector()
+order_name_vec <- vector()
 
 for(i in 1:no_fish){
 
 	target_fish <- FRA200List[i,1][[1]]
 	target_fish_ID <- which(JAFList$和名==target_fish)
-	scientific_name <- JAFList$学名[target_fish_ID]
-	Family <-JAFList$Family[target_fish_ID]
-#	gsub("\n", " ", Family)
-#	if(str_extract(Family, pattern="Epinephelidae")){
-#	  Family <- "Epinephelidae"
-#	}
+	scientific_name_check <- JAFList$学名[target_fish_ID]
+	Family_unlist <-JAFList$Family[target_fish_ID] %>% strsplit("\n") %>% unlist 
+	Family_name <- Family_unlist[1]
 
-	if(!(identical(scientific_name,character(0)))){#if non-fish species
-	  Family_vec[i] <- Family
+
+	if(!(identical(scientific_name_check,character(0)))){#if non-fish species
+	  scientific_unlist <- scientific_name_check %>% strsplit("\n") %>% unlist 
+	  scientific_name <- scientific_unlist[1]
+	  family_name_vec[i] <- Family_name
 	  scientific_name_vec[i] <- scientific_name
+
 	}else{
-	  Family_vec[i] <- NA
+	  family_name_vec[i] <- NA
 	  scientific_name_vec[i] <- NA
 	}
 
 }
 
 FRA200List_Latin <- FRA200List %>% 
-  mutate(Family = Family_vec, Scientific_name = scientific_name_vec) %>%
+  mutate(Family = family_name_vec, Scientific_name = scientific_name_vec) %>%
   arrange(Category, Family, Scientific_name)
 
 ```
