@@ -29,17 +29,18 @@ fishes_raw <- read_csv("FRA200List_Latin.csv")
 #filtering out species with NA
 fishes <- fishes_raw %>% drop_na()
 no_fish <- nrow(fishes) #number of fishes in the list
-#no_fish <- 5 # for test
+#no_fish <- 30 # for test
 #fishes <- fishes[1:no_fish,]
 ```
 
 ## Preparing storages
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
-genome_assembly_exist <- vector()
-genome_size_vec <- vector() # target species / a related species / mean within genus
-genome_assembly_genus_exist <- vector()
-no_related_exist <- vector()
+target_sp_genome_assembly_exist <- vector()
+target_sp_genome_size_vec <- vector() # genome size of the target species
+related_spp_genome_size_vec <- vector() # mean genome size of related species
+related_spp_genome_assembly_exist <- vector()
+no_related_spp_exist <- vector()
 ```
 
 ## Defining function
@@ -52,18 +53,24 @@ genome_size_sp_GenBank <- function(genus, species){
   target_title <- genbank_html %>% html_element(xpath = "/html/head/title") %>% html_text()
   
   if(!(stringr::str_detect(target_title,pattern="No items found"))){
-    summary_element <- genbank_html %>% 
-      html_element(xpath = '//*[@id="mmtest1"]/div/div/div/table') %>% 
-      html_table()
-    target_size <-
-      summary_element$X2[grep("total length", summary_element$X2)]
-    target_size_vec <- strsplit(target_size, ":") %>% unlist
-    genome_size_out <- round(as.numeric(target_size_vec[2]),digits=0)
+    summary_element_pre <- genbank_html %>% 
+      html_element(xpath = '//*[@id="mmtest1"]/div/div/div/table')
+    if(!(length(summary_element_pre)==0)){ #if web format unavaialable
+      summary_element <- summary_element_pre %>% html_table()
+      target_size <- summary_element$X2[grep("total length", summary_element$X2)]
+      target_size_vec <- strsplit(target_size, ":") %>% unlist
+      genome_size_out <- round(as.numeric(target_size_vec[2]),digits=0)
+    }else{
+      genome_size_out <- NA #
+    }
+       
+
     
-    return(genome_size_out)
-    
+  }else{
+    genome_size_out <- NA
   }
   
+  return(genome_size_out)
   Sys.sleep(1) #
 }
 
@@ -83,9 +90,11 @@ multi_species_genome_list <- function(genus_name){
   
   species_vec <- vector()
   for(i in 1:no_related){
-    species_vec[i] <-  NIH_html %>% 
-    html_element(xpath = '//*[@id="maincontent"]/div/div[5]/div[1]/div[2]/p') %>% 
-    html_text()
+    xpath_head1 <- '//*[@id="maincontent"]/div/div[5]/div['
+    xpath_head2 <- ']/div[2]/p'
+    xpath_lab <- paste0(xpath_head1,i,xpath_head2)
+    species_vec[i] <- multi_html %>% 
+      html_element(xpath = xpath_lab) %>% html_text()
   }
   output <- list(no_related,species_vec)
   return(output)
@@ -111,64 +120,75 @@ for(i in 1:no_fish){
   #extracting title element
   target_title <- genbank_html %>% html_element(xpath = "/html/head/title") %>% html_text()
   
+  # if genome assembly of the target species exist
   if(!(stringr::str_detect(target_title,pattern="No items found"))){
-    genome_assembly_exist[i] <- 1 # genome assembly found at species level
-    genome_assembly_genus_exist <- 1  # genome assembly found at genus level
+    target_sp_genome_assembly_exist[i] <- 1 # genome assembly found at species level
     
-    genome_size_vec[i] <- genome_size_sp_GenBank(genus_name,species_name)
+    target_sp_genome_size_vec[i] <- genome_size_sp_GenBank(genus_name,species_name)
     
     #Check related species
     genbank_genome_genus_url <- paste0(genbank_genome_head,genus_name)
     genbank_genus_html <- read_html(genbank_genome_genus_url)
     target_genus_title <- genbank_genus_html %>% html_element(xpath = "/html/head/title") %>% html_text()
     
-    if(!(stringr::str_detect(target_genus_title,pattern="ID"))){ #if multiple related species found
-      target_genus_items <- genbank_genus_html %>% 
-        html_element(xpath = '//*[@id="maincontent"]/div/div[3]/div/h3') %>% 
-        html_text()
-      items_vec <- strsplit(target_genus_items, " ") %>% unlist
-      no_related_exist[i]  <- items_vec[2]
+    #if genome assemblies of multiple related species found
+    if(!(stringr::str_detect(target_genus_title,pattern="ID"))){ 
+      multi_related_list <- multi_species_genome_list(genus_name)
+      no_related_spp_exist[i]  <- multi_related_list[[1]]
+      multi_related_list <- multi_related_list[[2]]
+      multi_related_spp_genome_size <- vector()
+      
+      for(j in 1:no_related_spp_exist[i]){
+        sp_name_recover <- strsplit(multi_related_list[j], " ") %>% unlist
+        multi_related_spp_genome_size[j] <- genome_size_sp_GenBank(sp_name_recover[1],sp_name_recover[2])
+      }
+      related_spp_genome_size_vec[i] <- round(mean(multi_related_spp_genome_size, na.rm=TRUE),digits=0)
+      
     }else{
-      no_related_exist[i] <- 1
+      no_related_spp_exist[i] <- 1
+      related_spp_genome_size_vec[i] <- genome_size_sp_GenBank(genus_name,species_name)
     }
   
   Sys.sleep(1) #
     
   }else{
-    genome_assembly_exist[i] <- 0 # no genome assembly found at species level
-    genome_size_vec[i] <- NA
+    target_sp_genome_assembly_exist[i] <- 0 # no genome assembly found at species level
+    target_sp_genome_size_vec[i] <- NA
     
     # search at genus level 
     genbank_genome_genus_url <- paste0(genbank_genome_head,genus_name)
     genbank_genus_html <- read_html(genbank_genome_genus_url)
     target_genus_title <- genbank_genus_html %>% html_element(xpath = "/html/head/title") %>% html_text()
     
-  
     if(!(stringr::str_detect(target_genus_title,pattern="No items found"))){
-      no_related_exist[i] <- 1 # items found at genus level
-      
+     
       if(stringr::str_detect(target_genus_title,pattern="ID")){ #a single related species found
-        summary_related_element <-genbank_genus_html %>% 
+        no_related_spp_exist[i] <- 1 # a single related species found within the same genus
+        
+        summary_element <- genbank_genus_html %>% 
           html_element(xpath = '//*[@id="mmtest1"]/div/div/div/table') %>% 
           html_table()
-        target_related_size <- summary_related_element$X2[grep("total length", summary_related_element$X2)]
-        target_related_size_vec <- strsplit(target_related_size, ":") %>% unlist
-        genome_size_vec[i] <- round(as.numeric(target_related_size_vec[2]),digits=0)
+        target_size <- summary_element$X2[grep("total length", summary_element$X2)]
+        target_size_vec <- strsplit(target_size, ":") %>% unlist
+        related_spp_genome_size_vec[i] <- round(as.numeric(target_size_vec[2]),digits=0)
+        
       
-      }else{
+      }else{ #if genome assemblies of multiple related species found
         multi_related_list <- multi_species_genome_list(genus_name)
-        no_related_exist[i]  <- multi_related_list[[1]]
+        no_related_spp_exist[i]  <- multi_related_list[[1]]
         multi_related_list <- multi_related_list[[2]]
-        multi_genome_size <- vector()
-        for(j in 1:no_related_exist[i]){
+        multi_related_spp_genome_size <- vector()
+        for(j in 1:no_related_spp_exist[i]){
           sp_name_recover <- strsplit(multi_related_list[j], " ") %>% unlist
-          multi_genome_size[j] <- genome_size_sp_GenBank(sp_name_recover[1],sp_name_recover[2])
+          multi_related_spp_genome_size[j] <- genome_size_sp_GenBank(sp_name_recover[1],sp_name_recover[2])
         }
         
-        genome_size_vec[i] <- round(mean(multi_genome_size),digits=0)
+        related_spp_genome_size_vec[i] <- round(mean(multi_related_spp_genome_size, na.rm=TRUE),digits=0)
       }
     }else{# No items found in the genus
-      no_related_exist[i] <- 0
+      target_sp_genome_size_vec[i] <- NA
+      no_related_spp_exist[i] <- 0
+      related_spp_genome_size_vec[i] <- NA
     }
       
   Sys.sleep(1)
@@ -178,10 +198,11 @@ for(i in 1:no_fish){
 }
 
 fishes_genome <- fishes %>%
-  mutate (Assembly = genome_assembly_exist, Assembly_related = no_related_exist, Genome_size = genome_size_vec)  %>% select(-SingleMulti,-TAC,-Target)
+  mutate (Target_sp_genome_size = target_sp_genome_size_vec, No_related_Assembly = no_related_spp_exist, Genus_genome_size = related_spp_genome_size_vec)
 ```
 
 ## Write a result file
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 write_csv(fishes_genome, "fishes_genome_size.csv")
 ```
+

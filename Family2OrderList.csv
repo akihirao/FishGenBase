@@ -1,72 +1,69 @@
-Family,Order,�ږ�
-Acropomatidae,Pempheriformes,�n�^���|��
-Ammodytidae,Uranoscopiformes,�~�V�}�I�R�[��
-Anguillidae,Anguilliformes,�E�i�M��
-Anoplopomatidae,Perciformes,�X�Y�L��
-Argentinidae,Argentiniformes,�j�M�X��
-Belonidae,Beloniformes,�_�c��
-Berycidae,Beryciformes,�L�����_�C��
-Branchiostegidae,Perciformes,�X�Y�L��
-Callionymidae,Syngnathiformes,�g�Q�E�I��
-Carangidae,Carangiformes,�A�W��
-Centrolophidae,,
-Chlorophthalmidae,,
-Clupeidae,,
-Coryphaenidae,,
-Cynoglossidae,,
-Dasyatidae,,
-Dussumieriidae,,
-Embiotocidae,,
-Engraulidae,,
-Epinephelidae,,
-Exocoetidae,,
-Fistulariidae,,
-Gadidae,,
-Girellidae,,
-Haemulidae,,
-Hemiramphidae,,
-Hemitripteridae,,
-Hexagrammidae,,
-Labridae,,
-Lampridae,,
-Lateolabracidae,,
-Lophiidae,,
-Lutjanidae,,
-Monacanthidae,,
-Moridae,,
-Mugilidae,,
-Mullidae,,
-Muraenesocidae,,
-Nemipteridae,,
-Niphonidae,,
-Ophidiidae,,
-Oplegnathidae,,
-Oplegnathidae,,
-Paralichthyidae,,
-Platycephalidae,,
-Pleuronectidae,,
-Priacanthidae,,
-Priacanthidae,,
-Salangidae,,
-Salmonidae,,
-Sciaenidae,,
-Sciaenidae,,
-Scombridae,,
-Scombridae,,
-Scorpididae,,
-Sebastidae,,
-Sebastolobidae,,
-Siganidae,,
-Sillaginidae,,
-Sparidae,,
-Sphyraenidae,,
-Spratelloididae,,
-Stichaeidae,,
-Synanceiidae,,
-Synaphobranchidae,,
-Tetraodontidae,,
-Trichiuridae,,
-Trichodontidae,,
-Triglidae,,
-Zeidae,,
-Zoarcidae,,
+Phylum,Class,Order,Family,目,科,Notes
+Chordata, Actinopterygii,Anguilliformes,Anguillidae,ウナギ目,ウナギ科,OK
+Chordata, Actinopterygii,Anguilliformes,Congridae,ウナギ目,アナゴ科,OK
+Chordata, Actinopterygii,Anguilliformes,Muraenesocidae,ウナギ目,ハモ科,OK
+Chordata, Actinopterygii,Anguilliformes,Synaphobranchidae,ウナギ目,ホラアナゴ科,OK
+Chordata, Actinopterygii,Aulopiformes,Chlorophthalmidae,ヒメ目,アオメエソ科,OK
+Chordata, Actinopterygii,Beloniformes,Belonidae,ダツ目,ダツ科,OK
+Chordata, Actinopterygii,Beloniformes,Exocoetidae,ダツ目,トビウオ科,OK
+Chordata, Actinopterygii,Beloniformes,Hemiramphidae,ダツ目,サヨリ科,OK
+Chordata, Actinopterygii,Beryciformes,Berycidae,キンメダイ目,キンメダイ科,OK
+Chordata, Actinopterygii,Clupeiformes,Clupeidae,ニシン目,ニシン科,OK
+Chordata, Actinopterygii,Clupeiformes,Dussumieriidae,ニシン目,ニシン科,OK
+Chordata, Actinopterygii,Clupeiformes,Engraulidae,ニシン目,カタクチイワシ科,OK
+Chordata, Actinopterygii,Clupeiformes,Spratelloididae,ニシン目,ニシン科,Check
+Chordata, Actinopterygii,Gadiformes,Gadidae,タラ目,タラ科,OK
+Chordata, Actinopterygii,Gadiformes,Moridae,タラ目,チゴダラ科,OK
+Chordata, Actinopterygii,Lampriformes,Lampridae,アカマンボウ目,アカマンボウ科,OK
+Chordata, Actinopterygii,Lophiiformes,Lophiidae,アンコウ目,アンコウ科,OK
+Chordata, Actinopterygii,Myliobatiformes,Dasyatidae,トビエイ目,アカエイ科,OK
+Chordata, Actinopterygii,Ophidiiformes,Ophidiidae,アシロ目,アシロ科,OK
+Chordata, Actinopterygii,Osmeriformes,Argentinidae,キュウリウオ目,ニギス科,OK
+Chordata, Actinopterygii,Osmeriformes,Salangidae,キュウリウオ目,シラウオ科,OK
+Chordata, Actinopterygii,Perciformes,Acropomatidae,スズキ目,ホタルジャコ科,OK
+Chordata, Actinopterygii,Perciformes,Ammodytidae,スズキ目,イカナゴ科,OK
+Chordata, Actinopterygii,Perciformes,Branchiostegidae,スズキ目,アマダイ科,OK
+Chordata, Actinopterygii,Perciformes,Callionymidae,スズキ目,ネズッポ科,OK
+Chordata, Actinopterygii,Perciformes,Carangidae,スズキ目,アジ科,OK
+Chordata, Actinopterygii,Perciformes,Centrolophidae,スズキ目,イボダイ科,OK
+Chordata, Actinopterygii,Perciformes,Coryphaenidae,スズキ目,シイラ科,OK
+Chordata, Actinopterygii,Perciformes,Embiotocidae,スズキ目,ウミタナゴ科,OK
+Chordata, Actinopterygii,Perciformes,Epinephelidae,スズキ目,マハタ科,OK
+Chordata, Actinopterygii,Perciformes,Girellidae,スズキ目,イスズミ科,Check
+Chordata, Actinopterygii,Perciformes,Haemulidae,スズキ目,イサキ科,OK
+Chordata, Actinopterygii,Perciformes,Labridae,スズキ目,ベラ科,OK
+Chordata, Actinopterygii,Perciformes,Lateolabracidae,スズキ目,スズキ科,OK
+Chordata, Actinopterygii,Perciformes,Lutjanidae,スズキ目,フエダイ科,OK
+Chordata, Actinopterygii,Perciformes,Mugilidae,スズキ目,ボラ科,OK
+Chordata, Actinopterygii,Perciformes,Mullidae,スズキ目,ヒメジ科,OK
+Chordata, Actinopterygii,Perciformes,Nemipteridae,スズキ目,イトヨリダイ科,OK
+Chordata, Actinopterygii,Perciformes,Niphonidae,スズキ目,ハタ科,Check
+Chordata, Actinopterygii,Perciformes,Oplegnathidae,スズキ目,イシダイ科,OK
+Chordata, Actinopterygii,Perciformes,Priacanthidae,スズキ目,キントキダイ科,OK
+Chordata, Actinopterygii,Perciformes,Sciaenidae,スズキ目,ニベ科,OK
+Chordata, Actinopterygii,Perciformes,Scombridae,スズキ目,サバ科,OK
+Chordata, Actinopterygii,Perciformes,Scorpididae,スズキ目,イスズミ科,Check
+Chordata, Actinopterygii,Perciformes,Siganidae,スズキ目,アイゴ科,OK
+Chordata, Actinopterygii,Perciformes,Sillaginidae,スズキ目,キス科,OK
+Chordata, Actinopterygii,Perciformes,Sparidae,スズキ目,タイ科,OK
+Chordata, Actinopterygii,Perciformes,Sphyraenidae,スズキ目,カマス科,OK
+Chordata, Actinopterygii,Perciformes,Stichaeidae,スズキ目,タウエガジ科,Check
+Chordata, Actinopterygii,Perciformes,Trichiuridae,スズキ目,タチウオ科,OK
+Chordata, Actinopterygii,Perciformes,Trichodontidae,スズキ目,ハタハタ科,OK
+Chordata, Actinopterygii,Perciformes,Zoarcidae,スズキ目,ゲンゲ科,OK
+Chordata, Actinopterygii,Pleuronectiformes,Cynoglossidae,カレイ目,ウシノシタ科,OK
+Chordata, Actinopterygii,Pleuronectiformes,Paralichthyidae,カレイ目,ヒラメ科,OK
+Chordata, Actinopterygii,Pleuronectiformes,Pleuronectidae,カレイ目,カレイ科,OK
+Chordata, Actinopterygii,Salmoniformes,Salmonidae,サケ目,サケ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Anoplopomatidae,カサゴ目,ギンダラ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Hemitripteridae,カサゴ目,ケムシカジカ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Hexagrammidae,カサゴ目,アイナメ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Platycephalidae,カサゴ目,コチ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Sebastidae,カサゴ目,メバル科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Sebastolobidae,カサゴ目,メバル科,Check
+Chordata, Actinopterygii,Scorpaeniformes,Synanceiidae,カサゴ目,オニオコゼ科,OK
+Chordata, Actinopterygii,Scorpaeniformes,Triglidae,カサゴ目,ホウボウ科,OK
+Chordata, Actinopterygii,Syngnathiformes,Fistulariidae,ヨウジウオ目,ヤガラ科,OK
+Chordata, Actinopterygii,Tetraodontiformes,Monacanthidae,フグ目,カワハギ科,OK
+Chordata, Actinopterygii,Tetraodontiformes,Tetraodontidae,フグ目,フグ科,OK
+Chordata, Actinopterygii,Zeiformes,Zeidae,マトウダイ目,マトウダイ科,OK

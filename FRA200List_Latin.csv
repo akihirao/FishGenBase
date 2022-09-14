@@ -1,206 +1,201 @@
-和名,Category,SingleMulti,TAC,Target,Family,Scientific_name
-ホタルジャコ,Fish,Single,0,R2,Acropomatidae,Acropoma japonicum Günther 1859
-アカムツ,Fish,Single,0,R1,Acropomatidae,Doederleinia berycoides (Hilgendorf 1879)
-イカナゴ,Fish,Single,0,H30,Ammodytidae,Ammodytes japonicus Duncker & Mohr 1939
-ニホンウナギ,Fish,Single,0,Ex,Anguillidae,Anguilla japonica Temminck & Schlegel 1846
-アブラボウズ,Fish,Single,0,R3,Anoplopomatidae,Erilepis zonifer (Lockington 1880)
-ニギス,Fish,Single,0,H30,Argentinidae,Glossanodon semifasciatus (Kishinouye 1904)
-サンマ,Fish,Single,1,NPFC,Belonidae,Cololabis saira (Brevoort 1856)
-キンメダイ,Fish,Single,0,H30,Berycidae,Beryx splendens Lowe 1834
-アカアマダイ,Fish,Single,0,H30,Branchiostegidae,Branchiostegus japonicus (Houttuyn 1782)
-ネズミゴチ,Fish,Single,0,R3,Callionymidae,Callionymus curvicornis Valenciennes 1837
-マルアジ,Fish,Single,0,R3,Carangidae,Decapterus maruadsi (Temminck & Schlegel 1843)
-カイワリ,Fish,Single,0,R2,Carangidae,Kaiwarinus equula (Temminck & Schlegel 1844)
-シマアジ,Fish,Single,0,R3,Carangidae,Pseudocaranx dentex (Bloch & Schneider 1801)
-ヒラマサ,Fish,Single,0,R3,Carangidae,Seriola aureovittata Temminck & Schlegel 1845
-カンパチ,Fish,Single,0,R3,Carangidae,Seriola dumerili (Risso 1810)
-ブリ,Fish,Single,0,H30,Carangidae,Seriola quinqueradiata Temminck & Schlegel 1845
-マアジ,Fish,Single,1,H30,Carangidae,Trachurus japonicus (Temminck & Schlegel 1844)
-メダイ,Fish,Single,0,R3,Centrolophidae,Hyperoglyphe japonica (Döderlein 1884)
-イボダイ,Fish,Single,0,R2,Centrolophidae,Psenopsis anomala (Temminck & Schlegel 1844)
-アオメエソ,Fish,Single,0,R2,Chlorophthalmidae,Chlorophthalmus albatrossis Jordan & Starks 1904
-ニシン,Fish,Single,0,H30,Clupeidae,Clupea pallasii Valenciennes 1847
-コノシロ,Fish,Single,0,R2,Clupeidae,Konosirus punctatus (Temminck & Schlegel 1846)
-マイワシ,Fish,Single,1,H30,Clupeidae,Sardinops melanostictus (Temminck & Schlegel 1846)
-マアナゴ,Fish,Single,0,H30,Congridae,Conger myriaster (Brevoort 1856)
-シイラ,Fish,Single,0,R2,Coryphaenidae,Coryphaena hippurus Linnaeus 1758
-コウライアカシタビラメ,Fish,Single,0,R3,Cynoglossidae,Cynoglossus abbreviatus (Gray 1834)
-アカシタビラメ,Fish,Single,0,R3,Cynoglossidae,Cynoglossus joyneri Günther 1878
-イヌノシタ,Fish,Single,0,R3,Cynoglossidae,Cynoglossus robustus Günther 1873
-クロウシノシタ,Fish,Single,0,R3,Cynoglossidae,Paraplagusia japonica (Temminck & Schlegel 1846)
-アカエイ,Fish,Single,0,R3,Dasyatidae,Hemitrygon akajei (Bürger 1841)
-ウルメイワシ,Fish,Single,0,H30,Dussumieriidae,Etrumeus micropus (Temminck & Schlegel 1846)
-ウミタナゴ,Fish,Single,0,R3,Embiotocidae,Ditrema temminckii temminckii Bleeker 1853
-カタクチイワシ,Fish,Single,0,H30,Engraulidae,Engraulis japonica Temminck & Schlegel 1846
-キジハタ,Fish,Single,0,R2,Epinephelidae,Epinephelus akaara (Temminck & Schlegel 1843)
-クエ,Fish,Single,0,R2,Epinephelidae,Epinephelus bruneus Bloch 1793
-マハタ,Fish,Single,0,R3,Epinephelidae,Hyporthodus septemfasciatus (Thunberg 1793)
-スジアラ,Fish,Single,0,R2,Epinephelidae,Plectropomus leopardus (Lacepède 1802)
-ツクシトビウオ,Fish,Single,0,R1,Exocoetidae,Cheilopogon heterurus doederleinii (Steindachner 1887)
-ハマトビウオ,Fish,Single,0,R1,Exocoetidae,Cheilopogon pinnatibarbatus japonicus (Franz 1910)
-ホソトビウオ,Fish,Single,0,R1,Exocoetidae,Cypselurus hiraii Abe 1953
-アカヤガラ,Fish,Single,0,R3,Fistulariidae,Fistularia petimba Lacepède 1803
-コマイ,Fish,Single,0,R3,Gadidae,Eleginus gracilis (Tilesius 1810)
-スケトウダラ,Fish,Single,1,H30,Gadidae,Gadus chalcogrammus Pallas 1814
-マダラ,Fish,Single,0,H30,Gadidae,Gadus macrocephalus Tilesius 1810
-メジナ,Fish,Single,0,R3,Girellidae,Girella punctata Gray 1835
-イサキ,Fish,Single,0,R1,Haemulidae,Parapristipoma trilineatum (Thunberg 1793)
-コショウダイ,Fish,Single,0,R3,Haemulidae,Plectorhinchus cinctus (Temminck & Schlegel 1843)
-サヨリ,Fish,Single,0,R2,Hemiramphidae,Hyporhamphus sajori (Temminck & Schlegel 1846)
-ケムシカジカ,Fish,Single,0,R3,Hemitripteridae,Hemitripterus villosus (Pallas 1814)
-クジメ,Fish,Single,0,R3,Hexagrammidae,Hexagrammos agrammus (Temminck & Schlegel 1843)
-アイナメ,Fish,Single,0,R1,Hexagrammidae,Hexagrammos otakii Jordan & Starks 1895
-ホッケ,Fish,Single,0,H30,Hexagrammidae,Pleurogrammus azonus Jordan & Metz 1913
-キュウセン,Fish,Single,0,R3,Labridae,Parajulis poecileptera (Temminck & Schlegel 1845)
-コブダイ,Fish,Single,0,R3,Labridae,Semicossyphus reticulatus (Valenciennes 1839)
-アカマンボウ,Fish,Single,0,R3,Lampridae,"Lampris megalopsis Underkoffler, Luers, Hyde & Craig 2018"
-スズキ,Fish,Single,0,R2,Lateolabracidae,Lateolabrax japonicus (Cuvier 1828)
-アンコウ,Fish,Single,0,R3,Lophiidae,Lophiomus setigerus (Vahl 1797)
-キアンコウ,Fish,Single,0,H30,Lophiidae,Lophius litulon (Jordan 1902)
-ハマダイ,Fish,Single,0,H30,Lutjanidae,Etelis coruscans Valenciennes 1862
-アオダイ,Fish,Single,0,H30,Lutjanidae,Paracaesio caerulea (Katayama 1934)
-オオヒメ,Fish,Single,0,H30,Lutjanidae,Pristipomoides filamentosus (Valenciennes 1830)
-ヒメダイ,Fish,Single,0,H30,Lutjanidae,Pristipomoides sieboldii (Bleeker 1855)
-カワハギ,Fish,Single,0,R2,Monacanthidae,Stephanolepis cirrhifer (Temminck & Schlegel 1850)
-ウマヅラハギ,Fish,Single,0,H30,Monacanthidae,Thamnaconus modestus (Günther 1877)
-イトヒキダラ,Fish,Single,0,H30,Moridae,Laemonema longipes Schmidt 1938
-チゴダラ,Fish,Single,0,R2,Moridae,Physiculus japonicus Hilgendorf 1879
-ボラ,Fish,Single,0,R3,Mugilidae,Mugil cephalus cephalus Linnaeus 1758
-ヒメジ,Fish,Single,0,R3,Mullidae,Upeneus japonicus (Houttuyn 1782)
-ハモ,Fish,Single,0,H30,Muraenesocidae,Muraenesox cinereus (Forsskål 1775)
-イトヨリダイ,Fish,Single,0,R3,Nemipteridae,Nemipterus virgatus (Houttuyn 1782)
-アラ,Fish,Single,0,R3,Niphonidae,Niphon spinosus Cuvier 1828
-ヨロイイタチウオ,Fish,Single,0,R2,Ophidiidae,Hoplobrotula armata (Temminck & Schlegel 1846)
-イシダイ,Fish,Single,0,R3,Oplegnathidae,Oplegnathus fasciatus (Temminck & Schlegel 1844)
-イシガキダイ,Fish,Single,0,R3,Oplegnathidae,Oplegnathus punctatus (Temminck & Schlegel 1844)
-ヒラメ,Fish,Single,0,H30,Paralichthyidae,Paralichthys olivaceus (Temminck & Schlegel 1846)
-マゴチ,Fish,Single,0,R3,Platycephalidae,Platycephalus sp. 2
-アブラガレイ,Fish,Single,0,R2,Pleuronectidae,Atheresthes evermanni Jordan & Starks 1904
-ソウハチ,Fish,Single,0,H30,Pleuronectidae,Cleisthenes pinetorum Jordan & Starks 1904
-サメガレイ,Fish,Single,0,H30,Pleuronectidae,Clidoderma asperrimum (Temminck & Schlegel 1846)
-ミギガレイ,Fish,Single,0,R2,Pleuronectidae,Dexistes rikuzenius Jordan & Starks 1904
-ムシガレイ,Fish,Single,0,H30,Pleuronectidae,Eopsetta grigorjewi (Herzenstein 1890)
-ヒレグロ,Fish,Single,0,R2,Pleuronectidae,Glyptocephalus stelleri (Schmidt 1904)
-アカガレイ,Fish,Single,0,H30,Pleuronectidae,Hippoglossoides dubius Schmidt 1904
-スナガレイ,Fish,Single,0,R3,Pleuronectidae,Limanda punctatissima (Steindachner 1879)
-ババガレイ,Fish,Single,0,R2,Pleuronectidae,Microstomus achne (Jordan & Starks 1904)
-イシガレイ,Fish,Single,0,R1,Pleuronectidae,Platichthys bicoloratus (Basilewsky 1855)
-メイタガレイ,Fish,Single,0,R1,Pleuronectidae,Pleuronichthys lighti Wu 1929
-マガレイ,Fish,Single,0,H30,Pleuronectidae,Pseudopleuronectes herzensteini (Jordan & Snyder 1901)
-クロガシラガレイ,Fish,Single,0,R3,Pleuronectidae,Pseudopleuronectes schrenki (Schmidt 1904)
-マコガレイ,Fish,Single,0,R1,Pleuronectidae,Pseudopleuronectes yokohamae (Günther 1877)
-ヤナギムシガレイ,Fish,Single,0,H30,Pleuronectidae,Tanakius kitaharae (Jordan & Starks 1904)
-ホシガレイ,Fish,Single,0,R2,Pleuronectidae,Verasper variegatus (Temminck & Schlegel 1846)
-チカメキントキ,Fish,Single,0,R3,Priacanthidae,Cookeolus japonicus (Cuvier 1829)
-キントキダイ,Fish,Single,0,R2,Priacanthidae,Priacanthus macracanthus Cuvier 1829
-イシカワシラウオ,Fish,Single,0,R2,Salangidae,Neosalangichthys ishikawae (Wakiya & Takahasi 1913)
-カラフトマス,Fish,Single,0,Ex,Salmonidae,Oncorhynchus gorbuscha (Walbaum 1792)
-サケ,Fish,Single,0,Ex,Salmonidae,Oncorhynchus keta (Walbaum 1792)
-ギンザケ,Fish,Single,0,Ex,Salmonidae,Oncorhynchus kisutch (Walbaum 1792)
-ニジマス,Fish,Single,0,Ex,Salmonidae,Oncorhynchus mykiss (Walbaum 1792)
-マスノスケ,Fish,Single,0,Ex,Salmonidae,Oncorhynchus tshawytscha (Walbaum 1792)
-ブラウントラウト,Fish,Single,0,Ex,Salmonidae,Salmo trutta Linnaeus 1758
-ニベ,Fish,Single,0,R3,Sciaenidae,Nibea mitsukurii (Jordan & Snyder 1900)
-シログチ,Fish,Single,0,R2,Sciaenidae,Pennahia argentata (Houttuyn 1782)
-マルソウダ,Fish,Single,0,R1,Scombridae,Auxis rochei rochei (Risso 1810)
-スマ,Fish,Single,0,R3,Scombridae,Euthynnus affinis (Cantor 1849)
-カツオ,Fish,Single,0,Ex,Scombridae,Katsuwonus pelamis (Linnaeus 1758)
-ハガツオ,Fish,Single,0,R3,Scombridae,Sarda orientalis (Temminck & Schlegel 1844)
-ゴマサバ,Fish,Single,1,H30,Scombridae,Scomber australasicus Cuvier 1832
-マサバ,Fish,Single,1,H30,Scombridae,Scomber japonicus Houttuyn 1782
-サワラ,Fish,Single,0,H30,Scombridae,Scomberomorus niphonius (Cuvier 1832)
-ビンナガ,Fish,Single,1,NPFC,Scombridae,Thunnus alalunga (Bonnaterre 1788)
-キハダ,Fish,Single,1,NPFC,Scombridae,Thunnus albacares (Bonnaterre 1788)
-メバチ,Fish,Single,1,NPFC,Scombridae,Thunnus obesus (Lowe 1839)
-クロマグロ,Fish,Single,1,NPFC,Scombridae,Thunnus orientalis (Temminck & Schlegel 1844)
-タカベ,Fish,Single,0,R3,Scorpididae,Labracoglossa argentiventris Peters 1866
-ユメカサゴ,Fish,Single,0,R3,Sebastidae,Helicolenus hilgendorfii (Döderlein 1884)
-バラメヌケ,Fish,Single,0,R3,Sebastidae,Sebastes baramenuke (Wakiya 1917)
-シロメバル,Fish,Single,0,R2,Sebastidae,Sebastes cheni Barsukov 1988
-ハツメ,Fish,Single,0,R2,Sebastidae,Sebastes owstoni (Jordan & Thompson 1914)
-クロソイ,Fish,Single,0,R2,Sebastidae,Sebastes schlegelii Hilgendorf 1880
-ウスメバル,Fish,Single,0,R1,Sebastidae,Sebastes thompsoni (Jordan & Hubbs 1925)
-キツネメバル,Fish,Single,0,R2,Sebastidae,Sebastes vulpes Döderlein 1884
-カサゴ,Fish,Single,0,R2,Sebastidae,Sebastiscus marmoratus (Cuvier 1829)
-キチジ,Fish,Single,0,H30,Sebastolobidae,Sebastolobus macrochir (Günther 1877)
-アイゴ,Fish,Single,0,R3,Siganidae,Siganus fuscescens (Houttuyn 1782)
-シロギス,Fish,Single,0,R3,Sillaginidae,Sillago japonica Temminck & Schlegel 1843
-クロダイ,Fish,Single,0,R2,Sparidae,Acanthopagrus schlegelii (Bleeker 1854)
-キダイ,Fish,Single,0,H30,Sparidae,Dentex hypselosomus Bleeker 1854
-チダイ,Fish,Single,0,R2,Sparidae,Evynnis tumifrons (Temminck & Schlegel 1843)
-マダイ,Fish,Single,0,H30,Sparidae,Pagrus major (Temminck & Schlegel 1843)
-アカカマス,Fish,Single,0,R2,Sphyraenidae,Sphyraena pinguis Günther 1874
-ヤマトカマス,Fish,Single,0,R2,Sphyraenidae,Sphyraena sp.
-キビナゴ,Fish,Single,0,R1,Spratelloididae,Spratelloides gracilis (Temminck & Schlegel 1846)
-ナガヅカ,Fish,Single,0,R3,Stichaeidae,Dinogunellus grigorjewi (Herzenstein 1890)
-オニオコゼ,Fish,Single,0,R2,Synanceiidae,Inimicus japonicus (Cuvier 1829)
-イラコアナゴ,Fish,Single,0,R2,Synaphobranchidae,Synaphobranchus kaupii Johnson 1862
-シロサバフグ,Fish,Single,0,R2,Tetraodontidae,Lagocephalus spadiceus (Richardson 1845)
-マフグ,Fish,Single,0,R3,Tetraodontidae,Takifugu porphyreus (Temminck & Schlegel 1850)
-トラフグ,Fish,Single,0,H30,Tetraodontidae,Takifugu rubripes (Temminck & Schlegel 1850)
-ショウサイフグ,Fish,Single,0,R3,Tetraodontidae,Takifugu snyderi (Abe 1988)
-タチウオ,Fish,Single,0,H30,Trichiuridae,Trichiurus japonicus Temminck & Schlegel 1844
-ハタハタ,Fish,Single,0,H30,Trichodontidae,Arctoscopus japonicus (Steindachner 1881)
-ホウボウ,Fish,Single,0,R2,Triglidae,Chelidonichthys spinosus (McClelland 1843)
-カナガシラ,Fish,Single,0,R3,Triglidae,Lepidotrigla microptera Günther 1873
-カガミダイ,Fish,Single,0,R3,Zeidae,Zenopsis nebulosa (Temminck & Schlegel 1845)
-マトウダイ,Fish,Single,0,R2,Zeidae,Zeus faber Linnaeus 1758
-ノロゲンゲ,Fish,Single,0,R3,Zoarcidae,Bothrocara hollandi (Jordan & Hubbs 1925)
-タナカゲンゲ,Fish,Single,0,R3,Zoarcidae,Lycodes tanakae Jordan & Thompson 1914
-イカナゴ類,Fish,Single,0,H30,NA,NA
-エソ類,Fish,Multi,0,H30,NA,NA
-カレイ類,Fish,Multi,0,H30,NA,NA
-マナガツオ類,Fish,Multi,0,H30,NA,NA
-ムロアジ類,Fish,Multi,0,H30,NA,NA
-ズワイガニ,Shellfish,Single,1,H30,NA,NA
-シャコ,Shellfish,Single,0,H30,NA,NA
-ベニズワイガニ,Shellfish,Single,0,H30,NA,NA
-ホッコクアカエビ,Shellfish,Single,0,H30,NA,NA
-ガザミ,Shellfish,Single,0,R1,NA,NA
-クマエビ,Shellfish,Single,0,R1,NA,NA
-クルマエビ,Shellfish,Single,0,R1,NA,NA
-ツノナシオキアミ,Shellfish,Single,0,R1,NA,NA
-イセエビ,Shellfish,Single,0,R2,NA,NA
-ウチワエビ,Shellfish,Single,0,R2,NA,NA
-クロザコエビ,Shellfish,Single,0,R2,NA,NA
-ケガニ,Shellfish,Single,0,R2,NA,NA
-サルエビ,Shellfish,Single,0,R2,NA,NA
-タイワンガザミ,Shellfish,Single,0,R2,NA,NA
-トゲザコエビ,Shellfish,Single,0,R2,NA,NA
-ボタンエビ,Shellfish,Single,0,R2,NA,NA
-モロトゲアカエビ,Shellfish,Single,0,R2,NA,NA
-ヨシエビ,Shellfish,Single,0,R2,NA,NA
-アカエビ,Shellfish,Single,0,R3,NA,NA
-アカガイ,Shellfish,Single,0,R3,NA,NA
-アサリ,Shellfish,Single,0,R3,NA,NA
-ウバガイ,Shellfish,Single,0,R3,NA,NA
-エゾアワビ,Shellfish,Single,0,R3,NA,NA
-エゾボラモドキ,Shellfish,Single,0,R3,NA,NA
-エッチュウバイ,Shellfish,Single,0,R3,NA,NA
-クロアワビ,Shellfish,Single,0,R3,NA,NA
-サザエ,Shellfish,Single,0,R3,NA,NA
-シバエビ,Shellfish,Single,0,R3,NA,NA
-シライトマキバイ,Shellfish,Single,0,R3,NA,NA
-シラエビ,Shellfish,Single,0,R3,NA,NA
-トコブシ,Shellfish,Single,0,R3,NA,NA
-トヤマエビ,Shellfish,Single,0,R3,NA,NA
-トリガイ,Shellfish,Single,0,R3,NA,NA
-ハマグリ,Shellfish,Single,0,R3,NA,NA
-ヒラツメガニ,Shellfish,Single,0,R3,NA,NA
-マダカアワビ,Shellfish,Single,0,R3,NA,NA
-メガイアワビ,Shellfish,Single,0,R3,NA,NA
-スルメイカ,Cuttlefish,Single,1,H30,NA,NA
-ケンサキイカ,Cuttlefish,Single,0,H30,NA,NA
-ヤリイカ,Cuttlefish,Single,0,H30,NA,NA
-コウイカ,Cuttlefish,Single,0,R1,NA,NA
-アオリイカ,Cuttlefish,Single,0,R2,NA,NA
-ソデイカ,Cuttlefish,Single,0,R2,NA,NA
-マダコ,Cuttlefish,Single,0,R2,NA,NA
-ミズダコ,Cuttlefish,Single,0,R2,NA,NA
-ヤナギダコ,Cuttlefish,Single,0,R2,NA,NA
-イイダコ,Cuttlefish,Single,0,R3,NA,NA
-カミナリイカ,Cuttlefish,Single,0,R3,NA,NA
-シリヤケイカ,Cuttlefish,Single,0,R3,NA,NA
-ホタルイカ,Cuttlefish,Single,0,R3,NA,NA
-マナマコ,Cuttlefish,Single,0,R3,NA,NA
-ジンドウイカ,NA,Single,0,R2,NA,NA
+和名,Phylum,Class,Order,Family,Scientific_name
+ニホンウナギ,Chordata,Actinopterygii,Anguilliformes,Anguillidae,Anguilla japonica Temminck & Schlegel 1846
+マアナゴ,Chordata,Actinopterygii,Anguilliformes,Congridae,Conger myriaster (Brevoort 1856)
+ハモ,Chordata,Actinopterygii,Anguilliformes,Muraenesocidae,Muraenesox cinereus (Forsskål 1775)
+イラコアナゴ,Chordata,Actinopterygii,Anguilliformes,Synaphobranchidae,Synaphobranchus kaupii Johnson 1862
+アオメエソ,Chordata,Actinopterygii,Aulopiformes,Chlorophthalmidae,Chlorophthalmus albatrossis Jordan & Starks 1904
+サンマ,Chordata,Actinopterygii,Beloniformes,Belonidae,Cololabis saira (Brevoort 1856)
+ツクシトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon heterurus doederleinii (Steindachner 1887)
+ハマトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon pinnatibarbatus japonicus (Franz 1910)
+ホソトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cypselurus hiraii Abe 1953
+サヨリ,Chordata,Actinopterygii,Beloniformes,Hemiramphidae,Hyporhamphus sajori (Temminck & Schlegel 1846)
+キンメダイ,Chordata,Actinopterygii,Beryciformes,Berycidae,Beryx splendens Lowe 1834
+ニシン,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Clupea pallasii Valenciennes 1847
+コノシロ,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Konosirus punctatus (Temminck & Schlegel 1846)
+マイワシ,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Sardinops melanostictus (Temminck & Schlegel 1846)
+ウルメイワシ,Chordata,Actinopterygii,Clupeiformes,Dussumieriidae,Etrumeus micropus (Temminck & Schlegel 1846)
+カタクチイワシ,Chordata,Actinopterygii,Clupeiformes,Engraulidae,Engraulis japonica Temminck & Schlegel 1846
+キビナゴ,Chordata,Actinopterygii,Clupeiformes,Spratelloididae,Spratelloides gracilis (Temminck & Schlegel 1846)
+コマイ,Chordata,Actinopterygii,Gadiformes,Gadidae,Eleginus gracilis (Tilesius 1810)
+スケトウダラ,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus chalcogrammus Pallas 1814
+マダラ,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus macrocephalus Tilesius 1810
+イトヒキダラ,Chordata,Actinopterygii,Gadiformes,Moridae,Laemonema longipes Schmidt 1938
+チゴダラ,Chordata,Actinopterygii,Gadiformes,Moridae,Physiculus japonicus Hilgendorf 1879
+アカマンボウ,Chordata,Actinopterygii,Lampriformes,Lampridae,"Lampris megalopsis Underkoffler, Luers, Hyde & Craig 2018"
+アンコウ,Chordata,Actinopterygii,Lophiiformes,Lophiidae,Lophiomus setigerus (Vahl 1797)
+キアンコウ,Chordata,Actinopterygii,Lophiiformes,Lophiidae,Lophius litulon (Jordan 1902)
+アカエイ,Chordata,Actinopterygii,Myliobatiformes,Dasyatidae,Hemitrygon akajei (Bürger 1841)
+ヨロイイタチウオ,Chordata,Actinopterygii,Ophidiiformes,Ophidiidae,Hoplobrotula armata (Temminck & Schlegel 1846)
+ニギス,Chordata,Actinopterygii,Osmeriformes,Argentinidae,Glossanodon semifasciatus (Kishinouye 1904)
+イシカワシラウオ,Chordata,Actinopterygii,Osmeriformes,Salangidae,Neosalangichthys ishikawae (Wakiya & Takahasi 1913)
+ホタルジャコ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Acropoma japonicum Günther 1859
+アカムツ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Doederleinia berycoides (Hilgendorf 1879)
+イカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes japonicus Duncker & Mohr 1939
+アカアマダイ,Chordata,Actinopterygii,Perciformes,Branchiostegidae,Branchiostegus japonicus (Houttuyn 1782)
+ネズミゴチ,Chordata,Actinopterygii,Perciformes,Callionymidae,Callionymus curvicornis Valenciennes 1837
+マルアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus maruadsi (Temminck & Schlegel 1843)
+カイワリ,Chordata,Actinopterygii,Perciformes,Carangidae,Kaiwarinus equula (Temminck & Schlegel 1844)
+シマアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Pseudocaranx dentex (Bloch & Schneider 1801)
+ヒラマサ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola aureovittata Temminck & Schlegel 1845
+カンパチ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola dumerili (Risso 1810)
+ブリ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola quinqueradiata Temminck & Schlegel 1845
+マアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Trachurus japonicus (Temminck & Schlegel 1844)
+メダイ,Chordata,Actinopterygii,Perciformes,Centrolophidae,Hyperoglyphe japonica (Döderlein 1884)
+イボダイ,Chordata,Actinopterygii,Perciformes,Centrolophidae,Psenopsis anomala (Temminck & Schlegel 1844)
+シイラ,Chordata,Actinopterygii,Perciformes,Coryphaenidae,Coryphaena hippurus Linnaeus 1758
+ウミタナゴ,Chordata,Actinopterygii,Perciformes,Embiotocidae,Ditrema temminckii temminckii Bleeker 1853
+キジハタ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Epinephelus akaara (Temminck & Schlegel 1843)
+クエ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Epinephelus bruneus Bloch 1793
+マハタ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Hyporthodus septemfasciatus (Thunberg 1793)
+スジアラ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Plectropomus leopardus (Lacepède 1802)
+メジナ,Chordata,Actinopterygii,Perciformes,Girellidae,Girella punctata Gray 1835
+イサキ,Chordata,Actinopterygii,Perciformes,Haemulidae,Parapristipoma trilineatum (Thunberg 1793)
+コショウダイ,Chordata,Actinopterygii,Perciformes,Haemulidae,Plectorhinchus cinctus (Temminck & Schlegel 1843)
+キュウセン,Chordata,Actinopterygii,Perciformes,Labridae,Parajulis poecileptera (Temminck & Schlegel 1845)
+コブダイ,Chordata,Actinopterygii,Perciformes,Labridae,Semicossyphus reticulatus (Valenciennes 1839)
+スズキ,Chordata,Actinopterygii,Perciformes,Lateolabracidae,Lateolabrax japonicus (Cuvier 1828)
+ハマダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Etelis coruscans Valenciennes 1862
+アオダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Paracaesio caerulea (Katayama 1934)
+オオヒメ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Pristipomoides filamentosus (Valenciennes 1830)
+ヒメダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Pristipomoides sieboldii (Bleeker 1855)
+ボラ,Chordata,Actinopterygii,Perciformes,Mugilidae,Mugil cephalus cephalus Linnaeus 1758
+ヒメジ,Chordata,Actinopterygii,Perciformes,Mullidae,Upeneus japonicus (Houttuyn 1782)
+イトヨリダイ,Chordata,Actinopterygii,Perciformes,Nemipteridae,Nemipterus virgatus (Houttuyn 1782)
+アラ,Chordata,Actinopterygii,Perciformes,Niphonidae,Niphon spinosus Cuvier 1828
+イシダイ,Chordata,Actinopterygii,Perciformes,Oplegnathidae,Oplegnathus fasciatus (Temminck & Schlegel 1844)
+イシガキダイ,Chordata,Actinopterygii,Perciformes,Oplegnathidae,Oplegnathus punctatus (Temminck & Schlegel 1844)
+チカメキントキ,Chordata,Actinopterygii,Perciformes,Priacanthidae,Cookeolus japonicus (Cuvier 1829)
+キントキダイ,Chordata,Actinopterygii,Perciformes,Priacanthidae,Priacanthus macracanthus Cuvier 1829
+ニベ,Chordata,Actinopterygii,Perciformes,Sciaenidae,Nibea mitsukurii (Jordan & Snyder 1900)
+シログチ,Chordata,Actinopterygii,Perciformes,Sciaenidae,Pennahia argentata (Houttuyn 1782)
+マルソウダ,Chordata,Actinopterygii,Perciformes,Scombridae,Auxis rochei rochei (Risso 1810)
+スマ,Chordata,Actinopterygii,Perciformes,Scombridae,Euthynnus affinis (Cantor 1849)
+カツオ,Chordata,Actinopterygii,Perciformes,Scombridae,Katsuwonus pelamis (Linnaeus 1758)
+ハガツオ,Chordata,Actinopterygii,Perciformes,Scombridae,Sarda orientalis (Temminck & Schlegel 1844)
+ゴマサバ,Chordata,Actinopterygii,Perciformes,Scombridae,Scomber australasicus Cuvier 1832
+マサバ,Chordata,Actinopterygii,Perciformes,Scombridae,Scomber japonicus Houttuyn 1782
+サワラ,Chordata,Actinopterygii,Perciformes,Scombridae,Scomberomorus niphonius (Cuvier 1832)
+ビンナガ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus alalunga (Bonnaterre 1788)
+キハダ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus albacares (Bonnaterre 1788)
+メバチ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus obesus (Lowe 1839)
+クロマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus orientalis (Temminck & Schlegel 1844)
+タカベ,Chordata,Actinopterygii,Perciformes,Scorpididae,Labracoglossa argentiventris Peters 1866
+アイゴ,Chordata,Actinopterygii,Perciformes,Siganidae,Siganus fuscescens (Houttuyn 1782)
+シロギス,Chordata,Actinopterygii,Perciformes,Sillaginidae,Sillago japonica Temminck & Schlegel 1843
+クロダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Acanthopagrus schlegelii (Bleeker 1854)
+キダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Dentex hypselosomus Bleeker 1854
+チダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Evynnis tumifrons (Temminck & Schlegel 1843)
+マダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Pagrus major (Temminck & Schlegel 1843)
+アカカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena pinguis Günther 1874
+ヤマトカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena sp.
+ナガヅカ,Chordata,Actinopterygii,Perciformes,Stichaeidae,Dinogunellus grigorjewi (Herzenstein 1890)
+タチウオ,Chordata,Actinopterygii,Perciformes,Trichiuridae,Trichiurus japonicus Temminck & Schlegel 1844
+ハタハタ,Chordata,Actinopterygii,Perciformes,Trichodontidae,Arctoscopus japonicus (Steindachner 1881)
+ノロゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Bothrocara hollandi (Jordan & Hubbs 1925)
+タナカゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes tanakae Jordan & Thompson 1914
+コウライアカシタビラメ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Cynoglossus abbreviatus (Gray 1834)
+アカシタビラメ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Cynoglossus joyneri Günther 1878
+イヌノシタ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Cynoglossus robustus Günther 1873
+クロウシノシタ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Paraplagusia japonica (Temminck & Schlegel 1846)
+ヒラメ,Chordata,Actinopterygii,Pleuronectiformes,Paralichthyidae,Paralichthys olivaceus (Temminck & Schlegel 1846)
+アブラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Atheresthes evermanni Jordan & Starks 1904
+ソウハチ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Cleisthenes pinetorum Jordan & Starks 1904
+サメガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Clidoderma asperrimum (Temminck & Schlegel 1846)
+ミギガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Dexistes rikuzenius Jordan & Starks 1904
+ムシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Eopsetta grigorjewi (Herzenstein 1890)
+ヒレグロ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Glyptocephalus stelleri (Schmidt 1904)
+アカガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Hippoglossoides dubius Schmidt 1904
+スナガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Limanda punctatissima (Steindachner 1879)
+ババガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Microstomus achne (Jordan & Starks 1904)
+イシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Platichthys bicoloratus (Basilewsky 1855)
+メイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys lighti Wu 1929
+マガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes herzensteini (Jordan & Snyder 1901)
+クロガシラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes schrenki (Schmidt 1904)
+マコガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes yokohamae (Günther 1877)
+ヤナギムシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Tanakius kitaharae (Jordan & Starks 1904)
+ホシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Verasper variegatus (Temminck & Schlegel 1846)
+カラフトマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus gorbuscha (Walbaum 1792)
+サケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus keta (Walbaum 1792)
+ギンザケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus kisutch (Walbaum 1792)
+ニジマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus mykiss (Walbaum 1792)
+マスノスケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus tshawytscha (Walbaum 1792)
+ブラウントラウト,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Salmo trutta Linnaeus 1758
+アブラボウズ,Chordata,Actinopterygii,Scorpaeniformes,Anoplopomatidae,Erilepis zonifer (Lockington 1880)
+ケムシカジカ,Chordata,Actinopterygii,Scorpaeniformes,Hemitripteridae,Hemitripterus villosus (Pallas 1814)
+クジメ,Chordata,Actinopterygii,Scorpaeniformes,Hexagrammidae,Hexagrammos agrammus (Temminck & Schlegel 1843)
+アイナメ,Chordata,Actinopterygii,Scorpaeniformes,Hexagrammidae,Hexagrammos otakii Jordan & Starks 1895
+ホッケ,Chordata,Actinopterygii,Scorpaeniformes,Hexagrammidae,Pleurogrammus azonus Jordan & Metz 1913
+マゴチ,Chordata,Actinopterygii,Scorpaeniformes,Platycephalidae,Platycephalus sp. 2
+ユメカサゴ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Helicolenus hilgendorfii (Döderlein 1884)
+バラメヌケ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes baramenuke (Wakiya 1917)
+シロメバル,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes cheni Barsukov 1988
+ハツメ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes owstoni (Jordan & Thompson 1914)
+クロソイ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes schlegelii Hilgendorf 1880
+ウスメバル,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes thompsoni (Jordan & Hubbs 1925)
+キツネメバル,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes vulpes Döderlein 1884
+カサゴ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastiscus marmoratus (Cuvier 1829)
+キチジ,Chordata,Actinopterygii,Scorpaeniformes,Sebastolobidae,Sebastolobus macrochir (Günther 1877)
+オニオコゼ,Chordata,Actinopterygii,Scorpaeniformes,Synanceiidae,Inimicus japonicus (Cuvier 1829)
+ホウボウ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Chelidonichthys spinosus (McClelland 1843)
+カナガシラ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Lepidotrigla microptera Günther 1873
+アカヤガラ,Chordata,Actinopterygii,Syngnathiformes,Fistulariidae,Fistularia petimba Lacepède 1803
+カワハギ,Chordata,Actinopterygii,Tetraodontiformes,Monacanthidae,Stephanolepis cirrhifer (Temminck & Schlegel 1850)
+ウマヅラハギ,Chordata,Actinopterygii,Tetraodontiformes,Monacanthidae,Thamnaconus modestus (Günther 1877)
+シロサバフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Lagocephalus spadiceus (Richardson 1845)
+マフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Takifugu porphyreus (Temminck & Schlegel 1850)
+トラフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Takifugu rubripes (Temminck & Schlegel 1850)
+ショウサイフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Takifugu snyderi (Abe 1988)
+カガミダイ,Chordata,Actinopterygii,Zeiformes,Zeidae,Zenopsis nebulosa (Temminck & Schlegel 1845)
+マトウダイ,Chordata,Actinopterygii,Zeiformes,Zeidae,Zeus faber Linnaeus 1758
+ケガニ,Arthropoda,Malacostraca,Decapoda,Atelecyclidae,"Erimacrus isenbeckii (Brandt, 1848)"
+クロザコエビ,Arthropoda,Malacostraca,Decapoda,Crangonidae,"Argis lar (Owen, 1839)"
+トゲザコエビ,Arthropoda,Malacostraca,Decapoda,Crangonoidea,"Argis toyamaensis (Yokoya, 1933)"
+ベニズワイガニ,Arthropoda,Malacostraca,Decapoda,Majidae,"Chionoecetes japonicus Rathbun, 1932"
+ズワイガニ,Arthropoda,Malacostraca,Decapoda,Majidae,"Chionoecetes opilio (O. Fabricius, 1788)"
+ヒラツメガニ,Arthropoda,Malacostraca,Decapoda,Ovalipidae,"Ovalipes punctatus (de Haan, 1833)"
+イセエビ,Arthropoda,Malacostraca,Decapoda,Palinuridae,"Panulirus japonicus (von Siebold, 1824)"
+モロトゲアカエビ,Arthropoda,Malacostraca,Decapoda,Pandalidae,"Pandalopsis japonica Balss, 1914"
+ホッコクアカエビ,Arthropoda,Malacostraca,Decapoda,Pandalidae,"Pandalus eous Makarov, 1935"
+トヤマエビ,Arthropoda,Malacostraca,Decapoda,Pandalidae,"Pandalus hypsinotus Brandt, 1851"
+ボタンエビ,Arthropoda,Malacostraca,Decapoda,Pandaloidea,"Pandalus nipponensis Yokoya, 1933"
+シラエビ,Arthropoda,Malacostraca,Decapoda,Pasiphaeidae,"Pasiphaea japonica Omori, 1976"
+クルマエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Marsupenaeus japonicus (Spence Bate, 1888)"
+アカエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Metapenaeopsis barbata (De Haan, 1844)"
+ヨシエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Metapenaeus ensis (De Haan, 1844)"
+シバエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Metapenaeus joyneri (Miers, 1880)"
+クマエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Penaeus semisulcatus De Haan, 1844"
+サルエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Trachypenaeus curvirostris (Stimpson, 1860)"
+タイワンガザミ,Arthropoda,Malacostraca,Decapoda,Portunidae,"Portunus pelagicus (Linnaeus, 1758)"
+ガザミ,Arthropoda,Malacostraca,Decapoda,Portunidae,"Portunus trituberculatus (Miers, 1876)"
+ウチワエビ,Arthropoda,Malacostraca,Decapoda,Scyllaridae,"Ibacus ciliatus (von Siebold, 1824)"
+ツノナシオキアミ,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,"Euphausia pacifica Hansen, 1911"
+シャコ,Arthropoda,Malacostraca,Stomatopoda,Squillidae,"Oratosquilla oratoria (de Haan, 1844)"
+マナマコ,Echinodermata,Holothuroidea,Aspidochirotida,Stichopodidae,"Apostichopus armata (Selenka, 1867)"
+アカガイ,Mollusca,Bivalvia,Arcoida,Arcidae,"Anadara broughtonii (Schrenck, 1867)"
+トリガイ,Mollusca,Bivalvia,Veneroida,Cardiidae,"Fulvia mutica (Reeve, 1844)"
+ウバガイ,Mollusca,Bivalvia,Veneroida,Mactridae,"Spisula sachalinensis (Schrenck, 1862)"
+ハマグリ,Mollusca,Bivalvia,Veneroida,Veneridae,"Meretrix lusoria (Röding, 1798)"
+アサリ,Mollusca,Bivalvia,Veneroida,Veneridae,"Ruditapes philippinarum (Adams & Reeve, 1850)"
+シリヤケイカ,Mollusca,Cephalopoda,Cephalopoda,Sepiidae,"Sepiella japonica Sasaki, 1929"
+イイダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Amphioctopus fangsiao (d'Orbigny, 1839)"
+ミズダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Enteroctopus dofleini (Wuelker, 1910)"
+マダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Octopus vulgaris Cuvier, 1797"
+ヤナギダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Paroctopus conispadiceus (Sasaki, 1917)"
+コウイカ,Mollusca,Cephalopoda,Sepioidea,Sepiidae,"Sepia esculenta Hoyle, 1885"
+カミナリイカ,Mollusca,Cephalopoda,Sepioidea,Sepiidae,"Sepia lycidas Gray, 1849"
+ホタルイカ,Mollusca,Cephalopoda,Teuthoidea,Enoploteuthidae,"Watasenia scintillans (Berry, 1911)"
+ヤリイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Heterololigo bleekeri (Keferstein, 1866)"
+ジンドウイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Loliolus japonica (Hoyle, 1885)"
+アオリイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Sepioteuthis lessoniana Lesson, 1830"
+ケンサキイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Uroteuthis edulis (Hoyle, 1885)"
+スルメイカ,Mollusca,Cephalopoda,Teuthoidea,Ommastrephidae,"Todarodes pacificus Steenstrup, 1880"
+ソデイカ,Mollusca,Cephalopoda,Teuthoidea,Thysanoteuthidae,"Thysanoteuthis rhombus Troschel, 1857"
+シライトマキバイ,Mollusca,Gastropoda,Sorbeoconcha,Buccinidae,"Buccinum isaotakii Kira, 1959"
+エッチュウバイ,Mollusca,Gastropoda,Sorbeoconcha,Buccinidae,"Buccinum striatissimum Sowerby, 1899"
+エゾボラモドキ,Mollusca,Gastropoda,Sorbeoconcha,Buccinidae,"Neptunea intersculpta (Sowerby III, 1899)"
+クロアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis discus discus Reeve, 1846"
+エゾアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis discus hannai Ino, 1952"
+トコブシ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis diversicolor aquatilis Reeve, 1846"
+メガイアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis gigantea Gmelin, 1791"
+マダカアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis madaka (Habe, 1979)"
+サザエ,Mollusca,Gastropoda,Vetigastropoda,Turbininae,"Turbo cornutus Lightfoot, 1786"
