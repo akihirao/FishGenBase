@@ -17,24 +17,24 @@ output:
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 # Loading packages
 library(tidyverse)
-library(rvest)
+library(rvest) #for scraping
 ```
 
-## Loading data-set
+## Loading dataset
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
-# Current standard Japanese/scientific names of all fish species recorded from Japanese waters
-#https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
+# Current standard Japanese/scientific names of all fish species recorded from Japanese waters: https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
 JAFList <- read_csv("20220821_JAFList.csv")
+
 NonFish_List <- read_csv("NonFishList.csv")
 
-# Species list of fisheries resources
+# A list of aquatic species for fisheries resource assessment
 FRA200List <- read_csv("FRA200List.csv")
 FRA200List <- FRA200List %>% filter(SingleMulti == "Single")
 FRA200List$Category <- factor(FRA200List$Category, levels=c("Fish","NonFish"))
 
-# Family2OrderList in fish species
-Family2Order <- read_csv("Family2OrderList.csv")
+# Taxonomic rank in fish species
+TaxonRankFish <- read_csv("TaxonRankFish.csv")
 
 ```
 
@@ -61,19 +61,19 @@ for(i in 1:no_fish){
 	  Family_unlist <-JAFList$Family[target_fish_ID] %>% strsplit("\n") %>% unlist 
 	  Family_name <- as.character(Family_unlist[1])
 
-	  target_Family_ID <- which(Family2Order$Family==Family_name)
+	  target_Family_ID <- which(TaxonRankFish$Family==Family_name)
 	  
-	  Phylum_name <- Family2Order$Phylum[target_Family_ID]
+	  Phylum_name <- TaxonRankFish$Phylum[target_Family_ID]
 	  if(identical(Phylum_name,character(0))){
 	    Phylum_name <-NA
 	  }
 	  
-	  Class_name <- Family2Order$Class[target_Family_ID]
+	  Class_name <- TaxonRankFish$Class[target_Family_ID]
 	  if(identical(Class_name,character(0))){
 	    Class_name <-NA
 	  }
 	  
-	  Order_name <- Family2Order$Order[target_Family_ID]
+	  Order_name <- TaxonRankFish$Order[target_Family_ID]
 	  if(identical(Order_name,character(0))){
 	    Order_name <-NA
 	  }
@@ -99,7 +99,6 @@ for(i in 1:no_fish){
 	    scientific_name_vec[i] <- NA
 	  }
 	  
-	  #browser()
 	}else if(Category == "NonFish"){
 	  target_NonFish_ID <- which(NonFish_List$和名==target_fish)
 	  scientific_name_check <- NonFish_List$Scientific_name[target_NonFish_ID]
@@ -135,15 +134,32 @@ for(i in 1:no_fish){
 	}  
 }
 
+# Checking number of phylum in the dataset
+No_phylum <- length(unique(phylum_name_vec))
+Phylum_order <- c("Chordata","Arthropoda","Mollusca","Echinodermata")
+if(!(No_phylum==length(Phylum_order))){
+  print("Number of phylum-levels does not match the dataset")
+}
 
+# Checking number of phylum in the dataset
+No_class <- length(unique(class_name_vec))
+Class_order <- c("Actinopterygii","Malacostraca","Cephalopoda","Gastropoda","Bivalvia","Holothuroidea")
+if(!(No_class=length(Class_order))){
+  print("Number of class-levels does not match the dataset")
+}
+
+# Summarizing a taxonomy list
 FRA200List_Latin <- FRA200List %>% 
-  mutate(Phylum = phylum_name_vec, Class = class_name_vec, Order = order_name_vec, Family = family_name_vec, Scientific_name = scientific_name_vec) %>%
-  arrange(Category, Phylum, Class, Order, Family, Scientific_name) %>% 
-  select(-Category,-SingleMulti,-TAC,-Target)
+  mutate(Phylum = factor(phylum_name_vec, levels = Phylum_order),
+         Class = factor(class_name_vec,levels = Class_order), 
+                         Order = order_name_vec, Family = family_name_vec,
+                         Scientific_name = scientific_name_vec) %>%
+  select(-Category,-SingleMulti,-TAC,-Target) %>% 
+  arrange(Phylum, Class, Order, Family, Scientific_name)
 
 ```
 
-## Write a list file
+## Write a taxonomy list file
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 write_csv(FRA200List_Latin, "FRA200List_Latin.csv")
 ```
