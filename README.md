@@ -2,6 +2,6 @@
 
 ### Contents
 
-* [Genome size information of comercially important aquatic species](fishes_genome_size.csv)
+* [Genome size information of comercially important aquatic species](aquatic_organism_genome_size.csv)
 
 
