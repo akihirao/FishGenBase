@@ -35,21 +35,21 @@ fishes <- fishes[1:no_fish,]
 
 # genome size estimate from animal genome size database
 #http://www.genomesize.com/index.php
-AGSDB_fish <- read_csv("AGSDB_fish.csv")
-no_AGSDB_fish <- nrow(AGSDB_fish)
+AGSDB_List <- read_csv("AGSDB_List.csv")
+no_AGSDB_List <- nrow(AGSDB_List)
 AGSDB_C_vec <- vector()
 AGSDB_genus_vec <- vector()
 
-for(i in 1:no_AGSDB_fish){
-  AGSDB_C_values <- strsplit(AGSDB_fish$'C-value'[i], "-") %>% unlist
+for(i in 1:no_AGSDB_List){
+  AGSDB_C_values <- strsplit(AGSDB_List$'C-value'[i], "-") %>% unlist
   AGSDB_C_vec[i] <- as.numeric(AGSDB_C_values[1])
-  AGSDB_species_unlist <-strsplit(AGSDB_fish$Species[i]," ") %>% unlist
+  AGSDB_species_unlist <-strsplit(AGSDB_List$Species[i]," ") %>% unlist
   AGSDB_genus_vec[i] <- AGSDB_species_unlist[1]
 }
-AGSDB_fish <- AGSDB_fish %>% mutate(Genus=AGSDB_genus_vec, C_value=AGSDB_C_vec)
+AGSDB_List <- AGSDB_List %>% mutate(Genus=AGSDB_genus_vec, C_value=AGSDB_C_vec)
 
-AGSDB_genus_ave_genome_size <- tapply(AGSDB_fish$C_value,AGSDB_fish$Genus, mean)
-AGSDB_no_genus_avail <- tapply(AGSDB_fish$C_value,AGSDB_fish$Genus, length)
+AGSDB_genus_ave_genome_size <- tapply(AGSDB_List$C_value,AGSDB_List$Genus, mean)
+AGSDB_no_genus_avail <- tapply(AGSDB_List$C_value,AGSDB_List$Genus, length)
 ```
 
 ## Preparing storages
