@@ -1,4 +1,4 @@
-## Genome size information of aquatic organisms for fisheries resource management in FRA
+## Scraping genome size information of aquatic organisms for fisheries resource management in FRA
 
 ### Contents
 

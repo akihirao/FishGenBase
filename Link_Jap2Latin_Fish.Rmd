@@ -10,7 +10,7 @@ output:
     toc: true
 ---
 
-# Linking Japanese name to scientific name in fishes
+# Linking Japanes/scientific names in aquatic species
 
 ## Loading the packages
 

@@ -1,12 +1,12 @@
--   [Linking Japanese name to scientific name in
-    fishes](#linking-japanese-name-to-scientific-name-in-fishes)
+-   [Linking Japanes/scientific names in aquatic
+    species](#linking-japanesscientific-names-in-aquatic-species)
     -   [Loading the packages](#loading-the-packages)
     -   [Loading dataset](#loading-dataset)
     -   [Linking Japanese name and scientific
         name](#linking-japanese-name-and-scientific-name)
     -   [Write a taxonomy list file](#write-a-taxonomy-list-file)
 
-# Linking Japanese name to scientific name in fishes
+# Linking Japanes/scientific names in aquatic species
 
 ## Loading the packages
 
