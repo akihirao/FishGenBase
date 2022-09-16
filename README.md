@@ -7,14 +7,13 @@
 
 ### Work flow
 
-* その１： 対象種の和名から学名を把握
+* ステップ１： 対象種の和名から学名を把握
 <br>
-Link_Jap2Latin_Fish.md
+[Link_Jap2Latin_Fish.md](https://github.com/akihirao/FishGenBase/blob/fd7eb089d38d9e977c2f0d5ab83bd19d8b16aa51/Link_Jap2Latin_Fish.md)
 
-
-* その２：対象種毎にGenBankに登録されているリファレンスゲノム情報を収集後、全対象種の情報をとりまとめる
+* ステップ：対象種毎にGenBankに登録されているリファレンスゲノム情報を収集後、全対象種の情報をとりまとめる
 <br>
-Scraping_FishGenome.md
+[Scraping_FishGenome.md](https://github.com/akihirao/FishGenBase/blob/fd7eb089d38d9e977c2f0d5ab83bd19d8b16aa51/Scraping_FishGenome.md)
 
 
 ### References
