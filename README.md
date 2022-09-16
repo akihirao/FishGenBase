@@ -12,6 +12,6 @@
 
 
 ### References
-* [日本産魚類全種リスト(JAFリスト)](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名—科名の参照
+* [日本産魚類全種リスト(JAFリスト)](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名—科名の参照先
 
-* [Eschmeyer's Catalog of Fishes](https://www.calacademy.org): 科—目レベルの分類階級の参照
+* [Eschmeyer's Catalog of Fishes](https://www.calacademy.org): 科—目レベルの分類階級の参照先
