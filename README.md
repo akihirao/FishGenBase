@@ -4,6 +4,10 @@
 
 * [Genome size of comercially important aquatic species](aquatic_organism_genome_size.csv)
 
+* [Number of fisheries species with genome sequence deposited in GenBank](chronology/aquatic_organism_genome_size.csv)
+
+
+
 ### Work flow for scaping genome size information
 
 * [ステップ１](Link_Jap2Latin_Fish.md)： 対象種の標準和名から学名を把握
