@@ -4,7 +4,7 @@
 
 * [Genome size of comercially important aquatic species](aquatic_organism_genome_size.csv)
 
-* [Number of fisheries species with genome sequence deposited in GenBank](chttps://github.com/akihirao/FishGenBase/blob/main/chronology/No_sp_genome_deposited.png)
+* [Number of fisheries species with genome sequence deposited in GenBank](https://github.com/akihirao/FishGenBase/blob/main/chronology/No_sp_genome_deposited.png)
 
 
 
