@@ -28,7 +28,7 @@ genome_chronology <- genome_chronology %>% tidyr::gather(Levels, Value, -date)
 plot_sp_level <- ggplot(data = genome_chronology, aes(x=date, y = Value, color=Levels, group=Levels)) + 
   geom_point() + 
   geom_line(linetype = "dotted") +
-  labs(y="No. fisheries species", title="No. fisheries species with genome sequence deposited in GenBank (last date: 2023/2/21)")
+  labs(y="No. fisheries species", title="No. fisheries species with genome sequence deposited in GenBank (last update: 2023/2/21)")
 
 png("No_sp_genome_deposited.png", width = 600, height = 400)
 plot_sp_level
