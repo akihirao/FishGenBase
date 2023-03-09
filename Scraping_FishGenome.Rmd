@@ -23,7 +23,7 @@ library(rvest)
 ## Loading dataset
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
-species_raw <- read_csv("FRA200List_Latin.csv")
+species_raw <- read_csv("FRA200List_Latin.test.csv")
 
 #filtering out species with NA
 species <- species_raw %>% drop_na()
@@ -79,6 +79,9 @@ genome_size_sp_GenBank <- function(genus, species){
       html_element(xpath = '//*[@id="mmtest1"]/div/div/div/table')
     if(!(length(summary_element_pre)==0)){ #if web format unavaialable
       summary_element <- summary_element_pre %>% html_table()
+      
+      browser()
+      
       target_size <- summary_element$X2[grep("total length", summary_element$X2)]
       target_size_vec <- strsplit(target_size, ":") %>% unlist
       genome_size_out <- round(as.numeric(target_size_vec[2]),digits=0)
