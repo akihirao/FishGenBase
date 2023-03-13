@@ -70,6 +70,7 @@ no_related_spp_exist <- vector()
 
 No_deposited_sp_level_genome_vec <- vector()
 representative_assembly_ID_vec <- vector()
+representative_assembly_status_vec <- vector()
 representative_contigN50_vec <- vector()
 representative_scaffoldN50_vec <- vector()
 
@@ -244,10 +245,12 @@ for(i in 1:no_species){
   rentrez_scraping_out <- genome_info_sp_NIH(genus_name, species_name)
   if(rentrez_scraping_out[[1]]>=1){
     representative_assembly_ID_vec[i] <- rentrez_scraping_out[[3]]
+    representative_assembly_status_vec[i] <- rentrez_scraping_out[[2]]$assemblystatus
     representative_contigN50_vec[i] <- rentrez_scraping_out[[2]]$contign50
     representative_scaffoldN50_vec[i] <- rentrez_scraping_out[[2]]$scaffoldn50
   }else{
     representative_assembly_ID_vec[i] <- NA
+    representative_assembly_status_vec[i] <- NA
     representative_contigN50_vec[i] <- NA
     representative_scaffoldN50_vec[i] <- NA
   }
@@ -358,6 +361,7 @@ species_genome <- species %>%
   mutate (Species_genome_size = target_sp_genome_size_vec,
           No_target_sp_genome = No_deposited_sp_level_genome_vec,
           Representative_assembly = representative_assembly_ID_vec,
+          Representative_assembly_status = representative_assembly_status_vec,
           Contig_N50 = representative_contigN50_vec,
           Scaffold_N50 = representative_scaffoldN50_vec,
           Genus_genome_size = related_spp_genome_size_vec, 
