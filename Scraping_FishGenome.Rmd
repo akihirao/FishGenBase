@@ -68,6 +68,7 @@ representative_assembly_ID_vec <- vector()
 representative_assembly_status_vec <- vector()
 representative_contigN50_vec <- vector()
 representative_scaffoldN50_vec <- vector()
+representative_genome_size_vec <- vector()
 
 AGSDB_genus_genome_size_vec <- vector()
 AGSDB_no_genus_avail_vec <- vector()
@@ -97,17 +98,29 @@ genome_info_sp_NIH <- function(genus, species){
         if(spp_genome_info_list[[i]]$refseq_category=="representative genome"){
           representative_sp_genome <- spp_genome_info_list[[i]] #Primary genome-assembly
           representative_sp_genome_accession <- spp_genome_info_list[[i]]$assemblyaccession
+          
+          #extracting genome size info
+          representative_meta <- unlist(strsplit( representative_sp_genome$meta,"> <"))
+          representative_genome_size_raw <- representative_meta[which(str_detect(representative_meta, pattern="total_length"))]
+          representative_genome_size <- as.numeric(str_extract_all(representative_genome_size_raw, "[0-9.]+"))
         }
       }
     
   }else if(no_assembly == 1){
     representative_sp_genome <- entrez_summary(db="assembly", id=spp_genome_info$ids)
     representative_sp_genome_accession <- representative_sp_genome$assemblyaccession
+    
+    #extracting genome size info
+    representative_meta <- unlist(strsplit( representative_sp_genome$meta,"> <"))
+    representative_genome_size_raw <- representative_meta[which(str_detect(representative_meta, pattern="total_length"))]
+    representative_genome_size <- as.numeric(str_extract_all(representative_genome_size_raw, "[0-9.]+"))
+
   }else{#(no_assembly == 0)
-     representative_sp_genome <- "NA"
-     representative_sp_genome_accession <- "NA"
+     representative_sp_genome <- NA
+     representative_sp_genome_accession <- NA
+     representative_genome_size <- NA
   } 
-  output <- list(no_assembly,representative_sp_genome,representative_sp_genome_accession)
+  output <- list(no_assembly,representative_sp_genome,representative_sp_genome_accession, representative_genome_size)
   return(output)
   Sys.sleep(1) #
 }
@@ -244,13 +257,18 @@ for(i in 1:no_species){
     representative_assembly_status_vec[i] <- rentrez_scraping_out[[2]]$assemblystatus
     representative_contigN50_vec[i] <- rentrez_scraping_out[[2]]$contign50
     representative_scaffoldN50_vec[i] <- rentrez_scraping_out[[2]]$scaffoldn50
+    representative_genome_size_vec[i] <- rentrez_scraping_out[[4]]
+
   }else{
     representative_assembly_ID_vec[i] <- NA
     representative_assembly_status_vec[i] <- NA
     representative_contigN50_vec[i] <- NA
     representative_scaffoldN50_vec[i] <- NA
+    representative_genome_size_vec[i] <- NA
   }
   No_deposited_sp_level_genome_vec[i] <- rentrez_scraping_out[[1]]
+
+  
   #------------------------------------------
   
   
@@ -355,6 +373,7 @@ for(i in 1:no_species){
 
 species_genome <- species %>%
   mutate (Species_genome_size = target_sp_genome_size_vec,
+          Assembly_genome_size = representative_genome_size_vec,
           No_target_sp_genome = No_deposited_sp_level_genome_vec,
           Representative_assembly = representative_assembly_ID_vec,
           Representative_assembly_status = representative_assembly_status_vec,
