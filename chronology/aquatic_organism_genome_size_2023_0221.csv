@@ -1,4 +1,4 @@
-和名,Phylum,Class,Order,Family,Scientific_name,Species_genome_size,Genus_genome_size,No_related_spp_with_assemblies,AGSDB_genus_genome_size,AGSDB_No_genus_avail
+和名,Phylum,Class,Order,Family,Scientific_name,Genome_size_of_the_species_Mbp,Average_genome_size_of_the_genus_Mbp,No_related_spp_with_assemblies,AGSDB_genus_genome_size,AGSDB_No_genus_avail
 ニホンウナギ,Chordata,Actinopterygii,Anguilliformes,Anguillidae,Anguilla japonica Temminck & Schlegel 1846,1094,988,6,1353,8
 マアナゴ,Chordata,Actinopterygii,Anguilliformes,Congridae,Conger myriaster (Brevoort 1856),NA,NA,0,1333,3
 ハモ,Chordata,Actinopterygii,Anguilliformes,Muraenesocidae,Muraenesox cinereus (Forsskål 1775),NA,NA,0,1105,1
