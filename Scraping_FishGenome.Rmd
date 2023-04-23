@@ -31,8 +31,8 @@ species <- species_raw %>% drop_na()
 no_species <- nrow(species) #number of fishes in the list
 
 #Set a small dataset for test procedure
-no_species <- 20 # for test
-species <- species[1:no_species,]
+#no_species <- 20 # for test
+#species <- species[1:no_species,]
 ```
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 # genome size estimate from animal genome size database
@@ -168,51 +168,6 @@ genome_info_sp_NCBI <- function(scientific_name){
 
 #-------------------------------------------------------------------------
 #Scraping information of genome-assembly of a target species using rentrez
-genome_info_sp_NIH <- function(genus, species){
-  
-  query_species_lab <- paste0(genus," ",species,"[Organism]")
-  spp_genome_info <- entrez_search(db="assembly", term =query_species_lab)
-  no_assembly <- spp_genome_info$count
-  
-  if(no_assembly > 1){
-  
-    spp_genome_info_list <- entrez_summary(db="assembly", id=spp_genome_info$ids)
-        
-      for(i in 1:no_assembly){
-    
-        if(spp_genome_info_list[[i]]$refseq_category=="representative genome"){
-          representative_sp_genome <- spp_genome_info_list[[i]] #Primary genome-assembly
-          representative_sp_genome_accession <- spp_genome_info_list[[i]]$assemblyaccession
-          
-          #extracting genome size info: the object "representative_sp_genome$meta" includes genome size etc.
-          representative_meta <- unlist(strsplit( representative_sp_genome$meta,"> <"))
-          representative_genome_size_raw <- representative_meta[which(str_detect(representative_meta, pattern="total_length"))]
-          representative_genome_size <- as.numeric(str_extract_all(representative_genome_size_raw, "[0-9.]+"))
-        }
-      }
-    
-  }else if(no_assembly == 1){
-    representative_sp_genome <- entrez_summary(db="assembly", id=spp_genome_info$ids)
-    representative_sp_genome_accession <- representative_sp_genome$assemblyaccession
-    
-    #extracting genome size info
-    representative_meta <- unlist(strsplit(representative_sp_genome$meta,"> <"))
-    representative_genome_size_raw <- representative_meta[which(str_detect(representative_meta, pattern="total_length"))]
-    representative_genome_size <- as.numeric(str_extract_all(representative_genome_size_raw, "[0-9.]+"))
-
-  }else{#(no_assembly == 0)
-     representative_sp_genome <- NA
-     representative_sp_genome_accession <- NA
-     representative_genome_size <- NA
-  } 
-  output <- list(no_assembly,representative_sp_genome,representative_sp_genome_accession, representative_genome_size)
-  return(output)
-  Sys.sleep(1) #
-}
-
-
-#-------------------------------------------------------------------------
-#Scraping information of genome-assembly of a target species using rentrez
 genome_info_genus_NIH <- function(genus){
   
   query_genus_lab <- paste0(genus,"[Organism]")
@@ -278,7 +233,7 @@ for(i in 1:no_species){
   #------------------------------------------
   #scraping representative genome using rentrez
   rentrez_scraping_out <- genome_info_sp_NCBI(scientific_name_input)
-  #rentrez_scraping_out <- genome_info_sp_NIH(genus_name, species_name)
+
   if(rentrez_scraping_out[[2]]>=1){
     representative_assembly_ID_vec[i] <- rentrez_scraping_out[[4]]
     representative_assembly_status_vec[i] <- rentrez_scraping_out[[3]]$assemblystatus
