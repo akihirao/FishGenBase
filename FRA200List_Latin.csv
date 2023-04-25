@@ -4,6 +4,10 @@
 ハモ,Chordata,Actinopterygii,Anguilliformes,Muraenesocidae,Muraenesox cinereus (Forsskål 1775)
 イラコアナゴ,Chordata,Actinopterygii,Anguilliformes,Synaphobranchidae,Synaphobranchus kaupii Johnson 1862
 アオメエソ,Chordata,Actinopterygii,Aulopiformes,Chlorophthalmidae,Chlorophthalmus albatrossis Jordan & Starks 1904
+ワニエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida wanieso Shindo & Yamada 1972
+マエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida macrolepis Tanaka 1917
+クロエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida umeyoshii Inoue & Nakabo 2006
+トカゲエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida elongata (Temminck & Schlegel 1846)
 サンマ,Chordata,Actinopterygii,Beloniformes,Belonidae,Cololabis saira (Brevoort 1856)
 ツクシトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon heterurus doederleinii (Steindachner 1887)
 ハマトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon pinnatibarbatus japonicus (Franz 1910)
@@ -30,10 +34,17 @@
 イシカワシラウオ,Chordata,Actinopterygii,Osmeriformes,Salangidae,Neosalangichthys ishikawae (Wakiya & Takahasi 1913)
 ホタルジャコ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Acropoma japonicum Günther 1859
 アカムツ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Doederleinia berycoides (Hilgendorf 1879)
+オオイカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,"Ammodytes heian Orr, Wildes & Kai 2015"
+キタイカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes hexapterus Pallas 1814
 イカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes japonicus Duncker & Mohr 1939
 アカアマダイ,Chordata,Actinopterygii,Perciformes,Branchiostegidae,Branchiostegus japonicus (Houttuyn 1782)
 ネズミゴチ,Chordata,Actinopterygii,Perciformes,Callionymidae,Callionymus curvicornis Valenciennes 1837
+アカアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus akaadsi Abe 1958
+クサヤモロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus macarellus (Cuvier 1833)
+モロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus macrosoma Bleeker 1851
 マルアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus maruadsi (Temminck & Schlegel 1843)
+ムロアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus muroadsi (Temminck & Schlegel 1844)
+オアカムロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus tabl Berry 1968
 カイワリ,Chordata,Actinopterygii,Perciformes,Carangidae,Kaiwarinus equula (Temminck & Schlegel 1844)
 シマアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Pseudocaranx dentex (Bloch & Schneider 1801)
 ヒラマサ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola aureovittata Temminck & Schlegel 1845
@@ -89,6 +100,8 @@
 アカカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena pinguis Günther 1874
 ヤマトカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena sp.
 ナガヅカ,Chordata,Actinopterygii,Perciformes,Stichaeidae,Dinogunellus grigorjewi (Herzenstein 1890)
+コウライマナガツオ,Chordata,Actinopterygii,Perciformes,Stromateidae,Pampus echinogaster (Basilewsky 1855)
+マナガツオ,Chordata,Actinopterygii,Perciformes,Stromateidae,Pampus punctatissimus (Temminck & Schlegel 1845)
 タチウオ,Chordata,Actinopterygii,Perciformes,Trichiuridae,Trichiurus japonicus Temminck & Schlegel 1844
 ハタハタ,Chordata,Actinopterygii,Perciformes,Trichodontidae,Arctoscopus japonicus (Steindachner 1881)
 ノロゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Bothrocara hollandi (Jordan & Hubbs 1925)
@@ -108,6 +121,7 @@
 スナガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Limanda punctatissima (Steindachner 1879)
 ババガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Microstomus achne (Jordan & Starks 1904)
 イシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Platichthys bicoloratus (Basilewsky 1855)
+ナガレメイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys cornutus (Temminck & Schlegel 1846)
 メイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys lighti Wu 1929
 マガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes herzensteini (Jordan & Snyder 1901)
 クロガシラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes schrenki (Schmidt 1904)

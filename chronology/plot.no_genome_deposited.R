@@ -2,6 +2,7 @@
 
 
 library(tidyverse)
+library(ggplot2)
 library(lubridate)
 
 list20220915 <- read_csv("aquatic_organism_genome_size_2022_0915.csv")
@@ -31,24 +32,24 @@ No_genus_genome_20230421 <- sum(!is.na(list20230421$Average_genome_size_of_the_g
 
 genome_chronology <- tibble(
   date = c(ymd("2010-03-31"),ymd("2020-04-21"),ymd("2022-09-15"), 
-           ymd("2023-02-21"),ymd("2023-03-13"),ymd("2023-03-29"),
-           ymd("2023-04-21")), 
+           ymd("2023-02-21"),ymd("2023-03-13"),ymd("2023-04-21")), 
   Species = c(No_sp_genome_20100331, No_sp_genome_20200421, No_sp_genome_20220915,
-              No_sp_genome_20230221,No_sp_genome_20230313,No_sp_genome_20230329,
-              No_sp_genome_20230421),
+              No_sp_genome_20230221,No_sp_genome_20230313, No_sp_genome_20230421),
   Genus = c(No_sp_genus_20100331,No_sp_genus_20200421,No_genus_genome_20220915,
-            No_genus_genome_20230221,No_genus_genome_20230313,No_genus_genome_20230329,
-            No_genus_genome_20230421)
+            No_genus_genome_20230221,No_genus_genome_20230313,No_genus_genome_20230421)
             )
 
+Taxonomic_class_lab <- c("Species","Genus")
 
-genome_chronology <- genome_chronology %>% tidyr::gather(Levels, Value, -date) 
+genome_chronology <- genome_chronology %>% 
+  tidyr::gather(Levels, Value, -date) %>% mutate(Class = factor(Levels, levels=Taxonomic_class_lab))
 
-
-plot_sp_level <- ggplot(data = genome_chronology, aes(x=date, y = Value, color=Levels, group=Levels)) + 
-  geom_point() + 
-  geom_line(linetype = "dotted") +
-  labs(y="No. fisheries species", title="No. fisheries species with genome sequence deposited in GenBank (last update: 2023/3/29)")
+current_day <-  Sys.Date()
+title_lab <- paste0("No. species with genome sequence deposited in GenBank: last update@",current_day)
+plot_sp_level <- ggplot(data = genome_chronology, aes(x=date, y = Value, color=Class, group=Class)) + 
+  geom_point(size=4.5) + 
+  geom_line(linetype = "dashed", linewidth = 1) +
+  labs(y="No. species", title=title_lab)
 
 png("No_sp_genome_deposited.png", width = 600, height = 400)
 plot_sp_level

@@ -4,6 +4,10 @@
 ハモ,Chordata,Actinopterygii,Anguilliformes,Muraenesocidae,Muraenesox cinereus (Forsskål 1775),NA,Muraenesox cinereus,NA,NA,NA,NA,NA,0,1105,1
 イラコアナゴ,Chordata,Actinopterygii,Anguilliformes,Synaphobranchidae,Synaphobranchus kaupii Johnson 1862,1503,Synaphobranchus kaupii,GCA_029718625.1,Chromosome,519789,76846976,0,1,NA,NA
 アオメエソ,Chordata,Actinopterygii,Aulopiformes,Chlorophthalmidae,Chlorophthalmus albatrossis Jordan & Starks 1904,NA,Chlorophthalmus albatrossis,NA,NA,NA,NA,NA,0,NA,NA
+ワニエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida wanieso Shindo & Yamada 1972,NA,Saurida wanieso,NA,NA,NA,NA,NA,0,1531,2
+マエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida macrolepis Tanaka 1917,NA,Saurida macrolepis,NA,NA,NA,NA,NA,0,1531,2
+クロエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida umeyoshii Inoue & Nakabo 2006,NA,Saurida umeyoshii,NA,NA,NA,NA,NA,0,1531,2
+トカゲエソ,Chordata,Actinopterygii,Aulopiformes,Synodontidae,Saurida elongata (Temminck & Schlegel 1846),NA,Saurida elongata,NA,NA,NA,NA,NA,0,1531,2
 サンマ,Chordata,Actinopterygii,Beloniformes,Belonidae,Cololabis saira (Brevoort 1856),NA,Cololabis saira,NA,NA,NA,NA,NA,0,NA,NA
 ツクシトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon heterurus doederleinii (Steindachner 1887),NA,Cheilopogon heterurus,NA,NA,NA,NA,NA,0,NA,NA
 ハマトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon pinnatibarbatus japonicus (Franz 1910),NA,Cheilopogon pinnatibarbatus,NA,NA,NA,NA,NA,0,NA,NA
@@ -30,10 +34,17 @@
 イシカワシラウオ,Chordata,Actinopterygii,Osmeriformes,Salangidae,Neosalangichthys ishikawae (Wakiya & Takahasi 1913),NA,Neosalangichthys ishikawae,NA,NA,NA,NA,NA,0,NA,NA
 ホタルジャコ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Acropoma japonicum Günther 1859,NA,Acropoma japonicum,NA,NA,NA,NA,NA,0,NA,NA
 アカムツ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Doederleinia berycoides (Hilgendorf 1879),NA,Doederleinia berycoides,NA,NA,NA,NA,NA,0,NA,NA
+オオイカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,"Ammodytes heian Orr, Wildes & Kai 2015",NA,Ammodytes heian,NA,NA,NA,NA,0,1,NA,NA
+キタイカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes hexapterus Pallas 1814,NA,Ammodytes hexapterus,NA,NA,NA,NA,0,1,NA,NA
 イカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes japonicus Duncker & Mohr 1939,NA,Ammodytes japonicus,NA,NA,NA,NA,0,1,NA,NA
 アカアマダイ,Chordata,Actinopterygii,Perciformes,Branchiostegidae,Branchiostegus japonicus (Houttuyn 1782),NA,Branchiostegus japonicus,NA,NA,NA,NA,NA,0,NA,NA
 ネズミゴチ,Chordata,Actinopterygii,Perciformes,Callionymidae,Callionymus curvicornis Valenciennes 1837,NA,Callionymus curvicornis,NA,NA,NA,NA,0,1,836,2
+アカアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus akaadsi Abe 1958,NA,Decapterus akaadsi,NA,NA,NA,NA,NA,0,645,1
+クサヤモロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus macarellus (Cuvier 1833),NA,Decapterus macarellus,NA,NA,NA,NA,NA,0,645,1
+モロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus macrosoma Bleeker 1851,NA,Decapterus macrosoma,NA,NA,NA,NA,NA,0,645,1
 マルアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus maruadsi (Temminck & Schlegel 1843),NA,Decapterus maruadsi,NA,NA,NA,NA,NA,0,645,1
+ムロアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus muroadsi (Temminck & Schlegel 1844),NA,Decapterus muroadsi,NA,NA,NA,NA,NA,0,645,1
+オアカムロ,Chordata,Actinopterygii,Perciformes,Carangidae,Decapterus tabl Berry 1968,NA,Decapterus tabl,NA,NA,NA,NA,NA,0,645,1
 カイワリ,Chordata,Actinopterygii,Perciformes,Carangidae,Kaiwarinus equula (Temminck & Schlegel 1844),NA,Kaiwarinus equula,NA,NA,NA,NA,NA,0,NA,NA
 シマアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Pseudocaranx dentex (Bloch & Schneider 1801),NA,Pseudocaranx dentex,NA,NA,NA,NA,NA,0,685,1
 ヒラマサ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola aureovittata Temminck & Schlegel 1845,647,Seriola aureovittata,GCA_021018895.1,Chromosome,17994190,28520646,0,5,743,4
@@ -89,6 +100,8 @@
 アカカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena pinguis Günther 1874,NA,Sphyraena pinguis,NA,NA,NA,NA,NA,0,767,5
 ヤマトカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena sp.,NA,Sphyraena sp.,NA,NA,NA,NA,NA,0,767,5
 ナガヅカ,Chordata,Actinopterygii,Perciformes,Stichaeidae,Dinogunellus grigorjewi (Herzenstein 1890),NA,Dinogunellus grigorjewi,NA,NA,NA,NA,NA,0,NA,NA
+コウライマナガツオ,Chordata,Actinopterygii,Perciformes,Stromateidae,Pampus echinogaster (Basilewsky 1855),NA,Pampus echinogaster,NA,NA,NA,NA,0,1,NA,NA
+マナガツオ,Chordata,Actinopterygii,Perciformes,Stromateidae,Pampus punctatissimus (Temminck & Schlegel 1845),NA,Pampus punctatissimus,NA,NA,NA,NA,0,1,NA,NA
 タチウオ,Chordata,Actinopterygii,Perciformes,Trichiuridae,Trichiurus japonicus Temminck & Schlegel 1844,NA,Trichiurus japonicus,NA,NA,NA,NA,NA,0,NA,NA
 ハタハタ,Chordata,Actinopterygii,Perciformes,Trichodontidae,Arctoscopus japonicus (Steindachner 1881),NA,Arctoscopus japonicus,NA,NA,NA,NA,NA,0,NA,NA
 ノロゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Bothrocara hollandi (Jordan & Hubbs 1925),NA,Bothrocara hollandi,NA,NA,NA,NA,NA,0,782,1
@@ -108,6 +121,7 @@
 スナガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Limanda punctatissima (Steindachner 1879),NA,Limanda punctatissima,NA,NA,NA,NA,NA,0,773,2
 ババガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Microstomus achne (Jordan & Starks 1904),NA,Microstomus achne,NA,NA,NA,NA,NA,0,949,1
 イシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Platichthys bicoloratus (Basilewsky 1855),NA,Platichthys bicoloratus,NA,NA,NA,NA,0,1,636,1
+ナガレメイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys cornutus (Temminck & Schlegel 1846),NA,Pleuronichthys cornutus,NA,NA,NA,NA,NA,0,616,2
 メイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys lighti Wu 1929,NA,Pleuronichthys lighti,NA,NA,NA,NA,NA,0,616,2
 マガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes herzensteini (Jordan & Snyder 1901),NA,Pseudopleuronectes herzensteini,NA,NA,NA,NA,0,1,691,3
 クロガシラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes schrenki (Schmidt 1904),NA,Pseudopleuronectes schrenki,NA,NA,NA,NA,0,1,691,3
@@ -136,7 +150,7 @@
 カサゴ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastiscus marmoratus (Cuvier 1829),NA,Sebastiscus marmoratus,NA,NA,NA,NA,0,2,900,1
 キチジ,Chordata,Actinopterygii,Scorpaeniformes,Sebastolobidae,Sebastolobus macrochir (Günther 1877),NA,Sebastolobus macrochir,NA,NA,NA,NA,0,2,NA,NA
 オニオコゼ,Chordata,Actinopterygii,Scorpaeniformes,Synanceiidae,Inimicus japonicus (Cuvier 1829),NA,Inimicus japonicus,NA,NA,NA,NA,NA,0,NA,NA
-ホウボウ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Chelidonichthys spinosus (McClelland 1843),NA,Chelidonichthys spinosus,NA,NA,NA,NA,NA,0,NA,NA
+ホウボウ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Chelidonichthys spinosus (McClelland 1843),625,Chelidonichthys spinosus,GCA_029853015.1,Chromosome,13767766,28108104,0,1,NA,NA
 カナガシラ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Lepidotrigla microptera Günther 1873,NA,Lepidotrigla microptera,NA,NA,NA,NA,NA,0,NA,NA
 アカヤガラ,Chordata,Actinopterygii,Syngnathiformes,Fistulariidae,Fistularia petimba Lacepède 1803,NA,Fistularia petimba,NA,NA,NA,NA,0,1,747,3
 カワハギ,Chordata,Actinopterygii,Tetraodontiformes,Monacanthidae,Stephanolepis cirrhifer (Temminck & Schlegel 1850),NA,Stephanolepis cirrhifer,NA,NA,NA,NA,NA,0,626,3
