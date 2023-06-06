@@ -13,6 +13,7 @@
         GenBank</a>
     -   <a href="#write-a-result-file" id="toc-write-a-result-file">Write a
         result file</a>
+    -   <a href="#furture-works" id="toc-furture-works">Furture works</a>
 
 # Scraping genome assembly information for fish species on GenBank
 
@@ -184,7 +185,7 @@ genome_info_genus_NIH <- function(genus){
   
   if(no_assembly_genus == 0){
     no_sp_within_genus <- 0 
-    ave_genus_genome_size <- NA
+    ave_genus_genome_size_Mbp <- NA
   
   }else{
     for(i in 1:no_assembly_genus){
@@ -209,11 +210,12 @@ genome_info_genus_NIH <- function(genus){
       genus_spp_genome_size_vec[j] <- representative_genus_spp_info[[5]]
     } 
     no_sp_within_genus <- no_sp_genus
-    ave_genus_genome_size_bp <- mean(genus_spp_genome_size_vec, na.rm=TRUE)
-    ave_genus_genome_size <- round(ave_genus_genome_size_bp/10^6,digits=0)
+    ave_genus_genome_size_Mbp <- mean(genus_spp_genome_size_vec, na.rm=TRUE) %>% round(digits=1)
+    
   } 
 
-  genus_genome_output <- list(no_sp_within_genus,ave_genus_genome_size)
+  
+  genus_genome_output <- list(no_sp_within_genus,ave_genus_genome_size_Mbp)
   return(genus_genome_output)
   Sys.sleep(1) #
 }
@@ -288,4 +290,10 @@ species_genome <- species %>%
 
 ``` r
 write_csv(species_genome, "aquatic_organism_genome_size.csv")
+```
+
+## Furture works
+
+``` r
+# list up for no. contigs/scaffolds
 ```
