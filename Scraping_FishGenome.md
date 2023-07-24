@@ -1,19 +1,12 @@
--   <a
-    href="#scraping-genome-assembly-information-for-fish-species-on-genbank"
-    id="toc-scraping-genome-assembly-information-for-fish-species-on-genbank">Scraping
-    genome assembly information for fish species on GenBank</a>
-    -   <a href="#loading-the-packages" id="toc-loading-the-packages">Loading
-        the packages</a>
-    -   <a href="#loading-dataset" id="toc-loading-dataset">Loading dataset</a>
-    -   <a href="#preparing-storages" id="toc-preparing-storages">Preparing
-        storages</a>
-    -   <a href="#defining-scraping-function"
-        id="toc-defining-scraping-function">Defining scraping function</a>
-    -   <a href="#scraping-on-genbank" id="toc-scraping-on-genbank">Scraping on
-        GenBank</a>
-    -   <a href="#write-a-result-file" id="toc-write-a-result-file">Write a
-        result file</a>
-    -   <a href="#furture-works" id="toc-furture-works">Furture works</a>
+-   [Scraping genome assembly information for fish species on
+    GenBank](#scraping-genome-assembly-information-for-fish-species-on-genbank)
+    -   [Loading the packages](#loading-the-packages)
+    -   [Loading dataset](#loading-dataset)
+    -   [Preparing storages](#preparing-storages)
+    -   [Defining scraping function](#defining-scraping-function)
+    -   [Scraping on GenBank](#scraping-on-genbank)
+    -   [Write a result file](#write-a-result-file)
+    -   [Furture works](#furture-works)
 
 # Scraping genome assembly information for fish species on GenBank
 
@@ -22,7 +15,6 @@
 ``` r
 # Loading packages
 library(tidyverse)
-#library(rvest)
 library(rentrez)
 ```
 
@@ -254,7 +246,7 @@ for(i in 1:no_species){
     representative_scaffoldN50_vec[i] <- NA
     representative_genome_size_vec[i] <- NA
   }
-  No_deposited_sp_level_genome_vec[i] <- rentrez_scraping_out[[1]]
+  No_deposited_sp_level_genome_vec[i] <- rentrez_scraping_out[[2]]
 
   
   #------------------------------------------

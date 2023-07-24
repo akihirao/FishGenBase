@@ -17,7 +17,6 @@ output:
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 # Loading packages
 library(tidyverse)
-#library(rvest)
 library(rentrez)
 ```
 
@@ -249,7 +248,7 @@ for(i in 1:no_species){
     representative_scaffoldN50_vec[i] <- NA
     representative_genome_size_vec[i] <- NA
   }
-  No_deposited_sp_level_genome_vec[i] <- rentrez_scraping_out[[1]]
+  No_deposited_sp_level_genome_vec[i] <- rentrez_scraping_out[[2]]
 
   
   #------------------------------------------

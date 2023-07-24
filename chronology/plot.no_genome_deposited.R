@@ -12,6 +12,7 @@ list20230329 <- read_csv("aquatic_organism_genome_size_2023_0329.csv")
 list20230421 <- read_csv("aquatic_organism_genome_size_2023_0421.csv")
 list20230515 <- read_csv("aquatic_organism_genome_size_2023_0515.csv")
 list20230531 <- read_csv("aquatic_organism_genome_size_2023_0531.csv")
+list20230724 <- read_csv("aquatic_organism_genome_size_2023_0724.csv")
 
 
 No_sp_genome_20100331 <- 1
@@ -23,6 +24,7 @@ No_sp_genome_20230329 <- sum(!is.na(list20230329$Genome_size_of_the_species_Mbp)
 No_sp_genome_20230421 <- sum(!is.na(list20230421$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20230515 <- sum(!is.na(list20230515$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20230531 <- sum(!is.na(list20230531$Genome_size_of_the_species_Mbp)) 
+No_sp_genome_20230724 <- sum(!is.na(list20230724$Genome_size_of_the_species_Mbp)) 
 
 
 No_sp_genus_20100331 <- 3
@@ -34,18 +36,19 @@ No_genus_genome_20230329 <- sum(!is.na(list20230329$Average_genome_size_of_the_g
 No_genus_genome_20230421 <- sum(!is.na(list20230421$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20230515 <- sum(!is.na(list20230515$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20230531 <- sum(!is.na(list20230531$Average_genome_size_of_the_genus_Mbp)) 
+No_genus_genome_20230724 <- sum(!is.na(list20230724$Average_genome_size_of_the_genus_Mbp)) 
 
 
 genome_chronology <- tibble(
   date = c(ymd("2010-03-31"),ymd("2020-04-21"),ymd("2022-09-15"), 
            ymd("2023-02-21"),ymd("2023-03-13"),ymd("2023-04-21"),
-           ymd("2023-05-15"),ymd("2023-05-31")), 
+           ymd("2023-05-15"),ymd("2023-05-31"),ymd("2023-07-24")), 
   Species = c(No_sp_genome_20100331, No_sp_genome_20200421, No_sp_genome_20220915,
               No_sp_genome_20230221,No_sp_genome_20230313, No_sp_genome_20230421,
-              No_sp_genome_20230515,No_sp_genome_20230531),
+              No_sp_genome_20230515,No_sp_genome_20230531,No_sp_genome_20230724),
   Genus = c(No_sp_genus_20100331,No_sp_genus_20200421,No_genus_genome_20220915,
             No_genus_genome_20230221,No_genus_genome_20230313,No_genus_genome_20230421,
-            No_genus_genome_20230515,No_genus_genome_20230531)
+            No_genus_genome_20230515,No_genus_genome_20230531,No_genus_genome_20230724)
             )
 
 Taxonomic_class_lab <- c("Species","Genus")
