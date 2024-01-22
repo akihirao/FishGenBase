@@ -1,11 +1,18 @@
-# Estimating generation time for fisheries resource fish species
+# Estimation of generation time for fish species
 
-## loading package
+-   Estimation based on the equation proposed in Pacoureau et al (2021)
+-   Genaration time = (Age\_max - Age\_maturity) \* Z + Age\_maturity
+-   Z is a coefficient associated with natural mortarity rate (assuming
+    0.5)
+-   Age\_max and Age\_maturity are inferred from FishLife
+-   FishLife: <https://github.com/James-Thorson-NOAA/FishLife>
+
+## Load packagse
 
     library(FishLife)
     library(tidyverse)
 
-## Defining function for estimating generation time inferred from FishLife
+## Define function for estimating generation time inferred from FishLife
 
     est_generation_time = function(species){
       
@@ -29,12 +36,12 @@
       return(output)
     }
 
-## loading a list of fisheries resource species
+## Load fisheries resource fish species
 
     fish_species_list = read_csv("aquatic_organism_genome_size.csv") %>%
       filter(Phylum == "Chordata")
 
-## estimating generation times for each of fish species
+## Estimate generation times for each of fish species
 
     no_species = length(fish_species_list$Scientific_name)
     species_name_vec = vector()
@@ -55,7 +62,7 @@
       age_maturity_vec[i] = generation_time_output[3]
     }
 
-## \## Write a result file
+## Write a result file
 
     species_GT = data.frame(Species = species_name_vec,
                Generation_time = round(generation_time_vec,digits=1),

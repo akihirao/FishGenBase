@@ -10,16 +10,23 @@ html_document:
   toc: true
 ---
 
-# Estimating generation time for fisheries resource fish species 
 
-## loading package
+# Estimation of generation time for fish species 
+- Estimation based on the equation proposed in Pacoureau et al (2021)
+- Genaration time = (Age_max - Age_maturity) * Z + Age_maturity
+- Z is a coefficient associated with natural mortarity rate (assuming 0.5)
+- Age_max and Age_maturity are inferred from FishLife
+- FishLife: https://github.com/James-Thorson-NOAA/FishLife
+
+
+## Load packagse
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 library(FishLife)
 library(tidyverse)
 ```
 
-## Defining function for estimating generation time inferred from FishLife
+## Define function for estimating generation time inferred from FishLife
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 est_generation_time = function(species){
@@ -45,14 +52,14 @@ est_generation_time = function(species){
 }
 ```
 
-## loading a list of fisheries resource species
+## Load fisheries resource fish species
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 fish_species_list = read_csv("aquatic_organism_genome_size.csv") %>%
   filter(Phylum == "Chordata")
 ```
 
-## estimating generation times for each of fish species
+## Estimate generation times for each of fish species
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 no_species = length(fish_species_list$Scientific_name)
@@ -75,7 +82,7 @@ for(i in 1:no_species){
 }
 ```
 
-## ## Write a result file
+## Write a result file
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 species_GT = data.frame(Species = species_name_vec,

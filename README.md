@@ -1,8 +1,6 @@
 ## Genome size information and demographic histories of aquatic organisms for fisheries resource management in FRA
 
 
-### Resouces
-
 * [Genome size of comercially important aquatic species](aquatic_organism_genome_size.csv)
 * [Number of fisheries species with genome sequence deposited in GenBank](https://github.com/akihirao/FishGenBase/blob/main/chronology/No_sp_genome_deposited.png)
 * [Generation time for fish species](species_generation_time_age.csv)
