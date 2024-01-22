@@ -1,16 +1,21 @@
-## Genome size information of aquatic organisms for fisheries resource management in FRA
+## Genome size information and demographic histories of aquatic organisms for fisheries resource management in FRA
 
-### Summary
+
+### Resouces
 
 * [Genome size of comercially important aquatic species](aquatic_organism_genome_size.csv)
 * [Number of fisheries species with genome sequence deposited in GenBank](https://github.com/akihirao/FishGenBase/blob/main/chronology/No_sp_genome_deposited.png)
-
+* [Generation time for fish species](species_generation_time_age.csv)
 
 
 ### Work flow for scaping genome size information
 
-* [ステップ１](Link_Jap2Latin_Fish.md)：対象種の標準和名から学名を把握
-* [ステップ２](Scraping_FishGenome.md)：対象種のリファレンスゲノム情報をGenBank上で収集し、表にとりまとめ
+* [Step 1](Link_Jap2Latin_Fish.md)：Link the standard Japanese name to the scientific name in each of species
+* [Step 2](Scraping_FishGenome.md)：Scrape genome assembly infomation depsited on GenBank
+
+
+### Estimation of generation time for fish species
+* [R code](fish_species_generation_time.md)
 
 
 ### References

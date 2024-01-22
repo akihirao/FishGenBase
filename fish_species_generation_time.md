@@ -1,0 +1,65 @@
+# Estimating generation time for fisheries resource fish species
+
+## loading package
+
+    library(FishLife)
+    library(tidyverse)
+
+## Defining function for estimating generation time inferred from FishLife
+
+    est_generation_time = function(species){
+      
+      z_coef = 0.5 #set a coefficient associated with mortality rate
+      
+      edge_names = c(FishBase_and_Morphometrics$tree$tip.label, 
+                     FishBase_and_Morphometrics$tree$node.label[-1] ) # Removing root
+
+      which_g = match(species, edge_names)
+      
+      Table_target_species = cbind(
+        Mean = FishBase_and_Morphometrics$beta_gv[which_g,],
+        SE = sqrt(diag(FishBase_and_Morphometrics$Cov_gvv[which_g,,]))
+      )
+      age_max = exp(Table_target_species[1,1])
+      age_maturity = exp(Table_target_species[10,1])
+      generation_time = (age_max - age_maturity)* z_coef + age_maturity
+
+      output = c(generation_time, age_max, age_maturity)
+      names(output) = c("Generation_time","Age_max","Age_maturity")
+      return(output)
+    }
+
+## loading a list of fisheries resource species
+
+    fish_species_list = read_csv("aquatic_organism_genome_size.csv") %>%
+      filter(Phylum == "Chordata")
+
+## estimating generation times for each of fish species
+
+    no_species = length(fish_species_list$Scientific_name)
+    species_name_vec = vector()
+    generation_time_vec = vector()
+    age_max_vec = vector()
+    age_maturity_vec = vector()
+
+    for(i in 1:no_species){
+      target_species_raw = fish_species_list$Scientific_name[i]
+      target_species_name_info = str_split(target_species_raw, pattern = " ")
+      genus_name = target_species_name_info[[1]][1]
+      species_name = target_species_name_info[[1]][2]
+      target_species = paste0(genus_name," ", species_name)
+      species_name_vec[i] = target_species 
+      generation_time_output = est_generation_time(target_species)
+      generation_time_vec[i] = generation_time_output[1]
+      age_max_vec[i] = generation_time_output[2]
+      age_maturity_vec[i] = generation_time_output[3]
+    }
+
+## \## Write a result file
+
+    species_GT = data.frame(Species = species_name_vec,
+               Generation_time = round(generation_time_vec,digits=1),
+               Age_max = round(age_max_vec,digits=1),
+               Age_maturity = round(age_maturity_vec,digits=1)
+               ) %>% as_tibble()
+    write_csv(species_GT, "species_generation_time_age.csv")
