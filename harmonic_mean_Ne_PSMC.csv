@@ -1,0 +1,24 @@
+Japanese_name,Scientific_name,SRA,BioSample,PSMC_input,harmonic_mean_Ne
+ニホンウナギ,Anguilla japonica,SRR19974267,SAMN29326702,ave_depth > 30; gt; mu,23411
+キンメダイ,Beryx splendens,ERR1473897,SAMEA4028808,ave_depth > 10; gt_FL,111956
+コマイ,Eleginus gracilis,SRR12199771,SAMN15508110,ave_depth > 10; gt_FL,46199
+スケトウダラ,Gadus chalcogrammus,SRR14784771,SAMN19665369,ave_depth > 30; gt; mu,85506
+マダラ,Gadus macrocephalus,SRR21531029,SAMN30802603,ave_depth > 30; gt; mu,70356
+アカマンボウ,Lampris megalopsis,SRR21383269,SAMN22826595,ave_depth > 30;  gt_FL,81698
+マルアジ,Decapterus maruadsi,SRR22328126,SAMN31777759,ave_depth > 30;  gt_FL,163365
+カンパチ,Seriola dumerili,DRR121626,SAMD00109156,ave_depth > 10; gt_FL,57869
+ボラ,Mugil cephalus,SRR15214610,SAMN16703275,ave_depth > 30;  gt_FL,98803
+イシダイ,Oplegnathus fasciatus,SRR16896027,SAMN22966831,ave_depth > 30;  gt_FL,58225
+スマ,Euthynnus affinis,SRR14329338,SAMN18876749,ave_depth > 30; gt,87246
+マサバ,Scomber japonicus,SRR26673749,SAMN38107556,ave_depth > 30;  gt_FL,134272
+クロマグロ,Thunnus orientalis,SRR14329339,SAMN18876748,ave_depth > 30; gt; mu,192655
+マダイ,Pagrus major,DRR089066,SAMD00076252,ave_depth > 10; gt_FL,31621
+ホシガレイ,Verasper variegatus,SRR21480267,SAMN30723058,ave_depth > 10; gt_FL,208706
+ユメカサゴ,Helicolenus hilgendorfii,ERR5241692,SAMEA7962316,ave_depth > 10; gt_FL,104392
+バラメヌケ,Sebastes baramenuke,ERR5241700,SAMEA7962325,ave_depth > 10; gt_FL,30670
+シロメバル,Sebastes cheni,ERR5241704,SAMEA7962329,ave_depth > 30;  gt_FL,46304
+クロソイ,Sebastes schlegelii,ERR5241771,SAMEA7962400,ave_depth > 10; gt_FL,46356
+ウスメバル,Sebastes thompsoni,ERR5241777,SAMEA7962406,ave_depth > 10; gt_FL,58388
+キツネメバル,Sebastes vulpes,ERR5241781,SAMEA7962413,ave_depth > 10; gt_FL,24398
+トラフグ,Takifugu snyderi,ERR3332418,SAMEA104384834,ave_depth > 30; gt; mu,283339
+マトウダイ,Zeus faver,ERR11641144,SAMEA111562293,ave_depth > 10; gt_FL,29868
