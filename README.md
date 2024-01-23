@@ -8,15 +8,16 @@
 
 ### Work flow for scaping genome size information
 
-* Step 1：Link the standard Japanese name to the scientific name in each of species [Rcode](Link_Jap2Latin_Fish.md)
-* Step 2：Scrape genome assembly infomation depsited on GenBank [Rcode](Scraping_FishGenome.md)
+* Step 1：Link the standard Japanese name to the scientific name in each of species [[Rcode]](Link_Jap2Latin_Fish.md)
+* Step 2：Scrape genome assembly infomation depsited on GenBank [[Rcode]](Scraping_FishGenome.md)
 
 
 ### Generation time of fish species
-* The generation time for each fish species was inferred based on the equation proposed by Pacoureau et al (2021)[R code](fish_species_generation_time.md)
+* The generation time for each fish species was inferred based on the equation proposed by Pacoureau et al (2021) [[R code]](fish_species_generation_time.md)
 
 
-### [Historical effective population size](harmonic_mean_Ne_PSMC.csv)
+### Historical effective population size
+* [Summary table](harmonic_mean_Ne_PSMC.csv)
 * The history of effective population size (Ne) for each species was inferred using PSMC. The historical Ne was represented as the harmonic mean across temporal estimates (see detailed in Wilder et al 2023).
 
 
