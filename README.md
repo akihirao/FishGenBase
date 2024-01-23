@@ -18,7 +18,7 @@
 
 ### Historical effective population size
 * [Summary table](harmonic_mean_Ne_PSMC.csv)
-* The history of effective population size (Ne) for each species was inferred using PSMC. The historical Ne was represented as the harmonic mean across temporal estimates (see detailed in Wilder et al 2023).
+* The history of effective population size (Ne) for each species was inferred using [PSMC](https://github.com/lh3/psmc) (Li & Durbin 2011). The historical Ne was represented as the harmonic mean across temporal estimates (see detailed in Wilder et al 2023). Parameters for time-interval pattern in PSMC analysis were followed by Li et al (2021).
 
 
 ### References
@@ -26,5 +26,7 @@
 * [Eschmeyer's Catalog of Fishes](https://www.calacademy.org): 魚類の科—目レベルの分類階級の参照先
 * [Animal Genome Size Database](http://www.genomesize.com/index.php): 動物6222種（脊椎動物2793種; 無脊椎動物2429種）を対象としたハプロイドDNA含量に関するデータベース
 
+* Li & Durbin (2011) Inference of human population history from individual whole-genome sequences. Nature 475, 493-496. [link](https://www.nature.com/articles/nature10231) 
+* Li et al. (2011) Temporal dynamics of teleost populations during the Pleistocene: a report from publicly available genome data. BMC genomics 22, 490. [link](https://doi.org/10.1186/s12864-021-07816-7) 
 * Pacoureau et al. (2021) Half a century of global decline in oceanic sharks and rays. Nature 589, 567–571. [link](https://www.nature.com/articles/s41586-020-03173-9)
 * Wilder et al. (2023) The contribution of historical processes to contemporary extinction risk in placental mammals. Sicence 380 eabn5856. [link](https://www.science.org/doi/10.1126/science.abn5856)
