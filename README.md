@@ -1,4 +1,4 @@
-## Genome size information and demographic histories of aquatic organisms for fisheries resource management in FRA
+## Genome size information and demographic histories of aquatic organisms for fisheries resource management in Japan
 
 
 * [Genome size of comercially important aquatic species](aquatic_organism_genome_size.csv)
