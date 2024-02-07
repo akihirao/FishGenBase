@@ -25,4 +25,5 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,
 マトウダイ,Zeus faber,ERR11641144,SAMEA111562293,14.3,1.0E-08,FishLife
 マダコ,Octopus vulgaris,SRR7898210-SRR7898213,SAMN10120072,51.0,2.4E-09,2.5
 ソデイカ,Thysanoteuthis rhombus,EERR11872602,SAMEA11646334,58.9,2.4E-09,1
-タイセイヨウマダラ, Gadus morhua, x,x,68.0,6.0E-09,10
+タイセイヨウマダラ,Gadus morhua, x,x,68.0,6.0E-09,10
+タイセイニシン,Clupea harengus, x,x,40.2	2.00E-09,6
