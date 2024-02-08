@@ -31,6 +31,9 @@ library(tidyverse)
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 est_generation_time = function(species){
   
+  genus_species_name = str_split(species, pattern = " ")
+  genus = genus_species_name[[1]][1]
+  
   z_coef = 0.5 #set a coefficient associated with mortality rate
   
   edge_names = c(FishBase_and_Morphometrics$tree$tip.label, 
@@ -45,9 +48,25 @@ est_generation_time = function(species){
   age_max = exp(Table_target_species[1,1])
   age_maturity = exp(Table_target_species[10,1])
   generation_time = (age_max - age_maturity)* z_coef + age_maturity
-
-  output = c(generation_time, age_max, age_maturity)
-  names(output) = c("Generation_time","Age_max","Age_maturity")
+  
+  output = c(generation_time, age_max, age_maturity, "species")
+  
+  # Explore genus-level information if species-level information is not found, 
+  if(is.na(age_max) || is.na(age_maturity)){
+    which_g_genus = match(genus, edge_names)
+  
+    Table_target_genus = cbind(
+      Mean = FishBase_and_Morphometrics$beta_gv[which_g_genus,],
+      SE = sqrt(diag(FishBase_and_Morphometrics$Cov_gvv[which_g_genus,,]))
+    )
+    age_max_genus = exp(Table_target_genus[1,1])
+    age_maturity_genus = exp(Table_target_genus[10,1])
+    generation_time_genus = (age_max_genus - age_maturity_genus)* z_coef + age_maturity_genus
+    output = c(generation_time_genus, age_max_genus, age_maturity_genus, "genus")
+    
+  }
+  
+  names(output) = c("Generation_time","Age_max","Age_maturity","Information_level")
   return(output)
 }
 ```
@@ -67,6 +86,7 @@ species_name_vec = vector()
 generation_time_vec = vector()
 age_max_vec = vector()
 age_maturity_vec = vector()
+info_level_vec = vector()
 
 for(i in 1:no_species){
   target_species_raw = fish_species_list$Scientific_name[i]
@@ -79,6 +99,7 @@ for(i in 1:no_species){
   generation_time_vec[i] = generation_time_output[1]
   age_max_vec[i] = generation_time_output[2]
   age_maturity_vec[i] = generation_time_output[3]
+  info_level_vec[i] = generation_time_output[4]
 }
 ```
 
@@ -86,9 +107,9 @@ for(i in 1:no_species){
 
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
 species_GT = data.frame(Species = species_name_vec,
-           Generation_time = round(generation_time_vec,digits=1),
-           Age_max = round(age_max_vec,digits=1),
-           Age_maturity = round(age_maturity_vec,digits=1)
-           ) %>% as_tibble()
+                        Infomation_level = info_level_vec,
+                        Generation_time = round(as.numeric(generation_time_vec),digits=1),
+                        Age_max = round(as.numeric(age_max_vec),digits=1),
+                        Age_maturity = round(as.numeric(age_maturity_vec),digits=1)) %>% as_tibble()
 write_csv(species_GT, "species_generation_time_age.csv")
 ```

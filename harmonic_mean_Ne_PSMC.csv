@@ -1,10 +1,10 @@
 Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,harmonic_mean_Ne
-ニホンウナギ,Anguilla japonica,SRR19974267,SAMN29326702,109.7,7.4E-08,8.5,24463
-イラコアナゴ,Synaphobranchus kaupii,SRR15082970,SAMN20062003,9.9,1.0E-08,FishLife,47835
-キンメダイ,Beryx splendens,ERR1473897,SAMEA4028808,13.3,1.0E-08,FishLife,111956
-コマイ,Eleginus gracilis,SRR12199771,SAMN15508110,13.6,1.0E-08,FishLife,46199
+ニホンウナギ,Anguilla japonica,SRR19974267,SAMN29326702,109.7,7.4E-08,8.5,23570
+イラコアナゴ,Synaphobranchus kaupii,SRR15082970,SAMN20062003,9.9,1.0E-08,FishLife,46603
+キンメダイ,Beryx splendens,ERR1473897,SAMEA4028808,13.3,1.0E-08,FishLife,110241
+コマイ,Eleginus gracilis,SRR12199771,SAMN15508110,13.6,1.0E-08,FishLife,44366
 スケトウダラ,Gadus chalcogrammus,SRR14784771,SAMN19665369,37.2,6.0E-09,10,85506
-マダラ,Gadus macrocephalus,SRR21531029,SAMN30802603,47.9,6.0E-09,10,70356
+マダラ,Gadus macrocephalus,SRR21531029,SAMN30802603,47.9,6.0E-09,10,68401
 アカマンボウ,Lampris megalopsis,SRR21383269,SAMN22826595,45.3,1.0E-08,FishLife,81698
 マルアジ,Decapterus maruadsi,SRR22328126,SAMN31777759,40.1,1.0E-08,FishLife,163365
 カンパチ,Seriola dumerili,DRR121626,SAMD00109156,23.5,1.0E-08,FishLife,57869
@@ -14,13 +14,13 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,harmonic_mean_N
 マサバ,Scomber japonicus,SRR26673749,SAMN38107556,31.6,1.0E-08,FishLife,134272
 クロマグロ,Thunnus orientalis,SRR14329339,SAMN18876748,43.4,7.3E-08,2.5,192655
 マダイ,Pagrus major,DRR089066,SAMD00076252,12.4,1.0E-08,FishLife,31621
-ホシガレイ,Verasper variegatus,SRR21480267,SAMN30723058,28.9,1.0E-08,FishLife,208706
+ホシガレイ,Verasper variegatus,SRR21480267,SAMN30723058,28.9,1.0E-08,FishLife,39484
 ユメカサゴ,Helicolenus hilgendorfii,ERR5241692,SAMEA7962316,26.5,1.0E-08,FishLife,104392
 バラメヌケ,Sebastes baramenuke,ERR5241700,SAMEA7962325,18.3,1.0E-08,FishLife,30670
 シロメバル,Sebastes cheni,ERR5241704,SAMEA7962329,30.5,1.0E-08,FishLife,46304
 クロソイ,Sebastes schlegelii,ERR5241771,SAMEA7962400,19.4,1.0E-08,FishLife,46356
 ウスメバル,Sebastes thompsoni,ERR5241777,SAMEA7962406,18.5,1.0E-08,FishLife,58388
 キツネメバル,Sebastes vulpes,ERR5241781,SAMEA7962413,18.3,1.0E-08,FishLife,24398
-トラフグ,Takifugu rubripes,ERR3332418,SAMEA104384834,30.2,2.5E-09,4,283339
+トラフグ,Takifugu rubripes,ERR3332418,SAMEA104384834,30.2,2.5E-09,4,280331
 マトウダイ,Zeus faber,ERR11641144,SAMEA111562293,14.3,1.0E-08,FishLife,25287
 マダコ,Octopus vulgaris,SRR7898210-SRR7898213,SAMN10120072,51.0,2.4E-09,2.5,447620
