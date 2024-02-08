@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggplot2)
 library(lubridate)
 
-last_day <- "2023-12-01"
+last_day <- "2024-02-07"
 
 list20220915 <- read_csv("aquatic_organism_genome_size_2022_0915.csv")
 list20230221 <- read_csv("aquatic_organism_genome_size_2023_0221.csv")
@@ -18,6 +18,9 @@ list20230724 <- read_csv("aquatic_organism_genome_size_2023_0724.csv")
 list20231201 <- read_csv("aquatic_organism_genome_size_2023_1201.csv")
 list20240109 <- read_csv("aquatic_organism_genome_size_2024_0109.csv")
 list20240207 <- read_csv("aquatic_organism_genome_size_2024_0207.csv")
+
+last_list <- list20240207
+
 
 No_sp_genome_20100331 <- 1
 No_sp_genome_20200421 <- 18
@@ -74,8 +77,43 @@ title_lab <- paste0("No. species with genome sequence deposited in GenBank: last
 plot_sp_level <- ggplot(data = genome_chronology, aes(x=date, y = Value, color=Class, group=Class)) + 
   geom_point(size=4.5) + 
   geom_line(linetype = "dashed", linewidth = 1) +
-  labs(y="No. species", title=title_lab)
+  labs(x = "Date", y="No. species", title=title_lab)+
+  theme(legend.text = element_text(size = 16),
+        axis.text.x = element_text(size = 16),
+        axis.text.y = element_text(size = 16),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20))
 
 png("No_sp_genome_deposited.png", width = 600, height = 400)
 plot_sp_level
 dev.off()
+
+
+# No. species/genus with genome assembly
+no_target_species <- length(last_list$Scientific_name)
+no_species_assembly <- sum(last_list$Genome_size_of_the_species_Mbp > 0,na.rm=TRUE)
+no_genus_assembly <- sum(last_list$No_species_with_assembly_within_the_genus > 0)
+cat("No. species with genome assembly")
+print(no_species_assembly)
+cat("Percentage of no. species with genome assembly")
+print(no_species_assembly/no_target_species)
+
+cat("No. genus with genome assembly")
+print(no_genus_assembly)
+cat("Percentage of no. genus with genome assembly")
+print(no_genus_assembly/no_target_species)
+
+
+last_list_with_assembly <- last_list %>% filter(Genome_size_of_the_species_Mbp > 0)
+gg_assembly_len_dist <- ggplot(last_list_with_assembly,
+                               aes(x= Genome_size_of_the_species_Mbp)) +
+  geom_histogram() +
+  labs(x = "Genome size (Mbp)", y = "Count") +
+  theme(text = element_text(size = 24))
+
+
+
+png("genome_size_dist.png", width = 600, height = 400)
+plot(gg_assembly_len_dist)
+dev.off()
+
