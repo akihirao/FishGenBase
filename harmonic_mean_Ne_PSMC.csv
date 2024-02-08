@@ -21,7 +21,6 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,harmonic_mean_N
 クロソイ,Sebastes schlegelii,ERR5241771,SAMEA7962400,19.4,1.0E-08,FishLife,46356
 ウスメバル,Sebastes thompsoni,ERR5241777,SAMEA7962406,18.5,1.0E-08,FishLife,58388
 キツネメバル,Sebastes vulpes,ERR5241781,SAMEA7962413,18.3,1.0E-08,FishLife,24398
-トラフグ,Takifugu snyderi,ERR3332418,SAMEA104384834,30.2,2.5E-09,4,283339
-マトウダイ,Zeus faber,ERR11641144,SAMEA111562293,14.3,1.0E-08,FishLife,29868
+トラフグ,Takifugu rubripes,ERR3332418,SAMEA104384834,30.2,2.5E-09,4,283339
+マトウダイ,Zeus faber,ERR11641144,SAMEA111562293,14.3,1.0E-08,FishLife,25287
 マダコ,Octopus vulgaris,SRR7898210-SRR7898213,SAMN10120072,51.0,2.4E-09,2.5,447620
-ソデイカ,Thysanoteuthis rhombus,EERR11872602,SAMEA11646334,58.9,2.4E-09,1,xxxx
