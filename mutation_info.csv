@@ -15,6 +15,7 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,
 クロマグロ,Thunnus orientalis,SRR14329339,SAMN18876748,43.4,7.3E-08,2.5,
 マダイ,Pagrus major,DRR089066,SAMD00076252,12.4,1.0E-08,FishLife
 ホシガレイ,Verasper variegatus,SRR21480267,SAMN30723058,28.9,1.0E-08,FishLife
+ホッケ,Pleurogrammus azonus,xx,xx,42.3,1.0E-08,FishLife
 ユメカサゴ,Helicolenus hilgendorfii,ERR5241692,SAMEA7962316,26.5,1.0E-08,FishLife
 バラメヌケ,Sebastes baramenuke,ERR5241700,SAMEA7962325,18.3,1.0E-08,FishLife
 シロメバル,Sebastes cheni,ERR5241704,SAMEA7962329,30.5,1.0E-08,FishLife
