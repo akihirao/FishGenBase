@@ -28,4 +28,7 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,
 マダコ,Octopus vulgaris,SRR7898210-SRR7898213,SAMN10120072,51.0,2.4E-09,2.5
 ソデイカ,Thysanoteuthis rhombus,EERR11872602,SAMEA11646334,58.9,2.4E-09,1
 タイセイヨウマダラ,Gadus morhua,x,x,68.0,6.0E-09,10
-タイセイニシン,Clupea harengus,x,x,40.2,2.00E-09,6
+タイセイニシン,Clupea harengus,x,x,40.2,2.0E-09,6
+アサリ,Ruditapes_philippinarum,x,x,18.6,2.5E-08,2
+
+
