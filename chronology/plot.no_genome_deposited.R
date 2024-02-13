@@ -112,8 +112,24 @@ gg_assembly_len_dist <- ggplot(last_list_with_assembly,
   theme(text = element_text(size = 24))
 
 
-
 png("genome_size_dist.png", width = 600, height = 400)
 plot(gg_assembly_len_dist)
 dev.off()
 
+
+genome_status = unlist(tapply(last_list,last_list$Representative_assembly_status,count))
+genome_status_tidy = data.frame(Status= names(genome_status), count=genome_status) %>%
+  as.tibble()
+genome_status_tidy$Status = factor(genome_status_tidy$Status, levels=c("Complete Genome",
+                                                                     "Chromosome",
+                                                                     "Scaffold",
+                                                                     "Contig"))
+
+genome_status_pi_plot = ggplot(genome_status_tidy, aes(x = "", y = count, fill = Status)) + 
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") + 
+  theme_void()
+
+plot(genome_status_pi_plot)
+ggsave("genome_status_pi_plot.png",
+        height=5, width=5)
