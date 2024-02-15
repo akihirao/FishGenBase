@@ -1,9 +1,9 @@
 #plot.no_genome_deposited.R
 
-
 library(tidyverse)
 library(ggplot2)
 library(lubridate)
+library(ggsci)
 
 last_day <- "2024-02-07"
 
@@ -118,17 +118,21 @@ dev.off()
 
 
 genome_status = unlist(tapply(last_list,last_list$Representative_assembly_status,count))
-genome_status_tidy = data.frame(Status= names(genome_status), count=genome_status) %>%
+genome_status_tidy = data.frame(Assembly_level= names(genome_status), count=genome_status) %>%
   as.tibble()
-genome_status_tidy$Status = factor(genome_status_tidy$Status, levels=c("Complete Genome",
+genome_status_tidy$Assembly_level = factor(genome_status_tidy$Assembly_level, levels=c("Complete Genome",
                                                                      "Chromosome",
                                                                      "Scaffold",
                                                                      "Contig"))
 
-genome_status_pi_plot = ggplot(genome_status_tidy, aes(x = "", y = count, fill = Status)) + 
+genome_status_pi_plot = ggplot(genome_status_tidy, aes(x = "", y = count, fill = Assembly_level)) + 
   geom_bar(stat = "identity") +
   coord_polar(theta = "y") + 
-  theme_void()
+  theme_void() +
+  theme(legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12)) +
+  guides(fill= guide_legend(reverse=FALSE)) +
+  scale_fill_nejm()
 
 plot(genome_status_pi_plot)
 ggsave("genome_status_pi_plot.png",
