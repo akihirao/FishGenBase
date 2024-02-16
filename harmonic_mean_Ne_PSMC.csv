@@ -23,4 +23,6 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time,harmonic_mean_N
 キツネメバル,Sebastes vulpes,ERR5241781,SAMEA7962413,18.3,1.0E-08,FishLife,24398
 トラフグ,Takifugu rubripes,ERR3332418,SAMEA104384834,30.2,2.5E-09,4,24356
 マトウダイ,Zeus faber,ERR11641144,SAMEA111562293,14.3,1.0E-08,FishLife,25287
+ガザミ,Portunus trituberculatus,SRR11838621,SAMN14896546,50.3,2.8E-09,2,230397	
 マダコ,Octopus vulgaris,SRR7898210-SRR7898213,SAMN10120072,51.0,2.4E-09,2.5,445127
+アサリ,Ruditapes philippinarum,SRR23279237,SAMN32964221,18.6,2.50E-08,2,82836
