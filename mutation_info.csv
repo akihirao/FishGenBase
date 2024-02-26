@@ -13,7 +13,7 @@ Japanese_name,Species,SRA,BioSample,Ave_depth,mu,Generation_time
 イシダイ,Oplegnathus fasciatus,SRR16896027,SAMN22966831,39.7,1.0E-08,FishLife
 スマ,Euthynnus affinis,SRR14329338,SAMN18876749,35.5,1.0E-08,3.25
 マサバ,Scomber japonicus,SRR26673749,SAMN38107556,31.6,1.0E-08,FishLife
-クロマグロ,Thunnus orientalis,SRR14329339,SAMN18876748,43.4,7.3E-08,2.5,
+クロマグロ,Thunnus orientalis,SRR14329339,SAMN18876748,43.4,7.3E-08,2.5
 マダイ,Pagrus major,DRR089066,SAMD00076252,12.4,1.0E-08,FishLife
 ヒラメ,Paralichthys olivaceus,x,x,36.5,1.85E-09,3
 ホシガレイ,Verasper variegatus,SRR21480267,SAMN30723058,28.9,1.0E-08,FishLife
