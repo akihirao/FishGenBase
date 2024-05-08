@@ -18,8 +18,10 @@ list20230724 <- read_csv("aquatic_organism_genome_size_2023_0724.csv")
 list20231201 <- read_csv("aquatic_organism_genome_size_2023_1201.csv")
 list20240109 <- read_csv("aquatic_organism_genome_size_2024_0109.csv")
 list20240207 <- read_csv("aquatic_organism_genome_size_2024_0207.csv")
+list20240508 <- read_csv("aquatic_organism_genome_size_2024_0508.csv")
 
-last_list <- list20240207
+
+last_list <- list20240508
 
 
 No_sp_genome_20100331 <- 1
@@ -35,6 +37,7 @@ No_sp_genome_20230724 <- sum(!is.na(list20230724$Genome_size_of_the_species_Mbp)
 No_sp_genome_20231201 <- sum(!is.na(list20231201$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20240109 <- sum(!is.na(list20240109$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20240207 <- sum(!is.na(list20240207$Genome_size_of_the_species_Mbp)) 
+No_sp_genome_20240508 <- sum(!is.na(list20240508$Genome_size_of_the_species_Mbp)) 
 
 
 No_sp_genus_20100331 <- 3
@@ -50,13 +53,15 @@ No_genus_genome_20230724 <- sum(!is.na(list20230724$Average_genome_size_of_the_g
 No_genus_genome_20231201 <- sum(!is.na(list20231201$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20240109 <- sum(!is.na(list20240109$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20240207 <- sum(!is.na(list20240207$Average_genome_size_of_the_genus_Mbp)) 
+No_genus_genome_20240508 <- sum(!is.na(list20240508$Average_genome_size_of_the_genus_Mbp)) 
 
 
 genome_chronology <- tibble(
   date = c(ymd("2010-03-31"),ymd("2020-04-21"),ymd("2022-09-15"), 
            ymd("2023-02-21"),ymd("2023-03-13"),ymd("2023-04-21"),
            ymd("2023-05-15"),ymd("2023-05-31"),ymd("2023-07-24"),
-           ymd("2023-12-01"),ymd("2024-01-09"),ymd("2024-02-07")), 
+           ymd("2023-12-01"),ymd("2024-01-09"),ymd("2024-02-07"),
+           ymd("2024-05-08"))
   Species = c(No_sp_genome_20100331, No_sp_genome_20200421, No_sp_genome_20220915,
               No_sp_genome_20230221,No_sp_genome_20230313, No_sp_genome_20230421,
               No_sp_genome_20230515,No_sp_genome_20230531,No_sp_genome_20230724,
@@ -64,7 +69,8 @@ genome_chronology <- tibble(
   Genus = c(No_sp_genus_20100331,No_sp_genus_20200421,No_genus_genome_20220915,
             No_genus_genome_20230221,No_genus_genome_20230313,No_genus_genome_20230421,
             No_genus_genome_20230515,No_genus_genome_20230531,No_genus_genome_20230724,
-            No_genus_genome_20231201,No_genus_genome_20240109,No_genus_genome_20240207)
+            No_genus_genome_20231201,No_genus_genome_20240109,No_genus_genome_20240207,
+            No_genus_genome_20240508)
             )
 
 Taxonomic_class_lab <- c("Species","Genus")
