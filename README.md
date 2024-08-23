@@ -22,7 +22,7 @@
 
 
 ### References
-* [日本産魚類全種リスト(JAFリスト)](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名—科名の参照先
+* [List of Japan's all fish species](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名—科名の参照先
 * [Eschmeyer's Catalog of Fishes](https://www.calacademy.org): 魚類の科—目レベルの分類階級の参照先
 * [Animal Genome Size Database](http://www.genomesize.com/index.php): 動物6222種（脊椎動物2793種; 無脊椎動物2429種）を対象としたハプロイドDNA含量に関するデータベース
 
