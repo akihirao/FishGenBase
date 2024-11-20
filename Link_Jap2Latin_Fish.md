@@ -14,6 +14,7 @@
 # Loading packages
 library(tidyverse)
 library(rvest) #for scraping
+library(rentrez)
 ```
 
 ## Loading dataset
@@ -45,6 +46,10 @@ family_name_vec <- vector()
 order_name_vec <- vector()
 class_name_vec <- vector()
 phylum_name_vec <- vector()
+
+
+checked_species_name_01 <- "Parajulis poecileptera (Temminck & Schlegel 1845)"
+corrected_species_name_01 <- "Parajulis poecilepterus (Temminck & Schlegel 1845)"
 
 for(i in 1:no_fish){
 
@@ -81,6 +86,11 @@ for(i in 1:no_fish){
       if(!(identical(scientific_name_check,character(0)))){#if non-fish species
       scientific_unlist <- scientific_name_check %>% strsplit("\n") %>% unlist 
       scientific_name <- scientific_unlist[1]
+      
+      if(scientific_name==checked_species_name_01){
+        scientific_name <- corrected_species_name_01
+      }
+      
       phylum_name_vec[i] <- Phylum_name
       class_name_vec[i] <- Class_name
       order_name_vec[i] <- Order_name
@@ -147,11 +157,28 @@ if(!(No_class=length(Class_order))){
 # Summarizing a taxonomy list
 FRA200List_Latin <- FRA200List %>% 
   mutate(Phylum = factor(phylum_name_vec, levels = Phylum_order),
-         Class = factor(class_name_vec,levels = Class_order), 
-                         Order = order_name_vec, Family = family_name_vec,
-                         Scientific_name = scientific_name_vec) %>%
+         Class = factor(class_name_vec,levels = Class_order),
+         Order = order_name_vec, 
+         Family = family_name_vec,
+         Scientific_name = scientific_name_vec
+         ) %>%
   select(-Category,-SingleMulti,-TAC,-Target) %>% 
-  arrange(Phylum, Class, Order, Family, Scientific_name)
+  arrange(Phylum, Class, Order, Family, Scientific_name) %>%
+  mutate(Taxonomy_id=NA)
+
+# add taxonomy id
+for(i in 1:nrow(FRA200List_Latin)){
+  target_species_name <- FRA200List_Latin[i,]$Scientific_name
+  scientific_name_split_vec <- unlist(strsplit(target_species_name, " "))
+    genus_name <- scientific_name_split_vec[1]
+    specific_name <- scientific_name_split_vec[2]
+  query_species_name  <- paste0(genus_name," ",specific_name)
+  target_taxonomy_id_info <- rentrez::entrez_search(db="taxonomy",term=query_species_name)
+  target_taxonomy_id <- target_taxonomy_id_info$ids
+  if(length(target_taxonomy_id)==1){
+    FRA200List_Latin[i,]$Taxonomy_id <- target_taxonomy_id
+  }
+}
 ```
 
 ## Write a taxonomy list file
