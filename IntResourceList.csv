@@ -1,0 +1,35 @@
+KAUM科番号,科,Family,和名,学名,Remarks,和名ヘボン式表記
+333,サバ科,Scombridae,タイセイヨウクロマグロ,Thunnus thynnus, ,Taiseiyo-kuromaguro
+333,サバ科,Scombridae,ミナミマグロ,Thunnus maccoyii, ,Minami-maguro
+328,マカジキ科,Istiophoridae,ニシマカジキ,Kajikia albida, ,Nishi-makajiki
+15,ネズミザメ科,Lamnidae,ニシネズミザメ,Lamna nasus, ,Nishi-nezumizame
+NA,ネズミイルカ科,Phocoenidae,イシイルカ,Phocoenoides dalli, ,Ishikujira
+NA,アカボウクジラ科,Ziphiidae,ツチクジラ,Berardius bairdii, ,Tsuchikujira
+NA,ナガスクジラ科,Balaenopteridae,ミンククジラ,Balaenoptera acutorostrata, ,Minkukujira
+NA,ナガスクジラ科,Balaenopteridae,クロミンククジラ,Balaenoptera bonaerensis, ,Kurominkukujira
+NA,ナガスクジラ科,Balaenopteridae,ニタリクジラ,Balaenoptera edeni, ,Nitarikujira
+NA,ナガスクジラ科,Balaenopteridae,シロナガスクジラ,Balaenoptera bonaerensis, ,Shironagasukujira
+NA,ナガスクジラ科,Balaenopteridae,イワシクジラ,Balaenoptera borealis, ,Iwashikujira
+NA,ネズミイルカ科,Phocoenidae,スナメリ,Neophocaena asiaeorientalis, ,Sunameri
+NA,マイルカ科,Delphinidae,シャチ,Orcinus orca, ,Shachi
+NA,アシカ科,Otariidae,トド,Eumetopias jubatus, ,Todo
+94,サケ科,Salmonidae,サクラマス,Oncorhynchus masou masou (Brevoort 1856),"
+サクラマス（降海型）・ヤマメ（陸封型）；坂本・田島（1995）佐賀自然史研究1:17-26，佐賀県；座間（1998）「万石浦の魚類の生態学的研究」，宮城県万石浦；田島（1999）佐賀自然史研究5:1-14，福岡県矢部川；武内ほか（2011）近畿大学農学部紀要44:63-87，北海道千歳川水系；竹内ほか（2015）日本生物地理学会会報70:1-11，対馬；金子ほか（2015）日本生物地理学会会報70:131-139，神奈川県（集団遺伝）；Motomura & Harazaki (2017) Bull Kagoshima Univ Mus 9:1-183，屋久島；Iwatsuki et al (2017) Bull Grad Sch Bioresour Mie Univ 43:27-55，宮崎県（日向灘）；綱川・白井（2018）魚類学雑誌doi 10.11369/jji.18-009，回遊履歴（栃木県）；Yamamoto et al (2019) Freshwater Biol doi:10.1111/fwb.13460，4亜種遺伝構造，中部地方から四国，九州北東部を除く日本各地に分布；園山ほか（2020）鹿児島大学総合研究博物館研究報告11:1-152，山口県日本海側；荒川（2021）のと海洋ふれあいセンター研究報告27:9-23，能登半島；岩坪ほか（2022）「薩摩半島沿岸の魚類」；佐藤ほか（2022）「北の磯魚生態図鑑」，北日本；山崎ほか（2022）茨城県自然博物館研究報告25:79-94，茨城県；平山ほか（2022）日本生物地理学会会報77:76-92，広島県；齊木ほか（2023）日本生物地理学会会報78:67-77，宮崎県；本田ほか（2024）神奈川県立博物館研究報告（自然科学）53:127-218，相模湾
+",Sakuramasu
+188.5,メバル科,Sebastidae,チヒロアカウオ1,Sebastes mentella, ,Chihiro-akauo1
+188.5,メバル科,Sebastidae,チヒロアカウオ2,Sebastes fasciatus, ,Chihiro-akauo2
+188.5,メバル科,Sebastidae,タイセイヨウアカウオ,Sebastes norvegicus, ,Taiseiyo-akauo
+NA,ノトテニア科,Nototheniidae,マジェランアイナメ,Dissostichus eleginoides, ,Majieran-ainame
+NA,ノトテニア科,Nototheniidae,ライギョダマシ,Dissostichus mawsoni, ,Raigyodamashi
+186,ダツ科,Belonidae,サンマ,Cololabis saira (Brevoort 1856),"
+竹内ほか（2015）日本生物地理学会会報70:1-11，対馬；Motomura & Harazaki (2017) Bull Kagoshima Univ Mus 9:1-183，屋久島；Iwatsuki et al (2017) Bull Grad Sch Bioresour Mie Univ 43:27-55，宮崎県（日向灘）；岩坪・本村（2017）「鹿児島湾の魚類」；吉郷（2018）比和科学博物館研究報告59:127-203，瀬戸内海；小枝ほか（2018）「内之浦の魚類」；園山ほか（2020）鹿児島大学総合研究博物館研究報告11:1-152，山口県日本海側；小枝ほか（2020）「大隅市場魚類図鑑」；Toyama et al (2020) Thailand Nat Hist Mus J Monogr 1:1-73，サンマはダツ科Belonidaeに含まれるため、サンマ科Scomberesocidaeは消滅；外山・今村（2020）魚類学雑誌67:299-300，サンマが含まれる亜科Beloninaeの和名をサンマ亜科とする；村瀬ほか（2021）「ひむかの海の魚たち」，宮崎県門川町；岩坪ほか（2022）「薩摩半島沿岸の魚類」；Motomura (2023) Bull Kagoshima Univ Mus 20:1-250，種子島；マジェランアイナメ本田ほか（2024）神奈川県立博物館研究報告（自然科学）53:127-218，相模湾
+",Samma
+55,ウナギ科,Anguillidae,ニホンウナギ,Anguilla japonica Temminck & Schlegel 1846,"
+坂本・田島（1995）佐賀自然史研究1:17-26，佐賀県；座間（1998）「万石浦の魚類の生態学的研究」，宮城県万石浦；田島（1999）佐賀自然史研究5:1-14，福岡県矢部川；今坂（1999）佐賀自然史研究5:15-25，福岡県三橋町；藤井（2009）佐賀自然史研究15:21-25，佐賀県伊万里市佐代川河口；武内ほか（2011）近畿大学農学部紀要44:63-87，和歌山県；平嶋・丸山（2012）南紀生物54:24-30，和歌山県和歌川河口；辻（2013）徳島県立博物館研究報告23:1-21，愛媛県伯方島；山田ほか（2014）神奈川自然誌資料35:41-44，相模湾；竹内ほか（2015）日本生物地理学会会報70:1-11，対馬；辻（2015）徳島県立博物館研究報告25:1-24，愛媛県岩松川；松沼ほか（2016）「鹿児島市の川魚」，鹿児島市；Koeda et al (2016) Fishes of Yonaguni，与那国島；辻・松田（2016）南予生物18:1-25，愛媛県八幡浜市；中原ほか（2017）佐賀自然史研究22:48-51，佐賀市神野公園；Motomura & Harazaki (2017) Bull Kagoshima Univ Mus 9:1-183，屋久島；鹿野ほか（2017）魚類学雑誌64:43-53，南西諸島における生息状況等；三井ほか（2017）神奈川自然誌資料38:67-76，神奈川県下山川水系；Iwatsuki et al (2017) Bull Grad Sch Bioresour Mie Univ 43:27-55，宮崎県（日向灘）；岩坪・本村（2017）「鹿児島湾の魚類」；木村ほか（2017）「口永良部島の魚類」；池（2017）鹿児島県立博物館研究報告36:25-27，口永良部島；吉郷（2018）比和科学博物館研究報告59:127-203，瀬戸内海；Nakae et al (2018) Mem Natl Mus Nat Sci Tokyo 52:205-361，奄美大島；三井・山川（2018）神奈川自然誌資料39:67-73，三浦半島関根川水系；Mochida & Motomura (2018) Bull Kagoshima Univ Mus 10:1-80，徳之島；荻野ほか（2019）Nat Kagoshima 45:225-228，鹿児島県いちき串木野市；Matsushige et al (2019) Ichthyol Res doi:10.1007/s10228-019-00704-x，鹿児島県本土の3河川；荒尾ほか（2019）神奈川自然誌資料40:41-48，東京湾；三井ほか（2019）神奈川自然誌資料40:75-83，小田原城址公園内堀；中村ほか（2019）Nat Kagoshima 46:225-230，鹿児島湾奥の汽水池；本村ほか（2019）「奄美群島の魚類」；村瀬ほか（2019）「門川の魚類」；Kuroki et al (2020) Ichthyol Res doi:10.1007/s10228-019-00731-8，神津島（淡水に加入しなかった個体）；伊藤ほか（2020）Nat Kagoshima 46:275-278，鹿児島県いちき串木野市；Kumai et al (2020) Ichthyol Res doi:10.1007/s10228-020-00732-y，屋久島；Wakiya & Mochioka (2020) Ichthyol Res doi:10.1007/s10228-020-00755-5，鹿児島県いちき串木野市土川川；Matsushige et al (2020) Ichthyol Res doi:10.1007/s10228-020-00759-1，鹿児島県網掛川；Morita & Kuroki (2020) Ichthyol Res di:10.1007/s10228-020-00771-5，北海道；本村ほか（2020）「高尾野川河口の生きもの」；Fujiwara & Motomura (2020) Bull Kagoshima Univ Mus 14:1-73，喜界島；井上ほか（2021）魚類学雑誌doi:10.11369/jji.20-024，西表島；中川ほか（2021）Nat Kagoshima 47:373-379，鹿児島湾北部霧島市；Itsukushima & Kano (2021) Biodivers Data J 9:367168，千葉県；村瀬ほか（2021）「ひむかの海の魚たち」，宮崎県門川町；辻・松田（2021）南予生物20:12-33，愛媛県肱川水系；岩坪ほか（2022）「薩摩半島沿岸の魚類」；萩原（2022）横須賀市博物館資料集46:1-127，奄美大島；工藤ほか（2022）神奈川県自然誌資料43:97-142，三浦半島南西岸；近藤ほか（2022）「ハチの干潟の生きものたち」，広島県竹原市（瀬戸内海）；黒木ほか（2022）魚類学雑誌doi:10.11369/jji.21-031，標準和名の基準標本指定（浜名湖）；栗原ほか（2022）「延岡水辺の生き物案内」，宮崎県延岡市；Hibino et al (2022) Univ Mus, Univ Tokyo Material Rep 129:137-148，北海道，青森県，福島県，茨城県，千葉県，栃木県，群馬県，新潟県，東京，八丈島，小笠原諸島，神奈川県，山梨県，長野県，静岡県，岐阜県，愛知県，三重県，和歌山県，奈良県，京都府，兵庫県，島根県，山口県，高知県，愛媛県，福岡県，長崎県，有明海，宮崎県，下甑島，薩摩半島西岸，鹿児島湾，沖縄島，西表島；金子ほか（2022）茨城県自然博物館研究報告25:27-40，茨城県久慈川；山崎ほか（2022）茨城県自然博物館研究報告25:79-94，茨城県；平山ほか（2022）日本生物地理学会会報77:76-92，広島県；山本ほか（2023）Ichthy, Nat Hist Fish Jpn 30:1-5，大阪府道頓堀川；樋之口ほか（2023）「錦江湾奥　干潟の生き物図鑑」，鹿児島湾；川瀬ほか（2023）魚類学雑誌doi:10.11369/jji.22-028，琵琶湖；Motomura (2023) Bull Kagoshima Univ Mus 20:1-250，種子島；本田ほか（2024）神奈川県立博物館研究報告（自然科学）53:127-218，相模湾；片寄ほか（2024）日本水産学会誌90:115-124，岩手県南部（仔稚魚）；井藤ほか（2024）徳島県立博物館研究報告34:41-64，徳島県伊勢田川；星野（2024）中津干潟の魚類in中津干潟レポート2023，大分県中津市；樋之口ほか（2024）「錦江湾奥　干潟の生き物図鑑 改訂版」，鹿児島湾北部",Nihon-unagi
+NA,アカイカ科,Ommastrephidae,アカイカ,Ommastrephes bartramii, ,Akaika
+NA,アカイカ科,Ommastrephidae,アルゼンチンマツイカ,Illex argentinus, ,Aruzenchimmatsuika
+NA,アカイカ科,Ommastrephidae,アメリカオオアカイカ,Dosidicus gigas, ,Amerika-oakaika
+NA,オキアミ科,Euphausiidae,ナンキョクオキアミ,Euphausia superba, ,Nankyoku-okiami
+NA,オオエンコウガニ科,Geryonidae,オオエンコウガニ,Chaceon erytheiae, ,Oenkogani
+
+

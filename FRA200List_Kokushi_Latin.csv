@@ -1,0 +1,55 @@
+和名,Phylum,Class,Order,Family,Scientific_name,Taxonomy_id
+アメリカオオアカイカ,Mollusca,Cephalopoda,Oegopsida,Ommastrephidae,Dosidicus gigas,346249
+アルゼンチンマツイカ,Mollusca,Cephalopoda,Oegopsida,Ommastrephidae,Illex argentinus,6628
+アカイカ,Mollusca,Cephalopoda,Oegopsida,Ommastrephidae,Ommastrephes bartramii,61679
+オオエンコウガニ,Arthropoda,Malacostraca,Decapoda,Geryonidae,Chaceon erytheiae,1605265
+ナンキョクオキアミ,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Euphausia superba,6819
+クロトガリザメ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Carcharhinus falciformis (Bibron 1839),202609
+ヨゴレ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Carcharhinus longimanus (Poey 1861),302049
+ヨシキリザメ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Prionace glauca (Linnaeus 1758),7815
+ニタリ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias pelagicus Nakamura 1935,57979
+ハチワレ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias superciliosus (Lowe 1841),57980
+マオナガ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias vulpinus (Bonnaterre 1788),7852
+ウバザメ,Chordata,Chondrichthyes,Lamniformes,Cetorhinidae,Cetorhinus maximus (Gunnerus 1765),57982
+ホホジロザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Carcharodon carcharias (Linnaeus 1758),13397
+アオザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Isurus oxyrinchus Rafinesque 1810,57983
+ネズミザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Lamna ditropis Hubbs & Follett 1947,38578
+ニシネズミザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Lamna nasus,7849
+ミズワニ,Chordata,Chondrichthyes,Lamniformes,Pseudocarchariidae,Pseudocarcharias kamoharai (Matsubara 1936),57991
+ジンベエザメ,Chordata,Chondrichthyes,Orectolobiformes,Rhincodontidae,Rhincodon typus Smith 1828,259920
+アブラツノザメ,Chordata,Chondrichthyes,Squaliformes,Squalidae,Squalus suckleyi (Girard 1855),7798
+ニホンウナギ,Chordata,Actinopterygii,Anguilliformes,Anguillidae,Anguilla japonica Temminck & Schlegel 1846,7937
+サンマ,Chordata,Actinopterygii,Beloniformes,Belonidae,Cololabis saira (Brevoort 1856),129043
+キンメダイ,Chordata,Actinopterygii,Beryciformes,Berycidae,Beryx splendens Lowe 1834,88663
+スケトウダラ,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus chalcogrammus Pallas 1814,1042646
+ニシマカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Kajikia albida,13719
+マカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Kajikia audax (Philippi 1887),13721
+クロカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Makaira nigricans Lacepède 1802,13604
+マジェランアイナメ,Chordata,Actinopterygii,Perciformes,Nototheniidae,Dissostichus eleginoides,100907
+ライギョダマシ,Chordata,Actinopterygii,Perciformes,Nototheniidae,Dissostichus mawsoni,36200
+クサカリツボダイ,Chordata,Actinopterygii,Perciformes,Pentacerotidae,Pentaceros wheeleri (Hardy 1983),257887
+カツオ,Chordata,Actinopterygii,Perciformes,Scombridae,Katsuwonus pelamis (Linnaeus 1758),8226
+ビンナガ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus alalunga (Bonnaterre 1788),8235
+キハダ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus albacares (Bonnaterre 1788),8236
+ミナミマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus maccoyii,8240
+メバチ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus obesus (Lowe 1839),8241
+クロマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus orientalis (Temminck & Schlegel 1844),8238
+タイセイヨウクロマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus thynnus,8237
+メカジキ,Chordata,Actinopterygii,Perciformes,Xiphiidae,Xiphias gladius Linnaeus 1758,8245
+カラスガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Reinhardtius hippoglossoides (Walbaum 1792),111784
+カラフトマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus gorbuscha (Walbaum 1792),8017
+サケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus keta (Walbaum 1792),8018
+サクラマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus masou masou (Brevoort 1856),8020
+チヒロアカウオ2,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes fasciatus,394691
+チヒロアカウオ1,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes mentella,394696
+タイセイヨウアカウオ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes norvegicus,394699
+トド,Chordata,Mammalia,Carnivora,Otariidae,Eumetopias jubatus,34886
+ミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera acutorostrata,9767
+クロミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,33556
+シロナガスクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,33556
+イワシクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera borealis,9768
+ニタリクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera edeni,9769
+シャチ,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Orcinus orca,9733
+スナメリ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Neophocaena asiaeorientalis,189058
+イシイルカ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Phocoenoides dalli,9744
+ツチクジラ,Chordata,Mammalia,Cetartiodactyla,Ziphiidae,Berardius bairdii,48742

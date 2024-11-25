@@ -25,10 +25,10 @@ species_raw <- read_csv("FRA200List_Latin.csv")
 
 #filtering out species with NA
 species <- species_raw %>% drop_na()
-no_species <- nrow(species) #number of fishes in the list
+n_species <- nrow(species) #number of fishes in the list
 
 #Set a small dataset for test procedure
-#no_species <- 20 # for test
+#n_species <- 20 # for test
 #species <- species[1:no_species,]
 ```
 
@@ -217,7 +217,7 @@ genome_info_genus_NIH <- function(genus){
 ## Scraping on GenBank
 
 ``` r
-for(i in 1:no_species){
+for(i in 1:n_species){
   scientific_name_input <- species[i,]$Scientific_name
   # split genus/species names
   genus_species_name <- strsplit(species[i,]$Scientific_name, " ") %>% unlist 
