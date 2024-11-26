@@ -212,7 +212,7 @@ FRA200List_Latin_query <- bind_rows(FRA200List_Latin,
   mutate(Phylum=factor(Phylum, levels=Phylum_order),
          Class =factor(Class , levels=Class_order)) %>%
   arrange(Phylum, Class, Order, Family, Scientific_name) %>%
-  dplyr::distinct(Taxonomy_id,.keep_all = TRUE)
+  dplyr::distinct(和名,.keep_all = TRUE)
 
 FRA200List_Latin <- FRA200List_Latin_query %>%
   dplyr::select(-c(NCBI_query_scientific_name))
