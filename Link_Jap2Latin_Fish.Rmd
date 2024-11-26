@@ -39,6 +39,8 @@ FRA200List$Category <- factor(FRA200List$Category, levels=c("Fish","NonFish"))
 # Taxonomic rank in fish species
 TaxonRank_info <- read_csv("TaxonRank_info.csv")
 
+# loading mismatch name list
+mismatch_name_info <- read_csv("mismatch_name_list.csv")
 ```
 
 ## Linking Japanese name and scientific name
@@ -48,6 +50,7 @@ n_fish <- nrow(FRA200List)
 #no_fish　<- 10
 
 scientific_name_vec <- vector()
+query_scientific_name_vec <- vector()
 genus_name_vec <- vector()
 family_name_vec <- vector()
 order_name_vec <- vector()
@@ -55,8 +58,6 @@ class_name_vec <- vector()
 phylum_name_vec <- vector()
 
 
-checked_species_name_01 <- "Parajulis poecileptera (Temminck & Schlegel 1845)"
-corrected_species_name_01 <- "Parajulis poecilepterus (Temminck & Schlegel 1845)"
 
 for(i in 1:n_fish){
 
@@ -93,9 +94,13 @@ for(i in 1:n_fish){
 	  if(!(identical(scientific_name_check,character(0)))){#if non-fish species
 	  scientific_unlist <- scientific_name_check %>% strsplit("\n") %>% unlist 
 	  scientific_name <- scientific_unlist[1]
-	  
-	  if(scientific_name==checked_species_name_01){
-	    scientific_name <- corrected_species_name_01
+  
+	  # Check mismatch scientific name
+	  if(scientific_name %in% mismatch_name_info$Taxonomical_correct_name){
+	    target_query_vec_id <- which(mismatch_name_info$Taxonomical_correct_name==scientific_name)
+	    query_scientific_name <- mismatch_name_info$NCBI_query_name[target_query_vec_id]
+	  }else{
+	     query_scientific_name <- scientific_name
 	  }
 	  
 	  phylum_name_vec[i] <- Phylum_name
@@ -103,6 +108,7 @@ for(i in 1:n_fish){
 	  order_name_vec[i] <- Order_name
 	  family_name_vec[i] <- Family_name
 	  scientific_name_vec[i] <- scientific_name
+	  query_scientific_name_vec[i] <- query_scientific_name
 
   	}else{
   	  phylum_name_vec[i] <- NA
@@ -110,6 +116,7 @@ for(i in 1:n_fish){
 	    order_name_vec[i] <- NA
 	    family_name_vec[i] <- NA
 	    scientific_name_vec[i] <- NA
+	    query_scientific_name_vec[i] <- query_scientific_name
 	  }
 	  
 	}else if(Category == "NonFish"){
@@ -129,6 +136,7 @@ for(i in 1:n_fish){
       order_name_vec[i] <- NonFish_List$Order[target_NonFish_ID]
 	    family_name_vec[i] <- Family_name
 	    scientific_name_vec[i] <- scientific_name
+	    query_scientific_name_vec[i] <- query_scientific_name
 
   	}else{
       phylum_name_vec[i] <- NA
@@ -136,6 +144,7 @@ for(i in 1:n_fish){
       order_name_vec[i] <- NA
 	    family_name_vec[i] <- NA
 	    scientific_name_vec[i] <- NA
+	    query_scientific_name_vec[i] <- NA
   	}
 	  
 	}else{
@@ -144,6 +153,7 @@ for(i in 1:n_fish){
     order_name_vec[i] <- NA
     family_name_vec[i] <- NA
 	  scientific_name_vec[i] <- NA
+	  query_scientific_name_vec[i] <- NA
 	}  
 }
 
@@ -172,7 +182,8 @@ FRA200List_Latin <- FRA200List %>%
          Class = factor(class_name_vec,levels = Class_order),
          Order = order_name_vec, 
          Family = family_name_vec,
-         Scientific_name = scientific_name_vec
+         Scientific_name = scientific_name_vec,
+         NCBI_query_scientific_name = query_scientific_name_vec
          ) %>%
   select(-Category,-SingleMulti,-TAC,-Target) %>% 
   arrange(Phylum, Class, Order, Family, Scientific_name) %>%
@@ -180,7 +191,7 @@ FRA200List_Latin <- FRA200List %>%
 
 # add taxonomy id
 for(i in 1:nrow(FRA200List_Latin)){
-  target_species_name <- FRA200List_Latin[i,]$Scientific_name
+  target_species_name <- FRA200List_Latin[i,]$NCBI_query_scientific_name
   scientific_name_split_vec <- unlist(strsplit(target_species_name, " "))
 	genus_name <- scientific_name_split_vec[1]
 	specific_name <- scientific_name_split_vec[2]
@@ -196,17 +207,21 @@ for(i in 1:nrow(FRA200List_Latin)){
 FRA200List_Kokushi_Latin_info <- read_csv("FRA200List_Kokushi_Latin.csv") %>%
   mutate(Taxonomy_id=as.integer(Taxonomy_id))
 
-FRA200List_Latin <- bind_rows(FRA200List_Latin,
+FRA200List_Latin_query <- bind_rows(FRA200List_Latin,
                               FRA200List_Kokushi_Latin_info) %>%
   mutate(Phylum=factor(Phylum, levels=Phylum_order),
          Class =factor(Class , levels=Class_order)) %>%
   arrange(Phylum, Class, Order, Family, Scientific_name) %>%
   dplyr::distinct(Taxonomy_id,.keep_all = TRUE)
+
+FRA200List_Latin <- FRA200List_Latin_query %>%
+  dplyr::select(-c(NCBI_query_scientific_name))
   
 ```
 
 ## Write a taxonomy list file
 ```{r message = FALSE, warning = FALSE, echo = TRUE}
+write_csv(FRA200List_Latin_query, "FRA200List_Latin_query.csv")
 write_csv(FRA200List_Latin, "FRA200List_Latin.csv")
 ```
 

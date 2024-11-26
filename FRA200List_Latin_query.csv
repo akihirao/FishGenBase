@@ -1,0 +1,191 @@
+和名,Phylum,Class,Order,Family,Scientific_name,NCBI_query_scientific_name,Taxonomy_id
+マナマコ,Echinodermata,Holothuroidea,Aspidochirotida,Stichopodidae,"Apostichopus japonicus (Selenka, 1867)",Platycephalus sp. 2,3111536
+アカガイ,Mollusca,Bivalvia,Arcoida,Arcidae,"Anadara broughtonii (Schrenck, 1867)",Hemitrygon akajei (Bürger 1841),2704970
+トリガイ,Mollusca,Bivalvia,Veneroida,Cardiidae,"Fulvia mutica (Reeve, 1844)",Cookeolus japonicus (Cuvier 1829),390314
+ウバガイ,Mollusca,Bivalvia,Veneroida,Mactridae,"Spisula sachalinensis (Schrenck, 1862)",Cynoglossus robustus Günther 1873,345019
+ハマグリ,Mollusca,Bivalvia,Veneroida,Veneridae,"Meretrix lusoria (Röding, 1798)",Sarda orientalis (Temminck & Schlegel 1844),8230
+アサリ,Mollusca,Bivalvia,Veneroida,Veneridae,"Ruditapes philippinarum (Adams & Reeve, 1850)",Fistularia petimba Lacepède 1803,206154
+シライトマキバイ,Mollusca,Gastropoda,Sorbeoconcha,Buccinidae,"Buccinum isaotakii Kira, 1959",Takifugu snyderi (Abe 1988),277993
+エッチュウバイ,Mollusca,Gastropoda,Sorbeoconcha,Buccinidae,"Buccinum striatissimum Sowerby, 1899",Ditrema temminckii temminckii Bleeker 1853,83878
+クロアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis discus discus Reeve, 1846",Hexagrammos agrammus (Temminck & Schlegel 1843),192376
+メガイアワビ,Mollusca,Gastropoda,Vetigastropoda,Haliotidae,"Haliotis gigantea Gmelin, 1791",Decapterus maruadsi (Temminck & Schlegel 1843),58220
+サザエ,Mollusca,Gastropoda,Vetigastropoda,Turbininae,"Turbo cornutus Lightfoot, 1786",Eleginus gracilis (Tilesius 1810),8047
+イイダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Amphioctopus fangsiao (d'Orbigny, 1839)",Lophiomus setigerus (Vahl 1797),292417
+ミズダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Enteroctopus dofleini (Wuelker, 1910)",Dexistes rikuzenius Jordan & Starks 1904,641117
+マダコ,Mollusca,Cephalopoda,Octopoda,Octopodidae,"Octopus vulgaris Cuvier, 1797",Acropoma japonicum Günther 1859,2233869
+コウイカ,Mollusca,Cephalopoda,Sepioidea,Sepiidae,"Sepia esculenta Hoyle, 1885",Spratelloides gracilis (Temminck & Schlegel 1846),365052
+カミナリイカ,Mollusca,Cephalopoda,Sepioidea,Sepiidae,"Sepia lycidas Gray, 1849",Lepidotrigla microptera Günther 1873,255557
+ホタルイカ,Mollusca,Cephalopoda,Teuthoidea,Enoploteuthidae,"Watasenia scintillans (Berry, 1911)",Seriola aureovittata Temminck & Schlegel 1845,2871759
+ヤリイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Heterololigo bleekeri (Keferstein, 1866)",Glyptocephalus kitaharae (Jordan & Starks 1904),490372
+ジンドウイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Loliolus japonica (Hoyle, 1885)",Sebastes cheni Barsukov 1988,1738870
+アオリイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Sepioteuthis lessoniana Lesson, 1830",Chlorophthalmus albatrossis Jordan & Starks 1904,197544
+ケンサキイカ,Mollusca,Cephalopoda,Teuthoidea,Loliginidae,"Uroteuthis edulis (Hoyle, 1885)",Beryx splendens Lowe 1834,88663
+アメリカオオアカイカ,Mollusca,Cephalopoda,Teuthoidea,Ommastrephidae,Dosidicus gigas,Dosidicus gigas,346249
+アルゼンチンマツイカ,Mollusca,Cephalopoda,Teuthoidea,Ommastrephidae,Illex argentinus,Illex argentinus,6628
+アカイカ,Mollusca,Cephalopoda,Teuthoidea,Ommastrephidae,Ommastrephes bartramii,Ommastrephes bartramii,61679
+スルメイカ,Mollusca,Cephalopoda,Teuthoidea,Ommastrephidae,"Todarodes pacificus Steenstrup, 1880",Scomber australasicus Cuvier 1832,29150
+ソデイカ,Mollusca,Cephalopoda,Teuthoidea,Thysanoteuthidae,"Thysanoteuthis rhombus Troschel, 1857",Lateolabrax japonicus (Cuvier 1828),8164
+ケガニ,Arthropoda,Malacostraca,Decapoda,Atelecyclidae,"Erimacrus isenbeckii (Brandt, 1848)",Acanthopagrus schlegelii (Bleeker 1854),72011
+クロザコエビ,Arthropoda,Malacostraca,Decapoda,Crangonidae,"Argis lar (Owen, 1839)",Epinephelus bruneus Bloch 1793,323802
+トゲザコエビ,Arthropoda,Malacostraca,Decapoda,Crangonoidea,"Argis toyamaensis (Yokoya, 1933)",Evynnis tumifrons (Temminck & Schlegel 1843),119711
+オオエンコウガニ,Arthropoda,Malacostraca,Decapoda,Geryonidae,Chaceon erytheiae,Chaceon erytheiae,1605265
+ベニズワイガニ,Arthropoda,Malacostraca,Decapoda,Majidae,"Chionoecetes japonicus Rathbun, 1932",Seriola quinqueradiata Temminck & Schlegel 1845,8161
+ヒラツメガニ,Arthropoda,Malacostraca,Decapoda,Ovalipidae,"Ovalipes punctatus (de Haan, 1833)",Upeneus japonicus (Houttuyn 1782),435235
+イセエビ,Arthropoda,Malacostraca,Decapoda,Palinuridae,"Panulirus japonicus (von Siebold, 1824)",Neosalangichthys ishikawae (Wakiya & Takahasi 1913),2905919
+ホッコクアカエビ,Arthropoda,Malacostraca,Decapoda,Pandalidae,"Pandalus eous Makarov, 1935",Pleurogrammus azonus Jordan & Metz 1913,175282
+ヨシエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Metapenaeus ensis (De Haan, 1844)",Sphyraena sp.,3051888
+サルエビ,Arthropoda,Malacostraca,Decapoda,Penaeidae,"Trachypenaeus curvirostris (Stimpson, 1860)",Hyporhamphus sajori (Temminck & Schlegel 1846),293917
+ガザミ,Arthropoda,Malacostraca,Decapoda,Portunidae,"Portunus trituberculatus (Miers, 1876)",Sebastes thompsoni (Jordan & Hubbs 1925),105747
+ウチワエビ,Arthropoda,Malacostraca,Decapoda,Scyllaridae,"Ibacus ciliatus (von Siebold, 1824)",Synaphobranchus kaupii Johnson 1862,118154
+ツノナシオキアミ,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,"Euphausia pacifica Hansen, 1911",Cheilopogon heterurus doederleinii (Steindachner 1887),546515
+ナンキョクオキアミ,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Euphausia superba,Euphausia superba,6819
+シャコ,Arthropoda,Malacostraca,Stomatopoda,Squillidae,"Oratosquilla oratoria (de Haan, 1844)",Scomberomorus niphonius (Cuvier 1832),321164
+クロトガリザメ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Carcharhinus falciformis (Bibron 1839),Carcharhinus falciformis (Bibron 1839),202609
+ヨゴレ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Carcharhinus longimanus (Poey 1861),Carcharhinus longimanus (Poey 1861),302049
+ヨシキリザメ,Chordata,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Prionace glauca (Linnaeus 1758),Prionace glauca (Linnaeus 1758),7815
+ニタリ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias pelagicus Nakamura 1935,Alopias pelagicus Nakamura 1935,57979
+ハチワレ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias superciliosus (Lowe 1841),Alopias superciliosus (Lowe 1841),57980
+マオナガ,Chordata,Chondrichthyes,Lamniformes,Alopiidae,Alopias vulpinus (Bonnaterre 1788),Alopias vulpinus (Bonnaterre 1788),7852
+ウバザメ,Chordata,Chondrichthyes,Lamniformes,Cetorhinidae,Cetorhinus maximus (Gunnerus 1765),Cetorhinus maximus (Gunnerus 1765),57982
+ホホジロザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Carcharodon carcharias (Linnaeus 1758),Carcharodon carcharias (Linnaeus 1758),13397
+アオザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Isurus oxyrinchus Rafinesque 1810,Isurus oxyrinchus Rafinesque 1810,57983
+ネズミザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Lamna ditropis Hubbs & Follett 1947,Lamna ditropis Hubbs & Follett 1947,38578
+ニシネズミザメ,Chordata,Chondrichthyes,Lamniformes,Lamnidae,Lamna nasus,Lamna nasus,7849
+ミズワニ,Chordata,Chondrichthyes,Lamniformes,Pseudocarchariidae,Pseudocarcharias kamoharai (Matsubara 1936),Pseudocarcharias kamoharai (Matsubara 1936),57991
+ジンベエザメ,Chordata,Chondrichthyes,Orectolobiformes,Rhincodontidae,Rhincodon typus Smith 1828,Rhincodon typus Smith 1828,259920
+アブラツノザメ,Chordata,Chondrichthyes,Squaliformes,Squalidae,Squalus suckleyi (Girard 1855),Squalus suckleyi (Girard 1855),7798
+ニホンウナギ,Chordata,Actinopterygii,Anguilliformes,Anguillidae,Anguilla japonica Temminck & Schlegel 1846,Anguilla japonica Temminck & Schlegel 1846,7937
+マアナゴ,Chordata,Actinopterygii,Anguilliformes,Congridae,Conger myriaster (Brevoort 1856),Conger myriaster (Brevoort 1856),7943
+ハモ,Chordata,Actinopterygii,Anguilliformes,Muraenesocidae,Muraenesox cinereus (Forsskål 1775),Muraenesox cinereus (Forsskål 1775),7946
+サンマ,Chordata,Actinopterygii,Beloniformes,Belonidae,Cololabis saira (Brevoort 1856),Cololabis saira (Brevoort 1856),129043
+ハマトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cheilopogon pinnatibarbatus japonicus (Franz 1910),Cheilopogon pinnatibarbatus japonicus (Franz 1910),307590
+ホソトビウオ,Chordata,Actinopterygii,Beloniformes,Exocoetidae,Cypselurus hiraii Abe 1953,Cypselurus hiraii Abe 1953,283373
+ニシン,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Clupea pallasii Valenciennes 1847,Clupea pallasii Valenciennes 1847,30724
+コノシロ,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Konosirus punctatus (Temminck & Schlegel 1846),Konosirus punctatus (Temminck & Schlegel 1846),365056
+マイワシ,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Sardinops melanostictus (Temminck & Schlegel 1846),Sardinops melanostictus (Temminck & Schlegel 1846),41697
+ウルメイワシ,Chordata,Actinopterygii,Clupeiformes,Dussumieriidae,Etrumeus micropus (Temminck & Schlegel 1846),Etrumeus micropus (Temminck & Schlegel 1846),942859
+カタクチイワシ,Chordata,Actinopterygii,Clupeiformes,Engraulidae,Engraulis japonica Temminck & Schlegel 1846,Engraulis japonica Temminck & Schlegel 1846,42892
+スケトウダラ,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus chalcogrammus Pallas 1814,Gadus chalcogrammus Pallas 1814,1042646
+マダラ,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus macrocephalus Tilesius 1810,Gadus macrocephalus Tilesius 1810,80720
+イトヒキダラ,Chordata,Actinopterygii,Gadiformes,Moridae,Laemonema longipes Schmidt 1938,Laemonema longipes Schmidt 1938,228653
+チゴダラ,Chordata,Actinopterygii,Gadiformes,Moridae,Physiculus japonicus Hilgendorf 1879,Physiculus japonicus Hilgendorf 1879,181408
+アカマンボウ,Chordata,Actinopterygii,Lampriformes,Lampridae,"Lampris megalopsis Underkoffler, Luers, Hyde & Craig 2018","Lampris megalopsis Underkoffler, Luers, Hyde & Craig 2018",2546035
+キアンコウ,Chordata,Actinopterygii,Lophiiformes,Lophiidae,Lophius litulon (Jordan 1902),Lophius litulon (Jordan 1902),30790
+ヨロイイタチウオ,Chordata,Actinopterygii,Ophidiiformes,Ophidiidae,Hoplobrotula armata (Temminck & Schlegel 1846),Hoplobrotula armata (Temminck & Schlegel 1846),1604580
+ニギス,Chordata,Actinopterygii,Osmeriformes,Argentinidae,Glossanodon semifasciatus (Kishinouye 1904),Glossanodon semifasciatus (Kishinouye 1904),170196
+アカムツ,Chordata,Actinopterygii,Perciformes,Acropomatidae,Doederleinia berycoides (Hilgendorf 1879),Doederleinia berycoides (Hilgendorf 1879),223795
+イカナゴ,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes japonicus Duncker & Mohr 1939,Ammodytes japonicus Duncker & Mohr 1939,1483214
+アカアマダイ,Chordata,Actinopterygii,Perciformes,Branchiostegidae,Branchiostegus japonicus (Houttuyn 1782),Branchiostegus japonicus (Houttuyn 1782),270562
+ネズミゴチ,Chordata,Actinopterygii,Perciformes,Callionymidae,Callionymus curvicornis Valenciennes 1837,Callionymus curvicornis Valenciennes 1837,1503337
+カイワリ,Chordata,Actinopterygii,Perciformes,Carangidae,Kaiwarinus equula (Temminck & Schlegel 1844),Kaiwarinus equula (Temminck & Schlegel 1844),274469
+シマアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Pseudocaranx dentex (Bloch & Schneider 1801),Pseudocaranx dentex (Bloch & Schneider 1801),349646
+カンパチ,Chordata,Actinopterygii,Perciformes,Carangidae,Seriola dumerili (Risso 1810),Seriola dumerili (Risso 1810),41447
+マアジ,Chordata,Actinopterygii,Perciformes,Carangidae,Trachurus japonicus (Temminck & Schlegel 1844),Trachurus japonicus (Temminck & Schlegel 1844),83875
+メダイ,Chordata,Actinopterygii,Perciformes,Centrolophidae,Hyperoglyphe japonica (Döderlein 1884),Hyperoglyphe japonica (Döderlein 1884),171196
+イボダイ,Chordata,Actinopterygii,Perciformes,Centrolophidae,Psenopsis anomala (Temminck & Schlegel 1844),Psenopsis anomala (Temminck & Schlegel 1844),163124
+シイラ,Chordata,Actinopterygii,Perciformes,Coryphaenidae,Coryphaena hippurus Linnaeus 1758,Coryphaena hippurus Linnaeus 1758,34814
+キジハタ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Epinephelus akaara (Temminck & Schlegel 1843),Epinephelus akaara (Temminck & Schlegel 1843),215347
+マハタ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Hyporthodus septemfasciatus (Thunberg 1793),Hyporthodus septemfasciatus (Thunberg 1793),232417
+スジアラ,Chordata,Actinopterygii,Perciformes,Epinephelidae,Plectropomus leopardus (Lacepède 1802),Plectropomus leopardus (Lacepède 1802),160734
+メジナ,Chordata,Actinopterygii,Perciformes,Girellidae,Girella punctata Gray 1835,Girella punctata Gray 1835,163149
+イサキ,Chordata,Actinopterygii,Perciformes,Haemulidae,Parapristipoma trilineatum (Thunberg 1793),Parapristipoma trilineatum (Thunberg 1793),360507
+コショウダイ,Chordata,Actinopterygii,Perciformes,Haemulidae,Plectorhinchus cinctus (Temminck & Schlegel 1843),Plectorhinchus cinctus (Temminck & Schlegel 1843),360509
+ニシマカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Kajikia albida,Kajikia albida,13719
+マカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Kajikia audax (Philippi 1887),Kajikia audax (Philippi 1887),13721
+クロカジキ,Chordata,Actinopterygii,Perciformes,Istiophoridae,Makaira nigricans Lacepède 1802,Makaira nigricans Lacepède 1802,13604
+キュウセン,Chordata,Actinopterygii,Perciformes,Labridae,Parajulis poecileptera (Temminck & Schlegel 1845),Parajulis poecilepterus (Temminck & Schlegel 1845),356780
+コブダイ,Chordata,Actinopterygii,Perciformes,Labridae,Semicossyphus reticulatus (Valenciennes 1839),Semicossyphus reticulatus (Valenciennes 1839),1522408
+ハマダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Etelis coruscans Valenciennes 1862,Etelis coruscans Valenciennes 1862,1003729
+アオダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Paracaesio caerulea (Katayama 1934),Paracaesio caerulea (Katayama 1934),1522414
+オオヒメ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Pristipomoides filamentosus (Valenciennes 1830),Pristipomoides filamentosus (Valenciennes 1830),398258
+ヒメダイ,Chordata,Actinopterygii,Perciformes,Lutjanidae,Pristipomoides sieboldii (Bleeker 1855),Pristipomoides sieboldii (Bleeker 1855),443712
+ボラ,Chordata,Actinopterygii,Perciformes,Mugilidae,Mugil cephalus cephalus Linnaeus 1758,Mugil cephalus cephalus Linnaeus 1758,48193
+イトヨリダイ,Chordata,Actinopterygii,Perciformes,Nemipteridae,Nemipterus virgatus (Houttuyn 1782),Nemipterus virgatus (Houttuyn 1782),450225
+アラ,Chordata,Actinopterygii,Perciformes,Niphonidae,Niphon spinosus Cuvier 1828,Niphon spinosus Cuvier 1828,228254
+マジェランアイナメ,Chordata,Actinopterygii,Perciformes,Nototheniidae,Dissostichus eleginoides,Dissostichus eleginoides,100907
+ライギョダマシ,Chordata,Actinopterygii,Perciformes,Nototheniidae,Dissostichus mawsoni,Dissostichus mawsoni,36200
+イシダイ,Chordata,Actinopterygii,Perciformes,Oplegnathidae,Oplegnathus fasciatus (Temminck & Schlegel 1844),Oplegnathus fasciatus (Temminck & Schlegel 1844),163134
+イシガキダイ,Chordata,Actinopterygii,Perciformes,Oplegnathidae,Oplegnathus punctatus (Temminck & Schlegel 1844),Oplegnathus punctatus (Temminck & Schlegel 1844),163135
+クサカリツボダイ,Chordata,Actinopterygii,Perciformes,Pentacerotidae,Pentaceros wheeleri (Hardy 1983),Pentaceros wheeleri (Hardy 1983),257887
+キントキダイ,Chordata,Actinopterygii,Perciformes,Priacanthidae,Priacanthus macracanthus Cuvier 1829,Priacanthus macracanthus Cuvier 1829,270572
+ニベ,Chordata,Actinopterygii,Perciformes,Sciaenidae,Nibea mitsukurii (Jordan & Snyder 1900),Nibea mitsukurii (Jordan & Snyder 1900),215360
+シログチ,Chordata,Actinopterygii,Perciformes,Sciaenidae,Pennahia argentata (Houttuyn 1782),Pennahia argentata (Houttuyn 1782),118565
+マルソウダ,Chordata,Actinopterygii,Perciformes,Scombridae,Auxis rochei rochei (Risso 1810),Auxis rochei rochei (Risso 1810),217026
+スマ,Chordata,Actinopterygii,Perciformes,Scombridae,Euthynnus affinis (Cantor 1849),Euthynnus affinis (Cantor 1849),8227
+カツオ,Chordata,Actinopterygii,Perciformes,Scombridae,Katsuwonus pelamis (Linnaeus 1758),Katsuwonus pelamis (Linnaeus 1758),8226
+マサバ,Chordata,Actinopterygii,Perciformes,Scombridae,Scomber japonicus Houttuyn 1782,Scomber japonicus Houttuyn 1782,13676
+ビンナガ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus alalunga (Bonnaterre 1788),Thunnus alalunga (Bonnaterre 1788),8235
+キハダ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus albacares (Bonnaterre 1788),Thunnus albacares (Bonnaterre 1788),8236
+ミナミマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus maccoyii,Thunnus maccoyii,8240
+メバチ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus obesus (Lowe 1839),Thunnus obesus (Lowe 1839),8241
+クロマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus orientalis (Temminck & Schlegel 1844),Thunnus orientalis (Temminck & Schlegel 1844),8238
+タイセイヨウクロマグロ,Chordata,Actinopterygii,Perciformes,Scombridae,Thunnus thynnus,Thunnus thynnus,8237
+タカベ,Chordata,Actinopterygii,Perciformes,Scorpididae,Labracoglossa argentiventris Peters 1866,Labracoglossa argentiventris Peters 1866,163139
+アイゴ,Chordata,Actinopterygii,Perciformes,Siganidae,Siganus fuscescens (Houttuyn 1782),Siganus fuscescens (Houttuyn 1782),225757
+シロギス,Chordata,Actinopterygii,Perciformes,Sillaginidae,Sillago japonica Temminck & Schlegel 1843,Sillago japonica Temminck & Schlegel 1843,43258
+キダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Dentex hypselosomus Bleeker 1854,Dentex hypselosomus Bleeker 1854,561094
+マダイ,Chordata,Actinopterygii,Perciformes,Sparidae,Pagrus major (Temminck & Schlegel 1843),Pagrus major (Temminck & Schlegel 1843),143350
+アカカマス,Chordata,Actinopterygii,Perciformes,Sphyraenidae,Sphyraena pinguis Günther 1874,Sphyraena pinguis Günther 1874,392540
+ナガヅカ,Chordata,Actinopterygii,Perciformes,Stichaeidae,Dinogunellus grigorjewi (Herzenstein 1890),Dinogunellus grigorjewi (Herzenstein 1890),3363564
+タチウオ,Chordata,Actinopterygii,Perciformes,Trichiuridae,Trichiurus japonicus Temminck & Schlegel 1844,Trichiurus japonicus Temminck & Schlegel 1844,235211
+ハタハタ,Chordata,Actinopterygii,Perciformes,Trichodontidae,Arctoscopus japonicus (Steindachner 1881),Arctoscopus japonicus (Steindachner 1881),148607
+メカジキ,Chordata,Actinopterygii,Perciformes,Xiphiidae,Xiphias gladius Linnaeus 1758,Xiphias gladius Linnaeus 1758,8245
+ノロゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Bothrocara hollandi (Jordan & Hubbs 1925),Bothrocara hollandi (Jordan & Hubbs 1925),153719
+タナカゲンゲ,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes tanakae Jordan & Thompson 1914,Lycodes tanakae Jordan & Thompson 1914,1358735
+コウライアカシタビラメ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Cynoglossus abbreviatus (Gray 1834),Cynoglossus abbreviatus (Gray 1834),341728
+アカシタビラメ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Cynoglossus joyneri Günther 1878,Cynoglossus joyneri Günther 1878,366923
+クロウシノシタ,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Paraplagusia japonica (Temminck & Schlegel 1846),Paraplagusia japonica (Temminck & Schlegel 1846),341733
+ヒラメ,Chordata,Actinopterygii,Pleuronectiformes,Paralichthyidae,Paralichthys olivaceus (Temminck & Schlegel 1846),Paralichthys olivaceus (Temminck & Schlegel 1846),8255
+アブラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Atheresthes evermanni Jordan & Starks 1904,Atheresthes evermanni Jordan & Starks 1904,195645
+ソウハチ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Cleisthenes pinetorum Jordan & Starks 1904,Cleisthenes pinetorum Jordan & Starks 1904,352245
+サメガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Clidoderma asperrimum (Temminck & Schlegel 1846),Clidoderma asperrimum (Temminck & Schlegel 1846),255560
+ムシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Eopsetta grigorjewi (Herzenstein 1890),Eopsetta grigorjewi (Herzenstein 1890),244450
+ヒレグロ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Glyptocephalus stelleri (Schmidt 1904),Glyptocephalus stelleri (Schmidt 1904),238840
+アカガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Hippoglossoides dubius Schmidt 1904,Hippoglossoides dubius Schmidt 1904,235072
+ババガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Microstomus achne (Jordan & Starks 1904),Microstomus achne (Jordan & Starks 1904),89057
+スナガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Myzopsetta punctatissima (Steindachner 1879),Myzopsetta punctatissima (Steindachner 1879),1357979
+イシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Platichthys bicoloratus (Basilewsky 1855),Platichthys bicoloratus (Basilewsky 1855),143345
+メイタガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pleuronichthys lighti Wu 1929,Pleuronichthys lighti Wu 1929,2135395
+マガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes herzensteini (Jordan & Snyder 1901),Pseudopleuronectes herzensteini (Jordan & Snyder 1901),244452
+クロガシラガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes schrenki (Schmidt 1904),Pseudopleuronectes schrenki (Schmidt 1904),382952
+マコガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes yokohamae (Günther 1877),Pseudopleuronectes yokohamae (Günther 1877),245875
+カラスガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Reinhardtius hippoglossoides (Walbaum 1792),Reinhardtius hippoglossoides (Walbaum 1792),111784
+ホシガレイ,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Verasper variegatus (Temminck & Schlegel 1846),Verasper variegatus (Temminck & Schlegel 1846),82366
+カラフトマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus gorbuscha (Walbaum 1792),Oncorhynchus gorbuscha (Walbaum 1792),8017
+サケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus keta (Walbaum 1792),Oncorhynchus keta (Walbaum 1792),8018
+ギンザケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus kisutch (Walbaum 1792),Oncorhynchus kisutch (Walbaum 1792),8019
+サクラマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus masou masou (Brevoort 1856),Oncorhynchus masou masou (Brevoort 1856),8020
+ニジマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus mykiss (Walbaum 1792),Oncorhynchus mykiss (Walbaum 1792),8022
+マスノスケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus tshawytscha (Walbaum 1792),Oncorhynchus tshawytscha (Walbaum 1792),74940
+ブラウントラウト,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Salmo trutta Linnaeus 1758,Salmo trutta Linnaeus 1758,8032
+アブラボウズ,Chordata,Actinopterygii,Scorpaeniformes,Anoplopomatidae,Erilepis zonifer (Lockington 1880),Erilepis zonifer (Lockington 1880),270543
+ケムシカジカ,Chordata,Actinopterygii,Scorpaeniformes,Hemitripteridae,Hemitripterus villosus (Pallas 1814),Hemitripterus villosus (Pallas 1814),255551
+アイナメ,Chordata,Actinopterygii,Scorpaeniformes,Hexagrammidae,Hexagrammos otakii Jordan & Starks 1895,Hexagrammos otakii Jordan & Starks 1895,72450
+ユメカサゴ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Helicolenus hilgendorfii (Döderlein 1884),Helicolenus hilgendorfii (Döderlein 1884),143344
+バラメヌケ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes baramenuke (Wakiya 1917),Sebastes baramenuke (Wakiya 1917),214491
+チヒロアカウオ2,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes fasciatus,Sebastes fasciatus,394691
+チヒロアカウオ1,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes mentella,Sebastes mentella,394696
+タイセイヨウアカウオ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes norvegicus,Sebastes norvegicus,394699
+ハツメ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes owstoni (Jordan & Thompson 1914),Sebastes owstoni (Jordan & Thompson 1914),160819
+クロソイ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes schlegelii Hilgendorf 1880,Sebastes schlegelii Hilgendorf 1880,214486
+キツネメバル,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes vulpes Döderlein 1884,Sebastes vulpes Döderlein 1884,201710
+カサゴ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastiscus marmoratus (Cuvier 1829),Sebastiscus marmoratus (Cuvier 1829),41446
+キチジ,Chordata,Actinopterygii,Scorpaeniformes,Sebastolobidae,Sebastolobus macrochir (Günther 1877),Sebastolobus macrochir (Günther 1877),98657
+オニオコゼ,Chordata,Actinopterygii,Scorpaeniformes,Synanceiidae,Inimicus japonicus (Cuvier 1829),Inimicus japonicus (Cuvier 1829),652442
+ホウボウ,Chordata,Actinopterygii,Scorpaeniformes,Triglidae,Chelidonichthys spinosus (McClelland 1843),Chelidonichthys spinosus (McClelland 1843),450224
+カワハギ,Chordata,Actinopterygii,Tetraodontiformes,Monacanthidae,Stephanolepis cirrhifer (Temminck & Schlegel 1850),Stephanolepis cirrhifer (Temminck & Schlegel 1850),143348
+ウマヅラハギ,Chordata,Actinopterygii,Tetraodontiformes,Monacanthidae,Thamnaconus modestus (Günther 1877),Thamnaconus modestus (Günther 1877),325629
+シロサバフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Lagocephalus spadiceus (Richardson 1845),Lagocephalus spadiceus (Richardson 1845),435151
+マフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Takifugu porphyreus (Temminck & Schlegel 1850),Takifugu porphyreus (Temminck & Schlegel 1850),176187
+トラフグ,Chordata,Actinopterygii,Tetraodontiformes,Tetraodontidae,Takifugu rubripes (Temminck & Schlegel 1850),Takifugu rubripes (Temminck & Schlegel 1850),31033
+カガミダイ,Chordata,Actinopterygii,Zeiformes,Zeidae,Zenopsis nebulosa (Temminck & Schlegel 1845),Zenopsis nebulosa (Temminck & Schlegel 1845),94939
+マトウダイ,Chordata,Actinopterygii,Zeiformes,Zeidae,Zeus faber Linnaeus 1758,Zeus faber Linnaeus 1758,64108
+トド,Chordata,Mammalia,Carnivora,Otariidae,Eumetopias jubatus,Eumetopias jubatus,34886
+ミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera acutorostrata,Balaenoptera acutorostrata,9767
+クロミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,Balaenoptera bonaerensis,33556
+イワシクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera borealis,Balaenoptera borealis,9768
+ニタリクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera edeni,Balaenoptera edeni,9769
+シャチ,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Orcinus orca,Orcinus orca,9733
+スナメリ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Neophocaena asiaeorientalis,Neophocaena asiaeorientalis,189058
+イシイルカ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Phocoenoides dalli,Phocoenoides dalli,9744
+ツチクジラ,Chordata,Mammalia,Cetartiodactyla,Ziphiidae,Berardius bairdii,Berardius bairdii,48742

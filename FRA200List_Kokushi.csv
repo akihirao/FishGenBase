@@ -40,10 +40,10 @@
 サクラマス,Fish,Single,0,NA
 スケトウダラ,Fish,Single,0,NA
 カラスガレイ,Fish,Single,1,NA
-アカイカ,Other,Single,0,NA
-アルゼンチンマツイカ,Other,Single,0,NA
-アメリカオオアカイカ,Other,Single,0,NA
-ナンキョクオキアミ,Other,Single,0,NA
+アカイカ,Mollusk,Single,0,NA
+アルゼンチンマツイカ,Mollusk,Single,0,NA
+アメリカオオアカイカ,Mollusk,Single,0,NA
+ナンキョクオキアミ,Crustacean,Single,0,NA
 マジェランアイナメ,Fish,Single,0,NA
 ライギョダマシ,Fish,Single,0,NA
 クサカリツボダイ,Fish,Single,0,NA
@@ -52,6 +52,6 @@
 チヒロアカウオ1,Fish,Single,0,NA
 チヒロアカウオ2,Fish,Single,0,NA
 タイセイヨウアカウオ,Fish,Single,0,NA
-オオエンコウガニ,Other,Single,0,NA
+オオエンコウガニ,Crustacean,Single,0,NA
 サンマ,Fish,Single,1,NA
 ニホンウナギ,Fish,Single,0,NA
