@@ -260,7 +260,7 @@ for(i in 1:n_species){
     AGSDB_no_genus_avail_vec[i] <- NA
   }
  
-  Sys.sleep(1)
+  Sys.sleep(2)
 }
 
 

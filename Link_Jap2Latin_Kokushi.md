@@ -24,13 +24,20 @@ rm(list=ls(all=TRUE))
 
 # Current standard Japanese/scientific names of all fish species recorded from Japanese waters: https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
 JAFList <- read_csv("20240905_JAFList.csv") #update@2024Nov25 in this script
+IntResourceList <- read_csv("IntResourceList.csv")
+
+JAFList_plus <- bind_rows(JAFList,IntResourceList)
 
 NonFish_List <- read_csv("NonFishList.csv")
 
 # A list of aquatic species for fisheries resource assessment
-FRA200List <- read_csv("FRA200List.csv")
-FRA200List <- FRA200List %>% filter(SingleMulti == "Single")
-FRA200List$Category <- factor(FRA200List$Category, levels=c("Fish","NonFish"))
+FRA200List_Kokushi <- read_csv("FRA200List_Kokushi.csv")
+FRA200List_Kokushi <- FRA200List_Kokushi %>% filter(SingleMulti == "Single")
+FRA200List_Kokushi$Category <- factor(FRA200List_Kokushi$Category,
+                                      levels=c("Fish",
+                                               "Mammal",
+                                               "Crustacean",
+                                               "Mollusk"))
 
 # Taxonomic rank in fish species
 TaxonRank_info <- read_csv("TaxonRank_info.csv")
@@ -42,7 +49,7 @@ mismatch_name_info <- read_csv("mismatch_name_list.csv")
 ## Linking Japanese name and scientific name
 
 ``` r
-n_fish <- nrow(FRA200List)
+n_fish <- nrow(FRA200List_Kokushi)
 #no_fish　<- 10
 
 scientific_name_vec <- vector()
@@ -54,16 +61,20 @@ class_name_vec <- vector()
 phylum_name_vec <- vector()
 
 
+taxonomical_correct_name_vec <- c("Parajulis poecileptera (Temminck & Schlegel 1845)","hoge hoge")
+NCBI_taxonomy_name_vec <- c("Parajulis poecilepterus (Temminck & Schlegel 1845)","hogehoga")
+mismatch_name_list <- list(taxonomical_correct_name_vec,NCBI_taxonomy_name_vec)
+names(mismatch_name_list) <- c("correct","NCBI")
 
 for(i in 1:n_fish){
-
-    target_fish <- FRA200List[i,1][[1]]
-    Category <- as.vector(FRA200List$Category)[i]
+    target_fish <- FRA200List_Kokushi[i,1][[1]]
+    Category <- as.vector(FRA200List_Kokushi$Category)[i]
     
-    if(Category == "Fish"){
-      target_fish_ID <- which(JAFList$和名==target_fish)
-      scientific_name_check <- JAFList$学名[target_fish_ID]
-      Family_unlist <-JAFList$Family[target_fish_ID] %>% strsplit("\n") %>% unlist 
+    if(Category == "Fish" | Category == "Mammal"| Category == "Crustacean" | Category == "Mollusk"){
+      target_fish_ID <- which(JAFList_plus$和名==target_fish)
+      scientific_name_check <- JAFList_plus$学名[target_fish_ID]
+      
+      Family_unlist <-JAFList_plus$Family[target_fish_ID] %>% strsplit("\n") %>% unlist 
       Family_name <- as.character(Family_unlist[1])
 
       target_Family_ID <- which(TaxonRank_info$Family==Family_name)
@@ -83,14 +94,10 @@ for(i in 1:n_fish){
         Order_name <-NA
       }
       
-      #if(str_detect(Family_name, pattern="Epinephelidae")){
-    #  Family_name <- "Serranidae"  
-      #}
-      
       if(!(identical(scientific_name_check,character(0)))){#if non-fish species
       scientific_unlist <- scientific_name_check %>% strsplit("\n") %>% unlist 
       scientific_name <- scientific_unlist[1]
-  
+      
       # Check mismatch scientific name
       if(scientific_name %in% mismatch_name_info$Taxonomical_correct_name){
         target_query_vec_id <- which(mismatch_name_info$Taxonomical_correct_name==scientific_name)
@@ -112,10 +119,10 @@ for(i in 1:n_fish){
         order_name_vec[i] <- NA
         family_name_vec[i] <- NA
         scientific_name_vec[i] <- NA
-        query_scientific_name_vec[i] <- query_scientific_name
+        query_scientific_name_vec[i] <- NA
       }
       
-    }else if(Category == "NonFish"){
+    }else if(Category == "Other"){
       target_NonFish_ID <- which(NonFish_List$和名==target_fish)
       scientific_name_check <- NonFish_List$Scientific_name[target_NonFish_ID]
       Family_unlist <-NonFish_List$Family[target_NonFish_ID] %>% strsplit("\n") %>% unlist 
@@ -171,9 +178,8 @@ if(!(n_class=length(Class_order))){
   warning("Number of class-levels does not match the dataset")
 }
 
-
 # Summarizing a taxonomy list
-FRA200List_Latin <- FRA200List %>% 
+FRA200List_Kokushi_Latin <- FRA200List_Kokushi %>% 
   mutate(Phylum = factor(phylum_name_vec, levels = Phylum_order),
          Class = factor(class_name_vec,levels = Class_order),
          Order = order_name_vec, 
@@ -186,37 +192,22 @@ FRA200List_Latin <- FRA200List %>%
   mutate(Taxonomy_id=NA)
 
 # add taxonomy id
-for(i in 1:nrow(FRA200List_Latin)){
-  target_species_name <- FRA200List_Latin[i,]$NCBI_query_scientific_name
+for(i in 1:nrow(FRA200List_Kokushi_Latin)){
+  target_species_name <- FRA200List_Kokushi_Latin[i,]$NCBI_query_scientific_name
   scientific_name_split_vec <- unlist(strsplit(target_species_name, " "))
     genus_name <- scientific_name_split_vec[1]
     specific_name <- scientific_name_split_vec[2]
   query_species_name  <- paste0(genus_name," ",specific_name)
   target_taxonomy_id_info <- rentrez::entrez_search(db="taxonomy",term=query_species_name)
-  target_taxonomy_id <- target_taxonomy_id_info$ids %>%
-    as.integer()
+  target_taxonomy_id <- target_taxonomy_id_info$ids
   if(length(target_taxonomy_id)==1){
-    FRA200List_Latin[i,]$Taxonomy_id <- target_taxonomy_id
+    FRA200List_Kokushi_Latin[i,]$Taxonomy_id <- target_taxonomy_id
   }
 }
-
-FRA200List_Kokushi_Latin_info <- read_csv("FRA200List_Kokushi_Latin.csv") %>%
-  mutate(Taxonomy_id=as.integer(Taxonomy_id))
-
-FRA200List_Latin_query <- bind_rows(FRA200List_Latin,
-                              FRA200List_Kokushi_Latin_info) %>%
-  mutate(Phylum=factor(Phylum, levels=Phylum_order),
-         Class =factor(Class , levels=Class_order)) %>%
-  arrange(Phylum, Class, Order, Family, Scientific_name) %>%
-  dplyr::distinct(和名,.keep_all = TRUE)
-
-FRA200List_Latin <- FRA200List_Latin_query %>%
-  dplyr::select(-c(NCBI_query_scientific_name))
 ```
 
 ## Write a taxonomy list file
 
 ``` r
-write_csv(FRA200List_Latin_query, "FRA200List_Latin_query.csv")
-write_csv(FRA200List_Latin, "FRA200List_Latin.csv")
+write_csv(FRA200List_Kokushi_Latin, "FRA200List_Kokushi_Latin.csv")
 ```

@@ -40,15 +40,15 @@
 カラフトマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus gorbuscha (Walbaum 1792),Oncorhynchus gorbuscha (Walbaum 1792),8017
 サケ,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus keta (Walbaum 1792),Oncorhynchus keta (Walbaum 1792),8018
 サクラマス,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus masou masou (Brevoort 1856),Oncorhynchus masou masou (Brevoort 1856),8020
-チヒロアカウオ2,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes fasciatus,Sebastes fasciatus,394691
-チヒロアカウオ1,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes mentella,Sebastes mentella,394696
+ファスシアツスアカウオ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes fasciatus,Sebastes fasciatus,394691
+メンテラアカウオ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes mentella,Sebastes mentella,394696
 タイセイヨウアカウオ,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes norvegicus,Sebastes norvegicus,394699
 トド,Chordata,Mammalia,Carnivora,Otariidae,Eumetopias jubatus,Eumetopias jubatus,34886
 ミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera acutorostrata,Balaenoptera acutorostrata,9767
 クロミンククジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,Balaenoptera bonaerensis,33556
-シロナガスクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,Balaenoptera bonaerensis,33556
 イワシクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera borealis,Balaenoptera borealis,9768
 ニタリクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera edeni,Balaenoptera edeni,9769
+シロナガスクジラ,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera musculus,Balaenoptera musculus,9771
 シャチ,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Orcinus orca,Orcinus orca,9733
 スナメリ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Neophocaena asiaeorientalis,Neophocaena asiaeorientalis,189058
 イシイルカ,Chordata,Mammalia,Cetartiodactyla,Phocoenidae,Phocoenoides dalli,Phocoenoides dalli,9744
