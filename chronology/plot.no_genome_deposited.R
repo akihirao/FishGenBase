@@ -5,7 +5,7 @@ library(ggplot2)
 library(lubridate)
 library(ggsci)
 
-last_day <- "2024-02-07"
+last_day <- "2025-02-28"
 
 list20220915 <- read_csv("aquatic_organism_genome_size_2022_0915.csv")
 list20230221 <- read_csv("aquatic_organism_genome_size_2023_0221.csv")
@@ -20,9 +20,9 @@ list20240109 <- read_csv("aquatic_organism_genome_size_2024_0109.csv")
 list20240207 <- read_csv("aquatic_organism_genome_size_2024_0207.csv")
 list20240508 <- read_csv("aquatic_organism_genome_size_2024_0508.csv")
 list20240801 <- read_csv("aquatic_organism_genome_size_2024_0801.csv")
+list20250228 <- read_csv("aquatic_organism_genome_size_2025_0228.csv")
 
-
-last_list <- list20240508
+last_list <- list20250228
 
 
 No_sp_genome_20100331 <- 1
@@ -40,6 +40,7 @@ No_sp_genome_20240109 <- sum(!is.na(list20240109$Genome_size_of_the_species_Mbp)
 No_sp_genome_20240207 <- sum(!is.na(list20240207$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20240508 <- sum(!is.na(list20240508$Genome_size_of_the_species_Mbp)) 
 No_sp_genome_20240801 <- sum(!is.na(list20240801$Genome_size_of_the_species_Mbp)) 
+No_sp_genome_20250228 <- sum(!is.na(list20250228$Genome_size_of_the_species_Mbp)) 
 
 
 No_sp_genus_20100331 <- 3
@@ -57,6 +58,7 @@ No_genus_genome_20240109 <- sum(!is.na(list20240109$Average_genome_size_of_the_g
 No_genus_genome_20240207 <- sum(!is.na(list20240207$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20240508 <- sum(!is.na(list20240508$Average_genome_size_of_the_genus_Mbp)) 
 No_genus_genome_20240801 <- sum(!is.na(list20240801$Average_genome_size_of_the_genus_Mbp)) 
+No_genus_genome_20250228 <- sum(!is.na(list20250228$Average_genome_size_of_the_genus_Mbp)) 
 
 
 genome_chronology <- tibble(
@@ -64,17 +66,17 @@ genome_chronology <- tibble(
            ymd("2023-02-21"),ymd("2023-03-13"),ymd("2023-04-21"),
            ymd("2023-05-15"),ymd("2023-05-31"),ymd("2023-07-24"),
            ymd("2023-12-01"),ymd("2024-01-09"),ymd("2024-02-07"),
-           ymd("2024-05-08"),ymd("2024-08-01")),
+           ymd("2024-05-08"),ymd("2024-08-01"),ymd("2025-02-28")),
   Species = c(No_sp_genome_20100331, No_sp_genome_20200421, No_sp_genome_20220915,
               No_sp_genome_20230221,No_sp_genome_20230313, No_sp_genome_20230421,
               No_sp_genome_20230515,No_sp_genome_20230531,No_sp_genome_20230724,
               No_sp_genome_20231201,No_sp_genome_20240109,No_sp_genome_20240207,
-              No_sp_genome_20240801),
+              No_sp_genome_20240508,No_sp_genome_20240801,No_sp_genome_20250228),
   Genus = c(No_sp_genus_20100331,No_sp_genus_20200421,No_genus_genome_20220915,
             No_genus_genome_20230221,No_genus_genome_20230313,No_genus_genome_20230421,
             No_genus_genome_20230515,No_genus_genome_20230531,No_genus_genome_20230724,
             No_genus_genome_20231201,No_genus_genome_20240109,No_genus_genome_20240207,
-            No_genus_genome_20240508,No_genus_genome_20240801)
+            No_genus_genome_20240508,No_genus_genome_20240801,No_genus_genome_20250228)
             )
 
 Taxonomic_class_lab <- c("Species","Genus")
@@ -83,11 +85,11 @@ genome_chronology <- genome_chronology %>%
   tidyr::gather(Levels, Value, -date) %>% mutate(Class = factor(Levels, levels=Taxonomic_class_lab))
 
 current_day <-  Sys.Date()
-title_lab <- paste0("No. species with genome sequence deposited in GenBank: last update@",last_day)
+title_lab <- paste0("No. taxa with genome sequence deposited in GenBank: last update@",last_day)
 plot_sp_level <- ggplot(data = genome_chronology, aes(x=date, y = Value, color=Class, group=Class)) + 
   geom_point(size=4.5) + 
   geom_line(linetype = "dashed", linewidth = 1) +
-  labs(x = "Date", y="No. species", title=title_lab)+
+  labs(x = "Date", y="No. taxa", title=title_lab)+
   theme(legend.text = element_text(size = 16),
         axis.text.x = element_text(size = 16),
         axis.text.y = element_text(size = 16),
@@ -147,3 +149,4 @@ genome_status_pi_plot = ggplot(genome_status_tidy, aes(x = "", y = count, fill =
 plot(genome_status_pi_plot)
 ggsave("genome_status_pi_plot.png",
         height=5, width=5)
+

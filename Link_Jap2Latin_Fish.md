@@ -23,7 +23,7 @@ library(rentrez)
 rm(list=ls(all=TRUE))
 
 # Current standard Japanese/scientific names of all fish species recorded from Japanese waters: https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html
-JAFList <- read_csv("20240905_JAFList.csv") #update@2024Nov25 in this script
+JAFList <- read_csv("20250123_JAFList.csv") #update@2025Feb28 in this script
 
 NonFish_List <- read_csv("NonFishList.csv")
 
@@ -43,7 +43,6 @@ mismatch_name_info <- read_csv("mismatch_name_list.csv")
 
 ``` r
 n_fish <- nrow(FRA200List)
-#no_fish　<- 10
 
 scientific_name_vec <- vector()
 query_scientific_name_vec <- vector()
@@ -125,6 +124,7 @@ for(i in 1:n_fish){
       Phylum_name <- NonFish_List$Phylum[target_NonFish_ID]
       
       if(!(identical(scientific_name_check,character(0)))){#if non-fish species
+        
         scientific_unlist <- scientific_name_check %>% strsplit("\n") %>% unlist 
       scientific_name <- scientific_unlist[1]
       phylum_name_vec[i] <- NonFish_List$Phylum[target_NonFish_ID]
@@ -132,6 +132,14 @@ for(i in 1:n_fish){
       order_name_vec[i] <- NonFish_List$Order[target_NonFish_ID]
         family_name_vec[i] <- Family_name
         scientific_name_vec[i] <- scientific_name
+        
+        # Check mismatch scientific name
+      if(scientific_name %in% mismatch_name_info$Taxonomical_correct_name){
+        target_query_vec_id <- which(mismatch_name_info$Taxonomical_correct_name==scientific_name)
+        query_scientific_name <- mismatch_name_info$NCBI_query_name[target_query_vec_id]
+      }else{
+        query_scientific_name <- scientific_name
+      }
         query_scientific_name_vec[i] <- query_scientific_name
 
     }else{
@@ -158,15 +166,15 @@ n_phylum <- length(unique(phylum_name_vec))
 Phylum_order <- c("Echinodermata",
                   "Mollusca",
                   "Arthropoda",
-                  "Chordata"
-                  )
+                  "Chordata",
+                  "Ochrophyta")
 if(!(n_phylum==length(Phylum_order))){
   warning("Number of phylum-levels does not match the dataset")
 }
 
 # Checking number of phylum in the dataset
 n_class <- length(unique(class_name_vec))
-Class_order <- c("Holothuroidea","Bivalvia","Gastropoda","Cephalopoda","Malacostraca","Chondrichthyes","Actinopterygii","Mammalia")
+Class_order <- c("Echinoidea","Holothuroidea","Bivalvia","Gastropoda","Cephalopoda","Malacostraca","Chondrichthyes","Actinopterygii","Mammalia","Phaeophyceae")
 if(!(n_class=length(Class_order))){
   warning("Number of class-levels does not match the dataset")
 }
@@ -198,6 +206,7 @@ for(i in 1:nrow(FRA200List_Latin)){
   if(length(target_taxonomy_id)==1){
     FRA200List_Latin[i,]$Taxonomy_id <- target_taxonomy_id
   }
+  Sys.sleep(3)
 }
 
 FRA200List_Kokushi_Latin_info <- read_csv("FRA200List_Kokushi_Latin.csv") %>%
@@ -212,6 +221,18 @@ FRA200List_Latin_query <- bind_rows(FRA200List_Latin,
 
 FRA200List_Latin <- FRA200List_Latin_query %>%
   dplyr::select(-c(NCBI_query_scientific_name))
+```
+
+``` r
+# Loading packages
+duplicated_taxonomy_id <- FRA200List_Latin %>%
+  group_by(Taxonomy_id) %>%
+  filter(n()>1) %>%
+  arrange(Taxonomy_id)
+
+if (nrow(duplicated_taxonomy_id) > 1){
+  warning(paste("Some of NCBI taxonomy IDs are duplicated!"))
+}
 ```
 
 ## Write a taxonomy list file

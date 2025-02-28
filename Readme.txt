@@ -20,3 +20,8 @@
 クサヤモロ: Decapterus macarellus (Cuvier 1833)
 オアカムロ: Decapterus tabl Berry 1968
 アカアジ: Decapterus akaadsi Abe 1958
+
+
+2024/11/26
+新規追加した国際資源の魚種の上位分類群をBISMALではなくhttps://www.calacademy.orgを参照するように変更すること
+リストについて、沿岸資源と国際資源の違いを判別できる列を追加すること
