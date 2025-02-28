@@ -22,7 +22,7 @@
 
 
 ### References
-* [List of Japan's all fish species (Motomura 2024)](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名の目録
+* [List of Japan's all fish species (JAF list: Motomura 2024)](https://www.museum.kagoshima-u.ac.jp/staff/motomura/jaf.html)：日本産全魚種の標準和名—学名の目録
 * [Eschmeyer's Catalog of Fishes](https://www.calacademy.org): 魚類の科—目レベルの分類階級の参照先
 * [Biological Information System for Marine Life; BISMaL](https://www.godac.jamstec.go.jp/bismal): 魚類以外の分類群の科—目レベルの分類階級の参照先
 * [Animal Genome Size Database](http://www.genomesize.com/index.php): 動物6222種（脊椎動物2793種; 無脊椎動物2429種）を対象としたハプロイドDNA含量に関するデータベース
